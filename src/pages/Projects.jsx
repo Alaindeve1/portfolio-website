@@ -28,7 +28,7 @@ const Projects = () => {
       id: 3,
       title: "Content Management System",
       description: "A custom CMS built for a media company to manage articles and digital assets.",
-      technologies: ["Node.js", "Express", "MongoDB", "AWS S3"],
+      technologies: ["Node.js", "Express", "postgresql", "AWS S3"],
       image: "/assets/images/project3.jpg",
       liveLink: "https://example.com",
       githubLink: "https://github.com/yourusername/project",
