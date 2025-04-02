@@ -1,0 +1,117 @@
+.experience-section {
+    padding: 2rem 0;
+  }
+  
+  .experience-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+  
+  .timeline {
+    position: relative;
+    padding-left: 2rem;
+  }
+  
+  .timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background-color: var(--primary-color);
+  }
+  
+  .timeline-title {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+  }
+  
+  .timeline-item {
+    position: relative;
+    padding-bottom: 2.5rem;
+  }
+  
+  .timeline-dot {
+    position: absolute;
+    top: 0;
+    left: -2rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    border: 2px solid var(--bg-color);
+  }
+  
+  .timeline-content {
+    background-color: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .timeline-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .timeline-header h3 {
+    font-size: 1.4rem;
+    margin-right: 1rem;
+  }
+  
+  .timeline-period {
+    font-weight: 500;
+    color: var(--primary-color);
+  }
+  
+  .timeline-company {
+    margin-bottom: 1rem;
+    font-weight: 500;
+    color: var(--secondary-color);
+  }
+  
+  .timeline-description ul {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .timeline-description li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+  }
+  
+  .timeline-description p {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+  }
+  
+  .timeline-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  @media (min-width: 992px) {
+    .experience-container {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 3rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .timeline-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .timeline-period {
+      margin-top: 0.5rem;
+    }
+  }
