@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/AboutStyles.css';
 
+
 const About = () => {
   return (
     <section className="about-section">
@@ -10,28 +11,28 @@ const About = () => {
         <div className="about-content">
           <div className="about-image">
             {/* Replace with your image */}
-            <div className="profile-img-placeholder"></div>
+            <img src="/assets/images/alainprofile.jpg" alt="alainprofile" />
           </div>
           
           <div className="about-text">
             <h2>Who I Am</h2>
             <p>
               I'm a passionate Full Stack Developer with a focus on creating responsive, 
-              user-friendly web applications. With over [X] years of experience in the industry, 
-              I've had the opportunity to work on a diverse range of projects, from e-commerce 
-              platforms to content management systems.
+              user-friendly web applications. With over 2 years of experience in the industry, 
+              I've had the opportunity to work on a diverse range of projects, from simple 
+              platforms to complex projects.
             </p>
             
             <h2>My Journey</h2>
             <p>
-              My journey in tech started when I [your starting story]. Since then, I've continuously 
+              My journey in tech started when I young when i first discovered my love for technology as well as software engineering. Since then, I've continuously 
               expanded my skills and knowledge, staying up-to-date with the latest technologies and best practices.
             </p>
             
             <h2>Education & Certifications</h2>
             <ul>
-              <li>Bachelor's Degree in Computer Science - University Name</li>
-              <li>Certification in Web Development - Organization Name</li>
+              <li>Bachelor's Degree in software engineering - AUCA</li>
+              <li>Certification in virtual assistance - ALX</li>
               <li>Certification in User Experience Design - Organization Name</li>
             </ul>
           </div>
@@ -47,9 +48,9 @@ const About = () => {
                 <li>React</li>
                 <li>JavaScript (ES6+)</li>
                 <li>TypeScript</li>
-                <li>HTML5 & CSS3</li>
-                <li>SASS/SCSS</li>
-                <li>Redux</li>
+                <li>HTML & CSS</li>
+                <li>tailwind</li>
+                
               </ul>
             </div>
             
@@ -57,20 +58,20 @@ const About = () => {
               <h3>Backend</h3>
               <ul>
                 <li>Node.js</li>
-                <li>Express</li>
+                <li>java</li>
                 <li>RESTful APIs</li>
-                <li>GraphQL</li>
-                <li>Python/Django</li>
+                <li>JavaScript</li>
+                
               </ul>
             </div>
             
             <div className="skill-category">
               <h3>Databases</h3>
               <ul>
-                <li>MongoDB</li>
+                <li>oracle (pl&SQL)</li>
                 <li>PostgreSQL</li>
                 <li>MySQL</li>
-                <li>Firebase</li>
+                
               </ul>
             </div>
             
@@ -78,9 +79,9 @@ const About = () => {
               <h3>Tools & Others</h3>
               <ul>
                 <li>Git/GitHub</li>
-                <li>Docker</li>
-                <li>AWS/Azure</li>
-                <li>CI/CD</li>
+                <li>virtual box</li>
+                <li>vs code</li>
+                <li>bpmn.io</li>
                 <li>Agile/Scrum</li>
               </ul>
             </div>

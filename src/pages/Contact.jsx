@@ -67,24 +67,24 @@ const Contact = () => {
             
             <div className="info-item">
               <i className="fas fa-envelope"></i>
-              <p>youremail@example.com</p>
+              <p>alainndizeye11@gmail.com</p>
             </div>
             
             <div className="info-item">
               <i className="fas fa-phone"></i>
-              <p>+1 (123) 456-7890</p>
+              <p>+250 799324850</p>
             </div>
             
             <div className="info-item">
               <i className="fas fa-map-marker-alt"></i>
-              <p>City, State, Country</p>
+              <p>KIGALI, Rwanda</p>
             </div>
             
             <div className="social-links">
-              <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <a href="https://github.com/dashboard" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                 <i className="fab fa-github"></i>
               </a>
-              <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <a href="https://www.linkedin.com/in/ndizeye-alain/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                 <i className="fab fa-linkedin"></i>
               </a>
               <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter">

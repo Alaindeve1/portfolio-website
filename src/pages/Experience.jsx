@@ -6,16 +6,16 @@ const Experience = () => {
   const workExperience = [
     {
       id: 1,
-      role: "Senior Frontend Developer",
-      company: "Tech Company Inc.",
-      location: "San Francisco, CA",
-      duration: "Jan 2023 - Present",
+      role: "junior software developer",
+      company: "fabritech.",
+      location: "kigali ,gasabo gishushu",
+      duration: "2023",
       description: [
-        "Led the development of a React-based dashboard that improved user engagement by 40%",
-        "Collaborated with UX designers to implement responsive designs across web and mobile platforms",
+        "development of a website using html,css and javascript%",
+        "helped with graphical design ,flyers ,etc",
         "Optimized application performance resulting in a 30% decrease in load time"
       ],
-      technologies: ["React", "TypeScript", "Redux", "Material UI"]
+      technologies: ["css", "html", "javascript", "canva"]
     },
     {
       id: 2,
@@ -48,19 +48,19 @@ const Experience = () => {
   const education = [
     {
       id: 1,
-      degree: "Master of Science in Computer Science",
-      institution: "University Name",
-      location: "City, State",
-      duration: "2016 - 2018",
+      degree: "bachelor of software engineering",
+      institution: "AVENTIST UNIVERSITY OF CENTRAL AFRICA",
+      location: "GASABO, GISHUSHU",
+      duration: "2023 - present",
       description: "Specialized in Web Technologies and Software Engineering"
     },
     {
       id: 2,
-      degree: "Bachelor of Science in Information Technology",
-      institution: "College Name",
-      location: "City, State",
-      duration: "2012 - 2016",
-      description: "Graduated with honors. Focused on programming and database management."
+      degree: "certification in virtual assistance",
+      institution: "ALX",
+      location: "Remote",
+      duration: "2024",
+      description: "8 week intensive training in virtual assistance using various technologies."
     }
   ];
 

@@ -2,44 +2,41 @@ import React, { useState } from 'react';
 import '../styles/ProjectsStyles.css';
 
 const Projects = () => {
-  // Sample project data - replace with your own projects
   const projectsData = [
     {
       id: 1,
-      title: "E-commerce Platform",
-      description: "A full-featured online store with product management, cart functionality, and payment integration.",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-      image: "/assets/images/project1.jpg",
+      title: "STUDENT-STAFF PORTAL",
+      description: "Java Swing project to manage students and staff with database connection using XAMPP (MySQL)",
+      technologies: ["Java", "Swing", "MySQL", "XAMPP"],
+      image: "/assets/images/student-portal-screenshot.png",
       liveLink: "https://example.com",
-      githubLink: "https://github.com/yourusername/project",
+      githubLink: "https://github.com/Alaindeve1/java-swing-application",
       category: "fullstack"
-    },
+    }, 
     {
       id: 2,
-      title: "Task Management App",
-      description: "A responsive task management application with drag-and-drop functionality and user authentication.",
+      title: "AUCTION MANAGMENT SYSTEM",
+      description: "A backend project using springboot framework and java with postgreSQL to manage auctions for both buyers and sellers.",
       technologies: ["React", "Firebase", "Styled Components"],
-      image: "/assets/images/project2.jpg",
+      image: "https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/320039537/original/172abd5a0080bde1137b926049ff45b4351d57d4/develop-java-spring-boot-maven-software-application-with-oracle-mysql-database.jpeg",
       liveLink: "https://example.com",
-      githubLink: "https://github.com/yourusername/project",
+      githubLink: "https://github.com/Alaindeve1/AUCTION-MANAGMENT-SYSTEM",
       category: "frontend"
     },
     {
       id: 3,
       title: "Content Management System",
       description: "A custom CMS built for a media company to manage articles and digital assets.",
-      technologies: ["Node.js", "Express", "postgresql", "AWS S3"],
-      image: "/assets/images/project3.jpg",
+      technologies: ["Node.js", "Express", "PostgreSQL", "AWS S3"],
+      image: "/assets/images/student-portal-screenshot.png",
       liveLink: "https://example.com",
       githubLink: "https://github.com/yourusername/project",
       category: "backend"
     }
   ];
 
-  // Filter state
   const [filter, setFilter] = useState("all");
 
-  // Filter projects based on category
   const filteredProjects = filter === "all" 
     ? projectsData 
     : projectsData.filter(project => project.category === filter);
@@ -80,8 +77,14 @@ const Projects = () => {
           {filteredProjects.map(project => (
             <div className="project-card" key={project.id}>
               <div className="project-image">
-                {/* You can use a placeholder for now */}
-                <div className="img-placeholder"></div>
+                <img 
+                  src={project.image} 
+                  alt={project.title} 
+                  className="project-img"
+                  onError={(e) => {
+                    e.target.src = '/assets/images/project-placeholder.jpg';
+                  }}
+                />
               </div>
               
               <div className="project-info">

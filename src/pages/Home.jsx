@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FaReact, FaNodeJs, FaJava, FaDatabase, FaHtml5 } from 'react-icons/fa';
+import { SiJavascript, SiC } from 'react-icons/si';
 import '../styles/HomeStyles.css';
 
 const Home = () => {
@@ -10,38 +12,95 @@ const Home = () => {
           <div className="hero-content">
             <h1>Hi, I'm <span className="highlight">Ndizeye Alain</span></h1>
             <h2>Full Stack Developer</h2>
-            <p>
+            <p className="hero-description">
               I design and develop web applications that deliver exceptional user experiences.
               Passionate about clean code and innovative solutions.
             </p>
             <div className="hero-buttons">
-              <Link to="/projects" className="btn btn-primary">View Projects</Link>
-              <Link to="/contact" className="btn btn-secondary">Contact Me</Link>
+              <Link to="/projects" className="btn btn-primary">
+                View Projects
+                <span className="btn-icon">→</span>
+              </Link>
+              <Link to="/contact" className="btn btn-secondary">
+                Contact Me
+                
+              </Link>
             </div>
           </div>
           
           <div className="hero-skills">
-            <h3>Tech Stack</h3>
+            <h3 className="skills-title">Tech Stack</h3>
             <div className="skills-container">
-              <div className="skill">React</div>
-              <div className="skill">Node.js</div>
-              <div className="skill">JavaScript</div>
-              <div className="skill">TypeScript</div>
-              <div className="skill">MongoDB</div>
-              <div className="skill">CSS/SASS</div>
+              <div className="skill" title="React">
+                <FaReact className="skill-icon" />
+                <span className="skill-name">React</span>
+              </div>
+              <div className="skill" title="Node.js">
+                <FaNodeJs className="skill-icon" />
+                <span className="skill-name">Node.js</span>
+              </div>
+              <div className="skill" title="JavaScript">
+                <SiJavascript className="skill-icon" />
+                <span className="skill-name">JavaScript</span>
+              </div>
+              <div className="skill" title="Java">
+                <FaJava className="skill-icon" />
+                <span className="skill-name">Java</span>
+              </div>
+              <div className="skill" title="PostgreSQL">
+                <FaDatabase className="skill-icon" />
+                <span className="skill-name">PostgreSQL</span>
+              </div>
+              <div className="skill" title="HTML & CSS">
+                <FaHtml5 className="skill-icon" />
+                <span className="skill-name">HTML & CSS</span>
+              </div>
+              <div className="skill" title="C Programming">
+                <SiC className="skill-icon" />
+                <span className="skill-name">C</span>
+              </div>
             </div>
           </div>
         </div>
         
         <div className="featured-projects">
-          <h2>Featured Projects</h2>
+          <h2 className="section-title">Featured Projects</h2>
           <div className="projects-preview">
-            {/* Display 2-3 featured projects here */}
             <div className="project-card">
-              <div className="project-image"></div>
-              <h3>Project Name</h3>
-              <p>Brief description of the project and technologies used.</p>
-              <Link to="/projects" className="project-link">Learn More</Link>
+              <div className="project-image">
+                <img 
+                  src="/assets/images/student-portal-screenshot.png" 
+                  alt="Student-Staff Portal" 
+                  className="project-img"
+                />
+                <div className="project-tech">
+                  <span>Java</span>
+                  <span>Swing</span>
+                  <span>MySQL</span>
+                </div>
+              </div>
+              <div className="project-info">
+                <h3>STUDENT-STAFF PORTAL</h3>
+                <p>Java Swing project to manage students and staff with database connection using XAMPP (MySQL)</p>
+                <Link to="/projects" className="project-link">
+                  Learn More
+                  <span>→</span>
+                </Link>
+              </div>
+            </div>
+            
+            <div className="project-card">
+              <div className="project-image placeholder">
+                <div className="placeholder-text">Coming Soon</div>
+              </div>
+              <div className="project-info">
+                <h3>New Project</h3>
+                <p>Exciting new project currently in development</p>
+                <Link to="/projects" className="project-link">
+                  Learn More
+                  <span>→</span>
+                </Link>
+              </div>
             </div>
           </div>
         </div>

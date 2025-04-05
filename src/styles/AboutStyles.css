@@ -115,3 +115,42 @@
       grid-template-columns: 1fr;
     }
   }
+  .about-content {
+    display: flex;
+    align-items: center; /* Vertically centers content */
+    gap: 2rem; /* Adds spacing between image and text */
+    max-width: 1200px; /* Adjust based on your layout */
+    margin: 0 auto; /* Centers the container */
+    padding: 2rem;
+  }
+  
+  .about-image {
+    flex: 0 0 40%; /* Prevents image from growing/shrinking (adjust %) */
+    border-radius: 10px; /* Soft rounded corners */
+    overflow: hidden; /* Ensures image respects border radius */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .about-image img {
+    width: 100%; /* Ensures image fills container */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Removes extra space below image */
+    object-fit: cover; /* Optional: Crops image to fill container */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+  }
+  
+  .about-image img:hover {
+    transform: scale(1.02); /* Slight zoom on hover */
+  }
+  
+  /* For mobile responsiveness */
+  @media (max-width: 768px) {
+    .about-content {
+      flex-direction: column; /* Stacks image above text */
+    }
+    .about-image {
+      flex: 0 0 auto; /* Resets flex for mobile */
+      width: 80%; /* Adjust image width on small screens */
+      margin-bottom: 1.5rem;
+    }
+  }

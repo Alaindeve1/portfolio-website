@@ -5,19 +5,43 @@ import '../styles/NavbarStyles.css';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const { isDarkMode, toggleTheme } = useContext(ThemeContext);
   const location = useLocation();
+
+  // Handle scroll effect
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   // Close mobile menu when route changes
   useEffect(() => {
     setMenuOpen(false);
   }, [location]);
 
+  // Navigation links - defined here to be reused in Footer
+  const navLinks = [
+    { path: '/', label: 'Home' },
+    { path: '/about', label: 'About' },
+    { path: '/projects', label: 'Projects' },
+    { path: '/experience', label: 'Experience' },
+    { path: '/contact', label: 'Contact' }
+  ];
+
   return (
-    <nav className="navbar">
+    <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="container navbar-container">
         <Link to="/" className="logo">
-          <h1>DevPortfolio</h1>
+          <h1>Ndizeye Alain</h1>
         </Link>
 
         <div className="navbar-buttons">
@@ -41,35 +65,29 @@ const Navbar = () => {
         </div>
 
         <ul className={`nav-menu ${menuOpen ? 'active' : ''}`}>
-          <li>
-            <Link to="/" className={location.pathname === '/' ? 'active' : ''}>
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link to="/about" className={location.pathname === '/about' ? 'active' : ''}>
-              About
-            </Link>
-          </li>
-          <li>
-            <Link to="/projects" className={location.pathname === '/projects' ? 'active' : ''}>
-              Projects
-            </Link>
-          </li>
-          <li>
-            <Link to="/experience" className={location.pathname === '/experience' ? 'active' : ''}>
-              Experience
-            </Link>
-          </li>
-          <li>
-            <Link to="/contact" className={location.pathname === '/contact' ? 'active' : ''}>
-              Contact
-            </Link>
-          </li>
+          {navLinks.map((link) => (
+            <li key={link.path}>
+              <Link 
+                to={link.path} 
+                className={location.pathname === link.path ? 'active' : ''}
+              >
+                {link.label}
+              </Link>
+            </li>
+          ))}
         </ul>
       </div>
     </nav>
   );
 };
+
+// Export navLinks to be used in other components
+export const navLinks = [
+  { path: '/', label: 'Home' },
+  { path: '/about', label: 'About' },
+  { path: '/projects', label: 'Projects' },
+  { path: '/experience', label: 'Experience' },
+  { path: '/contact', label: 'Contact' }
+];
 
 export default Navbar;
