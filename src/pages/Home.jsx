@@ -69,20 +69,26 @@ const Home = () => {
           <div className="projects-preview">
             <div className="project-card">
               <div className="project-image">
-                <picture>
-                  <source 
-                    srcSet="/assets/images/student-portal.webp" 
-                    type="image/webp" 
-                  />
-                  <img 
-                    src="/assets/images/student-portal-screenshot.png" 
-                    alt="Student Portal" 
-                    className="project-img"
-                    loading="lazy"
-                    width="600"
-                    height="400"
-                  />
-                </picture>
+                <div className="image-container">
+                  <picture>
+                    <source 
+                      srcSet="/assets/images/student-portal-screenshot.webp" 
+                      type="image/webp" 
+                    />
+                    <img 
+                      src="/assets/images/student-portal-screenshot.png" 
+                      alt="Student Portal" 
+                      className="project-img"
+                      loading="lazy"
+                      width="600"
+                      height="400"
+                      onError={(e) => {
+                        e.target.onerror = null;
+                        e.target.src = '/assets/images/project-placeholder.jpg';
+                      }}
+                    />
+                  </picture>
+                </div>
                 <div className="project-tech">
                   <span>Java</span>
                   <span>Swing</span>
@@ -101,20 +107,26 @@ const Home = () => {
             
             <div className="project-card">
               <div className="project-image">
-                <picture>
-                  <source 
-                    srcSet="/assets/images/ishore-ecommerce.webp" 
-                    type="image/webp" 
-                  />
-                  <img 
-                    src="/assets/images/ishore-ecommerce-outsourcing.png" 
-                    alt="E-commerce Project" 
-                    className="project-img"
-                    loading="lazy"
-                    width="600"
-                    height="400"
-                  />
-                </picture>
+                <div className="image-container">
+                  <picture>
+                    <source 
+                      srcSet="/assets/images/ishore-ecommerce-outsourcing.webp" 
+                      type="image/webp" 
+                    />
+                    <img 
+                      src="/assets/images/ishore-ecommerce-outsourcing.png" 
+                      alt="E-commerce Project" 
+                      className="project-img"
+                      loading="lazy"
+                      width="600"
+                      height="400"
+                      onError={(e) => {
+                        e.target.onerror = null;
+                        e.target.src = '/assets/images/project-placeholder.jpg';
+                      }}
+                    />
+                  </picture>
+                </div>
                 <div className="project-tech">
                   <span>React</span>
                   <span>Node.js</span>

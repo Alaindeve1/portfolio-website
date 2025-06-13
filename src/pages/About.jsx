@@ -1,8 +1,30 @@
-import React from 'react';
+import React, { useState, useCallback, useEffect } from 'react';
 import '../styles/AboutStyles.css';
-import { FaGithub, FaLinkedin, FaEnvelope, FaCode, FaServer, FaDatabase, FaTools } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope, FaCode, FaServer, FaDatabase, FaTools, FaTimes } from 'react-icons/fa';
 
 const About = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const toggleModal = useCallback(() => {
+    setIsModalOpen(prevState => {
+      document.body.style.overflow = !prevState ? 'hidden' : 'auto';
+      return !prevState;
+    });
+  }, []);
+
+  // Close modal when pressing Escape key
+  useEffect(() => {
+    if (!isModalOpen) return;
+    
+    const handleKeyDown = (e) => {
+      if (e.key === 'Escape') {
+        toggleModal();
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [isModalOpen, toggleModal]);
   return (
     <section className="about-section">
       <div className="container">
@@ -10,17 +32,38 @@ const About = () => {
         
         <div className="about-content">
           <div className="about-image">
-            <picture>
-              <source srcSet="/assets/images/alainprofile.webp" type="image/webp" />
-              <img 
-                src="/assets/images/alainprofile.jpg" 
-                alt="Alain Ndizeye - Full Stack Developer" 
-                className="profile-photo"
-                loading="lazy"
-                width="400"
-                height="400"
-              />
-            </picture>
+            <div className="profile-photo-container" onClick={toggleModal}>
+              <picture>
+                <source srcSet="/assets/images/alainprofile.webp" type="image/webp" />
+                <img 
+                  src="/assets/images/alainprofile.jpg" 
+                  alt="Alain Ndizeye - Full Stack Developer" 
+                  className="profile-photo"
+                  loading="lazy"
+                  width="400"
+                  height="400"
+                />
+              </picture>
+            </div>
+            
+            {/* Image Modal */}
+            {isModalOpen && (
+              <div className="modal-overlay active" onClick={toggleModal}>
+                <div className="modal-content" onClick={e => e.stopPropagation()}>
+                  <button className="close-button" onClick={toggleModal} aria-label="Close">
+                    <FaTimes />
+                  </button>
+                  <picture>
+                    <source srcSet="/assets/images/alainprofile.webp" type="image/webp" />
+                    <img 
+                      src="/assets/images/alainprofile.jpg" 
+                      alt="Alain Ndizeye - Full Stack Developer" 
+                      loading="eager"
+                    />
+                  </picture>
+                </div>
+              </div>
+            )}
           </div>
           
           <div className="about-text">

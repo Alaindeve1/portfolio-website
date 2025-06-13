@@ -8,7 +8,7 @@ const Projects = () => {
       title: "STUDENT-STAFF PORTAL",
       description: "Java Swing project to manage students and staff with database connection using XAMPP (MySQL)",
       technologies: ["Java", "Swing", "MySQL", "XAMPP"],
-      image: "/assets/images/student-portal.webp",
+      image: "/assets/images/student-portal-screenshot.webp",
       fallbackImage: "/assets/images/student-portal-screenshot.png",
       githubLink: "https://github.com/Alaindeve1/java-swing-application",
       category: "backend"
@@ -18,7 +18,7 @@ const Projects = () => {
       title: "AUCTION MANAGMENT SYSTEM",
       description: "A backend project using springboot framework and java with postgreSQL to manage auctions for both buyers and sellers.",
       technologies: ["React", "Firebase", "Styled Components"],
-      image: "/assets/images/screenshot-portal.webp",
+      image: "/assets/images/Screenshot 2025-06-12 141855.webp",
       fallbackImage: "/assets/images/Screenshot 2025-06-12 141855.png",
       liveLink: "https://www.loom.com/share/fd0dff316dad4e50ab781445c71947cb?sid=b9a65abb-c884-43bb-be41-cc487b7325a2",
       githubLink: "https://github.com/Alaindeve1/AUCTION-MANAGMENT-SYSTEM",
@@ -40,7 +40,7 @@ const Projects = () => {
       title: "The Fox Auction & Real Estate",
       description: "A website showcasing auction items and real estate properties.",
       technologies: ["HTML", "CSS", "JavaScript"],
-      image: "/assets/images/the-fox.webp",
+      image: "/assets/images/the fox.webp",
       fallbackImage: "/assets/images/the fox.png",
       liveLink: "https://www.loom.com/share/746caed9489647509e4b167a87293ad2?sid=9e60118d-dc52-4d47-b64b-a6dc508afb94",
       githubLink: "https://github.com/Alaindeve1/the-fox-website", // Add the GitHub link here if you have one
