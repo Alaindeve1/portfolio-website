@@ -10,11 +10,17 @@ const About = () => {
         
         <div className="about-content">
           <div className="about-image">
-            <img 
-              src="/assets/images/alainprofile.jpg" 
-              alt="Alain Ndizeye - Full Stack Developer" 
-              className="profile-photo"
-            />
+            <picture>
+              <source srcSet="/assets/images/alainprofile.webp" type="image/webp" />
+              <img 
+                src="/assets/images/alainprofile.jpg" 
+                alt="Alain Ndizeye - Full Stack Developer" 
+                className="profile-photo"
+                loading="lazy"
+                width="400"
+                height="400"
+              />
+            </picture>
           </div>
           
           <div className="about-text">
