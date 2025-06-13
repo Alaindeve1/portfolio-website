@@ -23,7 +23,7 @@ const Contact = () => {
   };
 
   // Handle form submission
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     
     // Basic validation
@@ -36,23 +36,39 @@ const Contact = () => {
       return;
     }
 
-    // This would typically be an API call to your backend
-    // For demo purposes, we'll just simulate a successful submission
-    setTimeout(() => {
+    try {
+      const response = await fetch('https://formspree.io/f/xblyrwdw', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      });
+
+      if (response.ok) {
+        setFormStatus({
+          submitted: true,
+          success: true,
+          message: 'Thank you for your message! I will get back to you soon.'
+        });
+        
+        // Reset form after successful submission
+        setFormData({
+          name: '',
+          email: '',
+          subject: '',
+          message: ''
+        });
+      } else {
+        throw new Error('Failed to send message');
+      }
+    } catch (error) {
       setFormStatus({
         submitted: true,
-        success: true,
-        message: 'Thank you for your message! I will get back to you soon.'
+        success: false,
+        message: 'Sorry, there was an error sending your message. Please try again later.'
       });
-      
-      // Reset form after successful submission
-      setFormData({
-        name: '',
-        email: '',
-        subject: '',
-        message: ''
-      });
-    }, 1000);
+    }
   };
 
   return (

@@ -6,7 +6,7 @@ const Experience = () => {
   const workExperience = [
     {
       id: 1,
-      role: "junior software developer",
+      role: "junior software developer & it personnel",
       company: "fabritech.",
       location: "kigali ,gasabo gishushu",
       duration: "2023",
@@ -15,33 +15,32 @@ const Experience = () => {
         "helped with graphical design ,flyers ,etc",
         "Optimized application performance resulting in a 30% decrease in load time"
       ],
-      technologies: ["css", "html", "javascript", "canva"]
+      technologies: ["css", "html", "javascript", "canva" , "wordpress" , "oracle", "pl/sql", "python", "excel","postgresql","java","springboot","docker","git","typescript","react js","word"]
     },
     {
       id: 2,
       role: "Full Stack Developer",
-      company: "Digital Solutions",
-      location: "Chicago, IL",
-      duration: "Mar 2020 - Dec 2022",
+      location: "kigali ,gasabo gishushu",
+      duration: "2022-now",
       description: [
-        "Developed and maintained RESTful APIs using Node.js and Express",
+        "Developed and maintained RESTful APIs using Node.js and springboot ",
         "Implemented user authentication system with JWT and OAuth integration",
         "Created responsive frontend interfaces using React and styled-components"
       ],
-      technologies: ["Node.js", "Express", "MongoDB", "React", "AWS"]
+      technologies: ["Node.js", "springboot", "Oracle", "javascript", "react js", "html", "css","typescript","docker","git"]
     },
     {
       id: 3,
-      role: "Junior Web Developer",
-      company: "Creative Agency",
-      location: "New York, NY",
-      duration: "Jun 2018 - Feb 2020",
+      role: "IT Personnel",
+      company: "the fox company",
+      location: "kigali ,gasabo gishushu",
+      duration: "2022-2023",
       description: [
         "Built custom WordPress themes and plugins for client websites",
-        "Assisted in implementing e-commerce features and payment processing",
+       "data analyst and virtual assistant as well as data entry clerk",
         "Performed website maintenance and troubleshooting for clients"
       ],
-      technologies: ["JavaScript", "PHP", "WordPress", "HTML/CSS", "MySQL"]
+      technologies: ["JavaScript", "PHP", "WordPress", "HTML/CSS", "MySQL" , "oracle", "pl/sql", "python", "excel","postgresql"]
     }
   ];
 

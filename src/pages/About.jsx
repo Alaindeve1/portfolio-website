@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/AboutStyles.css';
-
+import { FaGithub, FaLinkedin, FaEnvelope, FaCode, FaServer, FaDatabase, FaTools } from 'react-icons/fa';
 
 const About = () => {
   return (
@@ -10,31 +10,36 @@ const About = () => {
         
         <div className="about-content">
           <div className="about-image">
-            {/* Replace with your image */}
-            <img src="/assets/images/alainprofile.jpg" alt="alainprofile" />
+            <img 
+              src="/assets/images/alainprofile.jpg" 
+              alt="Alain Ndizeye - Full Stack Developer" 
+              className="profile-photo"
+            />
           </div>
           
           <div className="about-text">
-            <h2>Who I Am</h2>
+            <h2>Transforming Ideas Into Digital Excellence</h2>
             <p>
-              I'm a passionate Full Stack Developer with a focus on creating responsive, 
-              user-friendly web applications. With over 2 years of experience in the industry, 
-              I've had the opportunity to work on a diverse range of projects, from simple 
-              platforms to complex projects.
+            I'm a results-driven Full Stack Developer who specializes in crafting scalable, high-performance web applications
+             that deliver exceptional user experiences. With over 2 years of hands-on experience, I've successfully delivered
+              solutions for clients ranging from innovative startups to established enterprises, consistently exceeding
+               expectations and driving measurable business impact.
             </p>
             
-            <h2>My Journey</h2>
+            <h3>My Journey</h3>
             <p>
-              My journey in tech started when I young when i first discovered my love for technology as well as software engineering. Since then, I've continuously 
-              expanded my skills and knowledge, staying up-to-date with the latest technologies and best practices.
+            My passion for technology ignited at a young age when I first discovered the power of software engineering to solve
+             real-world problems. What started as curiosity evolved into a dedicated career focused on pushing the boundaries 
+             of what's possible in web development. I thrive on staying ahead of industry trends, continuously mastering 
+             emerging technologies, and applying cutting-edge best practices to create solutions that make a difference.
             </p>
             
-            <h2>Education & Certifications</h2>
-            <ul>
-              <li>Bachelor's Degree in software engineering - AUCA</li>
-              <li>Certification in virtual assistance - ALX</li>
-              <li>Certification in User Experience Design - Organization Name</li>
-            </ul>
+            <h3>What Drives Me</h3>
+            <p>
+              I'm passionate about creating clean, efficient code and solving complex problems. I believe in the power of 
+              technology to transform businesses and improve lives, and I'm committed to building solutions that make a 
+              real impact.
+            </p>
           </div>
         </div>
         
@@ -43,49 +48,74 @@ const About = () => {
           
           <div className="skills-categories">
             <div className="skill-category">
-              <h3>Frontend</h3>
+              <h3><FaCode className="skill-icon" /> Frontend</h3>
               <ul>
-                <li>React</li>
+                <li>React.js</li>
                 <li>JavaScript (ES6+)</li>
                 <li>TypeScript</li>
-                <li>HTML & CSS</li>
-                <li>tailwind</li>
-                
+                <li>HTML5 & CSS3</li>
+                <li>Tailwind CSS</li>
+                <li>Responsive Design</li>
               </ul>
             </div>
             
             <div className="skill-category">
-              <h3>Backend</h3>
+              <h3><FaServer className="skill-icon" /> Backend</h3>
               <ul>
                 <li>Node.js</li>
-                <li>java</li>
+                <li>Java/Spring Boot</li>
                 <li>RESTful APIs</li>
-                <li>JavaScript</li>
-                
+                <li>Authentication & Authorization</li>
+                <li>API Integration</li>
               </ul>
             </div>
             
             <div className="skill-category">
-              <h3>Databases</h3>
+              <h3><FaDatabase className="skill-icon" /> Databases</h3>
               <ul>
-                <li>oracle (pl&SQL)</li>
+                <li>Oracle (PL/SQL)</li>
                 <li>PostgreSQL</li>
                 <li>MySQL</li>
-                
+                <li>Database Design</li>
               </ul>
             </div>
             
             <div className="skill-category">
-              <h3>Tools & Others</h3>
+              <h3><FaTools className="skill-icon" /> Tools & More</h3>
               <ul>
-                <li>Git/GitHub</li>
-                <li>virtual box</li>
-                <li>vs code</li>
-                <li>bpmn.io</li>
+                <li>Git & GitHub</li>
+                <li>Docker</li>
+                <li>VS Code</li>
                 <li>Agile/Scrum</li>
+                <li>CI/CD</li>
               </ul>
             </div>
           </div>
+        </div>
+        <div className="contact-section">
+          <h2>Let's Build Something Amazing Together</h2>
+          <p>
+            I'm always excited to take on new challenges and collaborate on interesting projects. 
+            Whether you need a complete web application, API development, or technical consultation, 
+            I'm here to help bring your ideas to life with clean, efficient code and innovative solutions.
+          </p>
+          
+          <h3>Get In Touch</h3>
+          <div className="contact-links">
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" className="contact-link">
+              <FaGithub className="contact-icon" /> GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/ndizeye-alain/" target="_blank" rel="noopener noreferrer" className="contact-link">
+              <FaLinkedin className="contact-icon" /> LinkedIn
+            </a>
+            <a href="/contact" className="contact-link">
+              <FaEnvelope className="contact-icon" /> Email Me
+            </a>
+          </div>
+          
+          <p className="availability">
+            Currently available for freelance projects and full-time opportunities. Let's discuss how I can help with your next project!
+          </p>
         </div>
       </div>
     </section>

@@ -14,7 +14,8 @@ const Home = () => {
             <h2>Full Stack Developer</h2>
             <p className="hero-description">
               I design and develop web applications that deliver exceptional user experiences.
-              Passionate about clean code and innovative solutions.
+              Passionate about clean code and innovative solutions with broad understanding of 
+              database management systems and bigdata analystics as well.
             </p>
             <div className="hero-buttons">
               <Link to="/projects" className="btn btn-primary">
@@ -90,12 +91,21 @@ const Home = () => {
             </div>
             
             <div className="project-card">
-              <div className="project-image placeholder">
-                <div className="placeholder-text">Coming Soon</div>
+              <div className="project-image">
+                <img 
+                  src="/assets/images/ishore-ecommerce-outsourcing.png" 
+                  alt="E-commerce Project" 
+                  className="project-img"
+                />
+                <div className="project-tech">
+                  <span>React</span>
+                  <span>Node.js</span>
+                  <span>MongoDB</span>
+                </div>
               </div>
               <div className="project-info">
-                <h3>New Project</h3>
-                <p>Exciting new project currently in development</p>
+                <h3>E-COMMERCE</h3>
+                <p>Full-featured online shopping platform with user authentication and payment processing</p>
                 <Link to="/projects" className="project-link">
                   Learn More
                   <span>→</span>

@@ -9,29 +9,38 @@ const Projects = () => {
       description: "Java Swing project to manage students and staff with database connection using XAMPP (MySQL)",
       technologies: ["Java", "Swing", "MySQL", "XAMPP"],
       image: "/assets/images/student-portal-screenshot.png",
-      liveLink: "https://example.com",
       githubLink: "https://github.com/Alaindeve1/java-swing-application",
-      category: "fullstack"
+      category: "backend"
     }, 
     {
       id: 2,
       title: "AUCTION MANAGMENT SYSTEM",
       description: "A backend project using springboot framework and java with postgreSQL to manage auctions for both buyers and sellers.",
       technologies: ["React", "Firebase", "Styled Components"],
-      image: "https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/320039537/original/172abd5a0080bde1137b926049ff45b4351d57d4/develop-java-spring-boot-maven-software-application-with-oracle-mysql-database.jpeg",
-      liveLink: "https://example.com",
+      image: "/assets/images/Screenshot 2025-06-12 141855.png",
+      liveLink: "https://www.loom.com/share/fd0dff316dad4e50ab781445c71947cb?sid=b9a65abb-c884-43bb-be41-cc487b7325a2",
       githubLink: "https://github.com/Alaindeve1/AUCTION-MANAGMENT-SYSTEM",
-      category: "frontend"
+      category: "fullstack"
     },
     {
       id: 3,
-      title: "Content Management System",
-      description: "A custom CMS built for a media company to manage articles and digital assets.",
-      technologies: ["Node.js", "Express", "PostgreSQL", "AWS S3"],
-      image: "/assets/images/student-portal-screenshot.png",
-      liveLink: "https://example.com",
-      githubLink: "https://github.com/yourusername/project",
-      category: "backend"
+      title: "Auction Static Web",
+      description: "A responsive static website for an auction platform, showcasing items and services.",
+      technologies: ["HTML", "CSS", "JavaScript", "Responsive Design"],
+      image: "/assets/images/netlify.png",
+      liveLink: "https://lucky-puffpuff-669d75.netlify.app/",
+      githubLink: "",
+      category: "frontend"
+    },
+    {
+      id: 4,
+      title: "The Fox Auction & Real Estate",
+      description: "A website showcasing auction items and real estate properties.",
+      technologies: ["HTML", "CSS", "JavaScript"],
+      image: "/assets/images/the fox.png", // Add an image path here if you have one
+      liveLink: "https://www.loom.com/share/746caed9489647509e4b167a87293ad2?sid=9e60118d-dc52-4d47-b64b-a6dc508afb94",
+      githubLink: "https://github.com/Alaindeve1/the-fox-website", // Add the GitHub link here if you have one
+      category: "frontend"
     }
   ];
 
@@ -98,19 +107,21 @@ const Projects = () => {
                 </div>
                 
                 <div className="project-links">
-                  <a 
-                    href={project.liveLink} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="btn btn-primary"
-                  >
-                    Live Demo
-                  </a>
+                  {project.liveLink && (
+                    <a 
+                      href={project.liveLink} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="btn btn-primary"
+                    >
+                      Live Demo
+                    </a>
+                  )}
                   <a 
                     href={project.githubLink} 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="btn btn-secondary"
+                    className={`btn ${project.liveLink ? 'btn-secondary' : 'btn-primary'}`}
                   >
                     GitHub
                   </a>
