@@ -32,7 +32,7 @@ const Projects = () => {
       image: "/assets/images/netlify.webp",
       fallbackImage: "/assets/images/netlify.png",
       liveLink: "https://lucky-puffpuff-669d75.netlify.app/",
-      githubLink: "",
+      githubLink: "https://github.com/",
       category: "frontend"
     },
     {

@@ -1,30 +1,28 @@
-import React, { useState, useCallback, useEffect } from 'react';
+import React, { useState } from 'react';
 import '../styles/AboutStyles.css';
 import { FaGithub, FaLinkedin, FaEnvelope, FaCode, FaServer, FaDatabase, FaTools, FaTimes } from 'react-icons/fa';
 
 const About = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isLightboxOpen, setIsLightboxOpen] = useState(false);
 
-  const toggleModal = useCallback(() => {
-    setIsModalOpen(prevState => {
-      document.body.style.overflow = !prevState ? 'hidden' : 'auto';
-      return !prevState;
-    });
-  }, []);
+  const openLightbox = (e) => {
+    e.preventDefault();
+    setIsLightboxOpen(true);
+    document.body.style.overflow = 'hidden'; // Prevent scrolling when lightbox is open
+  };
 
-  // Close modal when pressing Escape key
-  useEffect(() => {
-    if (!isModalOpen) return;
-    
-    const handleKeyDown = (e) => {
-      if (e.key === 'Escape') {
-        toggleModal();
-      }
-    };
+  const closeLightbox = (e) => {
+    if (e) e.preventDefault();
+    setIsLightboxOpen(false);
+    document.body.style.overflow = 'auto'; // Re-enable scrolling
+  };
 
-    window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [isModalOpen, toggleModal]);
+  // Close lightbox when clicking outside the image
+  const handleBackdropClick = (e) => {
+    if (e.target === e.currentTarget) {
+      closeLightbox();
+    }
+  };
   return (
     <section className="about-section">
       <div className="container">
@@ -32,7 +30,7 @@ const About = () => {
         
         <div className="about-content">
           <div className="about-image">
-            <div className="profile-photo-container" onClick={toggleModal}>
+            <div className="profile-photo-container" onClick={openLightbox}>
               <picture>
                 <source srcSet="/assets/images/alainprofile.webp" type="image/webp" />
                 <img 
@@ -42,25 +40,28 @@ const About = () => {
                   loading="lazy"
                   width="400"
                   height="400"
+                  style={{ cursor: 'zoom-in' }}
                 />
               </picture>
             </div>
             
-            {/* Image Modal */}
-            {isModalOpen && (
-              <div className="modal-overlay active" onClick={toggleModal}>
-                <div className="modal-content" onClick={e => e.stopPropagation()}>
-                  <button className="close-button" onClick={toggleModal} aria-label="Close">
+            {/* Lightbox Modal */}
+            {isLightboxOpen && (
+              <div className="lightbox" onClick={handleBackdropClick}>
+                <div className="lightbox-content">
+                  <button className="lightbox-close" onClick={closeLightbox}>
                     <FaTimes />
                   </button>
-                  <picture>
-                    <source srcSet="/assets/images/alainprofile.webp" type="image/webp" />
-                    <img 
-                      src="/assets/images/alainprofile.jpg" 
-                      alt="Alain Ndizeye - Full Stack Developer" 
-                      loading="eager"
-                    />
-                  </picture>
+                  <div className="lightbox-image-container">
+                    <picture>
+                      <source srcSet="/assets/images/alainprofile.webp" type="image/webp" />
+                      <img 
+                        src="/assets/images/alainprofile.jpg" 
+                        alt="Alain Ndizeye - Full Stack Developer" 
+                        className="lightbox-image"
+                      />
+                    </picture>
+                  </div>
                 </div>
               </div>
             )}
