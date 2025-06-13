@@ -1,28 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../styles/AboutStyles.css';
-import { FaGithub, FaLinkedin, FaEnvelope, FaCode, FaServer, FaDatabase, FaTools, FaTimes } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope, FaCode, FaServer, FaDatabase, FaTools } from 'react-icons/fa';
 
 const About = () => {
-  const [isLightboxOpen, setIsLightboxOpen] = useState(false);
 
-  const openLightbox = (e) => {
-    e.preventDefault();
-    setIsLightboxOpen(true);
-    document.body.style.overflow = 'hidden'; // Prevent scrolling when lightbox is open
-  };
-
-  const closeLightbox = (e) => {
-    if (e) e.preventDefault();
-    setIsLightboxOpen(false);
-    document.body.style.overflow = 'auto'; // Re-enable scrolling
-  };
-
-  // Close lightbox when clicking outside the image
-  const handleBackdropClick = (e) => {
-    if (e.target === e.currentTarget) {
-      closeLightbox();
-    }
-  };
   return (
     <section className="about-section">
       <div className="container">
@@ -30,41 +11,21 @@ const About = () => {
         
         <div className="about-content">
           <div className="about-image">
-            <div className="profile-photo-container" onClick={openLightbox}>
-              <picture>
-                <source srcSet="/assets/images/alainprofile.webp" type="image/webp" />
-                <img 
-                  src="/assets/images/alainprofile.jpg" 
-                  alt="Alain Ndizeye - Full Stack Developer" 
-                  className="profile-photo"
-                  loading="lazy"
-                  width="400"
-                  height="400"
-                  style={{ cursor: 'zoom-in' }}
-                />
-              </picture>
-            </div>
-            
-            {/* Lightbox Modal */}
-            {isLightboxOpen && (
-              <div className="lightbox" onClick={handleBackdropClick}>
-                <div className="lightbox-content">
-                  <button className="lightbox-close" onClick={closeLightbox}>
-                    <FaTimes />
-                  </button>
-                  <div className="lightbox-image-container">
-                    <picture>
-                      <source srcSet="/assets/images/alainprofile.webp" type="image/webp" />
-                      <img 
-                        src="/assets/images/alainprofile.jpg" 
-                        alt="Alain Ndizeye - Full Stack Developer" 
-                        className="lightbox-image"
-                      />
-                    </picture>
-                  </div>
-                </div>
+            <div className="about-image-container">
+              <div className="about-image-border"></div>
+              <div className="about-image-inner">
+                <picture>
+                  <source srcSet="/assets/images/alainprofile.webp" type="image/webp" />
+                  <img 
+                    src="/assets/images/alainprofile.jpg" 
+                    alt="Alain Ndizeye - Full Stack Developer" 
+                    loading="lazy"
+                    width="400"
+                    height="400"
+                  />
+                </picture>
               </div>
-            )}
+            </div>
           </div>
           
           <div className="about-text">
