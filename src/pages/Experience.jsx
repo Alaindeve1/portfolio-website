@@ -15,7 +15,7 @@ const Experience = () => {
         "helped with graphical design ,flyers ,etc",
         "Optimized application performance resulting in a 30% decrease in load time"
       ],
-      technologies: ["css", "html", "javascript", "canva" , "wordpress" , "oracle", "pl/sql", "python", "excel","postgresql","java","springboot","docker","git","typescript","react js","word"]
+      technologies: ["css", "html", "javascript", "canva" , "wordpress" , "oracle", "pl/sql", "python", "excel","postgresql","java","springboot","docker","git","typescript","react js","word","virtualbox"]
     },
     {
       id: 2,
@@ -48,7 +48,7 @@ const Experience = () => {
     {
       id: 1,
       degree: "bachelor of software engineering",
-      institution: "AVENTIST UNIVERSITY OF CENTRAL AFRICA",
+      institution: "ADVENTIST UNIVERSITY OF CENTRAL AFRICA",
       location: "GASABO, GISHUSHU",
       duration: "2023 - present",
       description: "Specialized in Web Technologies and Software Engineering"
