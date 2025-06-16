@@ -37,12 +37,15 @@ const Contact = () => {
     }
 
     try {
+      const form = e.target;
+      const formDataToSend = new FormData(form);
+      
       const response = await fetch('https://formspree.io/f/xblyrwdw', {
         method: 'POST',
+        body: formDataToSend,
         headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(formData)
+          'Accept': 'application/json'
+        }
       });
 
       if (response.ok) {
@@ -59,14 +62,20 @@ const Contact = () => {
           subject: '',
           message: ''
         });
+        form.reset();
       } else {
-        throw new Error('Failed to send message');
+        const data = await response.json();
+        if (data.errors) {
+          throw new Error(data.errors.map(error => error.message).join(', '));
+        } else {
+          throw new Error('Failed to send message');
+        }
       }
     } catch (error) {
       setFormStatus({
         submitted: true,
         success: false,
-        message: 'Sorry, there was an error sending your message. Please try again later.'
+        message: error.message || 'Sorry, there was an error sending your message. Please try again later.'
       });
     }
   };
@@ -77,6 +86,68 @@ const Contact = () => {
         <h1 className="section-title">Get In Touch</h1>
         
         <div className="contact-container">
+          <form 
+            className="contact-form" 
+            onSubmit={handleSubmit}
+            action="https://formspree.io/f/xblyrwdw"
+            method="POST"
+          >
+            {formStatus.submitted && (
+              <div className={`form-message ${formStatus.success ? 'success' : 'error'}`}>
+                {formStatus.message}
+              </div>
+            )}
+            
+            <div className="form-group">
+              <label htmlFor="name">Name <span className="required">*</span></label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            
+            <div className="form-group">
+              <label htmlFor="email">Email <span className="required">*</span></label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            
+            <div className="form-group">
+              <label htmlFor="subject">Subject</label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                value={formData.subject}
+                onChange={handleChange}
+              />
+            </div>
+            
+            <div className="form-group">
+              <label htmlFor="message">Message <span className="required">*</span></label>
+              <textarea
+                id="message"
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            
+            <button type="submit" className="btn btn-primary">Send Message</button>
+          </form>
+          
           <div className="contact-info">
             <h2>Contact Information</h2>
             <p>Feel free to reach out to me using the form or through the contact information below.</p>
@@ -107,65 +178,6 @@ const Contact = () => {
                 <i className="fab fa-twitter"></i>
               </a>
             </div>
-          </div>
-          
-          <div className="contact-form-container">
-            <form className="contact-form" onSubmit={handleSubmit}>
-              {formStatus.submitted && (
-                <div className={`form-message ${formStatus.success ? 'success' : 'error'}`}>
-                  {formStatus.message}
-                </div>
-              )}
-              
-              <div className="form-group">
-                <label htmlFor="name">Name <span className="required">*</span></label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  required
-                />
-              </div>
-              
-              <div className="form-group">
-                <label htmlFor="email">Email <span className="required">*</span></label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                />
-              </div>
-              
-              <div className="form-group">
-                <label htmlFor="subject">Subject</label>
-                <input
-                  type="text"
-                  id="subject"
-                  name="subject"
-                  value={formData.subject}
-                  onChange={handleChange}
-                />
-              </div>
-              
-              <div className="form-group">
-                <label htmlFor="message">Message <span className="required">*</span></label>
-                <textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  rows="5"
-                  required
-                ></textarea>
-              </div>
-              
-              <button type="submit" className="btn btn-primary">Send Message</button>
-            </form>
           </div>
         </div>
       </div>

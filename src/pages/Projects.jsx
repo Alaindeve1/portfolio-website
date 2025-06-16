@@ -91,19 +91,23 @@ const Projects = () => {
             <div className="project-card" key={project.id}>
               <div className="project-image">
                 <picture>
-                  <source 
-                    srcSet={project.image} 
-                    type="image/webp" 
-                  />
+                  {project.image && project.image.endsWith('.webp') && (
+                    <source 
+                      srcSet={project.image} 
+                      type="image/webp" 
+                    />
+                  )}
                   <img 
-                    src={project.fallbackImage || project.image} 
+                    src={project.fallbackImage || project.image || '/assets/images/project-placeholder.jpg'} 
                     alt={project.title} 
                     className="project-img"
                     loading="lazy"
                     width="600"
                     height="400"
                     onError={(e) => {
-                      e.target.src = '/assets/images/project-placeholder.jpg';
+                      if (e.target.src !== '/assets/images/project-placeholder.jpg') {
+                        e.target.src = '/assets/images/project-placeholder.jpg';
+                      }
                     }}
                   />
                 </picture>
