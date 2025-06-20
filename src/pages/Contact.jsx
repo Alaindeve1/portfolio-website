@@ -37,25 +37,20 @@ const Contact = () => {
     }
 
     try {
-      // Create URLSearchParams instead of FormData
-      const formDataToSend = new URLSearchParams();
-      formDataToSend.append('name', formData.name);
-      formDataToSend.append('email', formData.email);
-      formDataToSend.append('subject', formData.subject || '(No subject)');
-      formDataToSend.append('message', formData.message);
-      
       const response = await fetch('https://formspree.io/f/xblyrwdw', {
         method: 'POST',
-        body: formDataToSend,
         headers: {
-          'Content-Type': 'application/x-www-form-urlencoded',
+          'Content-Type': 'application/json',
           'Accept': 'application/json'
         },
-        mode: 'cors' // Explicitly set CORS mode
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          subject: formData.subject || '(No subject)',
+          message: formData.message
+        })
       });
 
-      const data = await response.json();
-      
       if (response.ok) {
         setFormStatus({
           submitted: true,
@@ -71,7 +66,8 @@ const Contact = () => {
           message: ''
         });
       } else {
-        throw new Error(data.error || 'Failed to send message');
+        const errorData = await response.json().catch(() => ({}));
+        throw new Error(errorData.error || 'Failed to send message');
       }
     } catch (error) {
       console.error('Form submission error:', error);
