@@ -37,17 +37,25 @@ const Contact = () => {
     }
 
     try {
-      const form = e.target;
-      const formDataToSend = new FormData(form);
+      // Create URLSearchParams instead of FormData
+      const formDataToSend = new URLSearchParams();
+      formDataToSend.append('name', formData.name);
+      formDataToSend.append('email', formData.email);
+      formDataToSend.append('subject', formData.subject || '(No subject)');
+      formDataToSend.append('message', formData.message);
       
       const response = await fetch('https://formspree.io/f/xblyrwdw', {
         method: 'POST',
         body: formDataToSend,
         headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
           'Accept': 'application/json'
-        }
+        },
+        mode: 'cors' // Explicitly set CORS mode
       });
 
+      const data = await response.json();
+      
       if (response.ok) {
         setFormStatus({
           submitted: true,
@@ -62,20 +70,15 @@ const Contact = () => {
           subject: '',
           message: ''
         });
-        form.reset();
       } else {
-        const data = await response.json();
-        if (data.errors) {
-          throw new Error(data.errors.map(error => error.message).join(', '));
-        } else {
-          throw new Error('Failed to send message');
-        }
+        throw new Error(data.error || 'Failed to send message');
       }
     } catch (error) {
+      console.error('Form submission error:', error);
       setFormStatus({
         submitted: true,
         success: false,
-        message: error.message || 'Sorry, there was an error sending your message. Please try again later.'
+        message: 'Sorry, there was an error sending your message. Please try again later.'
       });
     }
   };
@@ -89,8 +92,7 @@ const Contact = () => {
           <form 
             className="contact-form" 
             onSubmit={handleSubmit}
-            action="https://formspree.io/f/xblyrwdw"
-            method="POST"
+            noValidate
           >
             {formStatus.submitted && (
               <div className={`form-message ${formStatus.success ? 'success' : 'error'}`}>
