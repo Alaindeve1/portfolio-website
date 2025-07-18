@@ -36,22 +36,36 @@ const Contact = () => {
       return;
     }
 
+    // Email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formData.email)) {
+      setFormStatus({
+        submitted: true,
+        success: false,
+        message: 'Please enter a valid email address'
+      });
+      return;
+    }
+
     try {
+      // Using FormData instead of URLSearchParams as it's more compatible with Formspree
+      const formDataToSend = new FormData();
+      formDataToSend.append('name', formData.name.trim());
+      formDataToSend.append('email', formData.email.trim());
+      formDataToSend.append('subject', formData.subject.trim() || '(No subject)');
+      formDataToSend.append('message', formData.message.trim());
+      
       const response = await fetch('https://formspree.io/f/xblyrwdw', {
         method: 'POST',
+        body: formDataToSend,
         headers: {
-          'Content-Type': 'application/json',
           'Accept': 'application/json'
-        },
-        body: JSON.stringify({
-          name: formData.name,
-          email: formData.email,
-          subject: formData.subject || '(No subject)',
-          message: formData.message
-        })
+        }
       });
 
-      if (response.ok) {
+      const data = await response.json();
+      
+      if (response.ok && data.ok) {
         setFormStatus({
           submitted: true,
           success: true,
@@ -66,15 +80,14 @@ const Contact = () => {
           message: ''
         });
       } else {
-        const errorData = await response.json().catch(() => ({}));
-        throw new Error(errorData.error || 'Failed to send message');
+        throw new Error(data.error || 'Failed to send message');
       }
     } catch (error) {
       console.error('Form submission error:', error);
       setFormStatus({
         submitted: true,
         success: false,
-        message: 'Sorry, there was an error sending your message. Please try again later.'
+        message: `Sorry, there was an error: ${error.message || 'Please try again later.'}`
       });
     }
   };

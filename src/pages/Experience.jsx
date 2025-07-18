@@ -29,6 +29,7 @@ const Experience = () => {
       ],
       technologies: ["Node.js", "springboot", "Oracle", "javascript", "react js", "html", "css","typescript","docker","git"]
     },
+    
     {
       id: 3,
       role: "IT Personnel",
@@ -41,6 +42,18 @@ const Experience = () => {
         "Performed website maintenance and troubleshooting for clients"
       ],
       technologies: ["JavaScript", "PHP", "WordPress", "HTML/CSS", "MySQL" , "oracle", "pl/sql", "python", "excel","postgresql"]
+    },{
+      id: 4,
+      company: "desc softlab ltd",
+      role: "Full Stack Developer",
+      location: "kigali ,gasabo gishushu",
+      duration: "2025-now",
+      description: [
+        "Developed and maintained RESTful APIs using Node.js and springboot ",
+        "Implemented user authentication system with JWT and OAuth integration",
+        "Created responsive frontend interfaces using React and styled-components"
+      ],
+      technologies: ["next js", "springboot", "html", "javascript", "react js", "css","tailwind css","git","postgresql","tailwind css"]
     }
   ];
 

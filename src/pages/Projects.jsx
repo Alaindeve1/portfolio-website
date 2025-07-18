@@ -37,15 +37,26 @@ const Projects = () => {
     },
     {
       id: 4,
-      title: "The Fox Auction & Real Estate",
-      description: "A website showcasing auction items and real estate properties.",
+      title: "THE FOX WEB ",
+      description: "A static website using HTML, CSS, and JavaScript.",
       technologies: ["HTML", "CSS", "JavaScript"],
       image: "/assets/images/the fox.webp",
       fallbackImage: "/assets/images/the fox.png",
       liveLink: "https://www.loom.com/share/746caed9489647509e4b167a87293ad2?sid=9e60118d-dc52-4d47-b64b-a6dc508afb94",
-      githubLink: "https://github.com/Alaindeve1/the-fox-website", // Add the GitHub link here if you have one
+      githubLink: "https://github.com/Alaindeve1/the-fox-website", 
       category: "frontend"
-    }
+    },
+    {
+      id: 5,
+      title: "PORTFOLIO 2",
+      description: "A static website using HTML, CSS, and JavaScript.",
+      technologies: ["HTML", "CSS", "JavaScript"],
+      image: "/assets/images/the fox.webp",
+      fallbackImage: "/assets/images/the fox.png",
+      liveLink: "https://www.loom.com/share/746caed9489647509e4b167a87293ad2?sid=9e60118d-dc52-4d47-b64b-a6dc508afb94",
+      githubLink: "https://github.com/Alaindeve1/the-fox-website", 
+      category: "frontend"
+    },
   ];
 
   const [filter, setFilter] = useState("all");
