@@ -49,12 +49,12 @@ const Projects = () => {
     {
       id: 5,
       title: "PORTFOLIO 2",
-      description: "A static website using HTML, CSS, and JavaScript.",
-      technologies: ["HTML", "CSS", "JavaScript"],
-      image: "/assets/images/the fox.webp",
-      fallbackImage: "/assets/images/the fox.png",
-      liveLink: "https://www.loom.com/share/746caed9489647509e4b167a87293ad2?sid=9e60118d-dc52-4d47-b64b-a6dc508afb94",
-      githubLink: "https://github.com/Alaindeve1/the-fox-website", 
+      description: "A portfolio website using Next JS, Tailwind CSS, and TypeScript.",
+      technologies: ["Next JS", "Tailwind CSS", "TypeScript"],
+      image: "/assets/images/nextjs.webp",
+      fallbackImage: "/assets/images/nextjs.png",
+      liveLink: "https://ndizeye-portfolio2.netlify.app/",
+      githubLink: "https://github.com/Alaindeve1/typescript-nextjs", 
       category: "frontend"
     },
   ];
