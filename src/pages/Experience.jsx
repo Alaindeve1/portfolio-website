@@ -19,7 +19,7 @@ const Experience = () => {
     },
     {
       id: 2,
-      role: "Full Stack Developer",
+      role: "Full Stack  & web developer freelancer",
       location: "kigali ,gasabo gishushu",
       duration: "2022-now",
       description: [
@@ -37,13 +37,27 @@ const Experience = () => {
       location: "kigali ,gasabo gishushu",
       duration: "2022-2023",
       description: [
-        "Built custom WordPress themes and plugins for client websites",
+        
        "data analyst and virtual assistant as well as data entry clerk",
-        "Performed website maintenance and troubleshooting for clients"
+        "Performed website maintenance & development and troubleshooting for clients"
       ],
-      technologies: ["JavaScript", "PHP", "WordPress", "HTML/CSS", "MySQL" , "oracle", "pl/sql", "python", "excel","postgresql"]
-    },{
+      technologies: ["JavaScript",  "HTML/CSS", "MySQL" , "oracle", "pl/sql", "python", "google workspace",]
+    },
+    {
       id: 4,
+      role: "Web developer & Data entry clerk",
+      company: "Stinda media ltd",
+      location: "kigali ,gasabo gishushu",
+      duration: "2022-2023",
+      description: [
+        
+       "data analyst and virtual assistant as well as data entry clerk",
+        "Performed website development and IT support for clients"
+      ],
+      technologies: ["JavaScript",  "HTML/CSS", "MySQL" , "oracle", "pl/sql", "python", "google workspace",]
+    },
+    {
+      id: 5,
       company: "desc softlab ltd",
       role: "Full Stack Developer",
       location: "kigali ,gasabo gishushu",
@@ -73,7 +87,15 @@ const Experience = () => {
       location: "Remote",
       duration: "2024",
       description: "8 week intensive training in virtual assistance using various technologies."
-    }
+    },
+    {
+      id: 3,
+      degree: "certification in network operations 1",
+      institution: "Internet society",
+      location: "Remote",
+      duration: "2024",
+      description: "4 weeks training in introduction to network operations."
+    },
   ];
 
   return (
