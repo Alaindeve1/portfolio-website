@@ -24,7 +24,7 @@ const Experience = () => {
       duration: "2022-now",
       description: [
         "Implemented user authentication system with JWT and OAuth integration",
-        "Created responsive frontend interfaces using React  and styled-components"
+        "Created responsive frontend interfaces using React ,next javascript and styled-components"
       ],
       technologies: ["Node.js", "springboot", "Oracle", "javascript", "react js", "html", "css","typescript","docker","git"]
     },
