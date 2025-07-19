@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/ExperienceStyles.css';
 
 const Experience = () => {
-  // Sample experience data - replace with your own
+  
   const workExperience = [
     {
       id: 1,
@@ -23,9 +23,8 @@ const Experience = () => {
       location: "kigali ,gasabo gishushu",
       duration: "2022-now",
       description: [
-        "Developed and maintained RESTful APIs using Node.js and springboot ",
         "Implemented user authentication system with JWT and OAuth integration",
-        "Created responsive frontend interfaces using React and styled-components"
+        "Created responsive frontend interfaces using React  and styled-components"
       ],
       technologies: ["Node.js", "springboot", "Oracle", "javascript", "react js", "html", "css","typescript","docker","git"]
     },
