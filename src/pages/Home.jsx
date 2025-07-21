@@ -32,9 +32,9 @@ const Home = () => {
           <div className="hero-skills">
             <h3 className="skills-title">Tech Stack</h3>
             <div className="skills-container">
-              <div className="skill" title="React">
+              <div className="skill" title="React JS">
                 <FaReact className="skill-icon" />
-                <span className="skill-name">React</span>
+                <span className="skill-name">React JS</span>
               </div>
               <div className="skill" title="Node.js">
                 <FaNodeJs className="skill-icon" />
@@ -52,16 +52,23 @@ const Home = () => {
                 <FaDatabase className="skill-icon" />
                 <span className="skill-name">PostgreSQL</span>
               </div>
-              <div className="skill" title="HTML & CSS">
+              <div className="skill" title="Html & Css">
                 <FaHtml5 className="skill-icon" />
-                <span className="skill-name">HTML & CSS</span>
+                <span className="skill-name">Html & Css</span>
               </div>
              
-              <div className="skill" title="NEXT JS">
+              <div className="skill" title="Next JS">
                 <SiC className="skill-icon" />
-                <span className="skill-name">NEXT JS</span>
+                <span className="skill-name">Next JS</span>
               </div>
-              
+              <div className="skill" title="Express JS">
+                <SiC className="skill-icon" />
+                <span className="skill-name">Express JS</span>
+              </div>
+              <div className="skill" title="Typescript">
+                <SiC className="skill-icon" />
+                <span className="skill-name">Typescript</span>
+              </div>
             </div>
           </div>
         </div>
