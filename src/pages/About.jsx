@@ -61,12 +61,13 @@ const About = () => {
             <div className="skill-category">
               <h3><FaCode className="skill-icon" /> Frontend</h3>
               <ul>
-                <li>React.js</li>
+                <li>React JS</li>
                 <li>JavaScript (ES6+)</li>
                 <li>TypeScript</li>
                 <li>HTML5 & CSS3</li>
                 <li>Tailwind CSS</li>
                 <li>Responsive Design</li>
+                <li>Next JS</li>
               </ul>
             </div>
             
@@ -74,6 +75,8 @@ const About = () => {
               <h3><FaServer className="skill-icon" /> Backend</h3>
               <ul>
                 <li>Node.js</li>
+                <li>Express JS</li>
+                <li>Python</li>
                 <li>Java/Spring Boot</li>
                 <li>RESTful APIs</li>
                 <li>Authentication & Authorization</li>
@@ -97,6 +100,7 @@ const About = () => {
                 <li>Git & GitHub</li>
                 <li>Docker</li>
                 <li>VS Code</li>
+                <li>Netlify</li>
                 <li>Agile/Scrum</li>
                 <li>CI/CD</li>
               </ul>
