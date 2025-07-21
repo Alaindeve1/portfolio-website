@@ -56,10 +56,12 @@ const Home = () => {
                 <FaHtml5 className="skill-icon" />
                 <span className="skill-name">HTML & CSS</span>
               </div>
-              <div className="skill" title="C Programming">
+             
+              <div className="skill" title="NEXT JS">
                 <SiC className="skill-icon" />
-                <span className="skill-name">C</span>
+                <span className="skill-name">NEXT JS</span>
               </div>
+              
             </div>
           </div>
         </div>
