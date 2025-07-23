@@ -11,7 +11,7 @@ const Experience = () => {
       location: "kigali ,gasabo gishushu",
       duration: "2023",
       description: [
-        "development of a website using html,css and javascript%",
+        "development of a website using html,css and javascript",
         "helped with graphical design ,flyers ,etc",
         "Optimized application performance resulting in a 30% decrease in load time"
       ],
@@ -19,7 +19,7 @@ const Experience = () => {
     },
     {
       id: 2,
-      role: "Full Stack  & web developer freelancer",
+      role: "Full Stack developer & data entry freelancer",
       location: "kigali ,gasabo gishushu",
       duration: "2022-now",
       description: [
