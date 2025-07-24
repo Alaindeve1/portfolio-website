@@ -51,7 +51,7 @@ const Projects = () => {
       title: "PORTFOLIO 2",
       description: "A portfolio website using Next JS, Tailwind CSS, and TypeScript.",
       technologies: ["Next JS", "Tailwind CSS", "TypeScript"],
-      image: "/assets/images/nextjs.png",
+      image: "/assets/images/nextjs.webp",
       fallbackImage: "/assets/images/nextjs.png",
       liveLink: "https://ndizeye-portfolio2.netlify.app/",
       githubLink: "https://github.com/Alaindeve1/typescript-nextjs", 
