@@ -19,14 +19,14 @@ const Experience = () => {
     },
     {
       id: 2,
-      role: "Full Stack developer & data entry freelancer",
+      role: "Full Stack developer ,data entry & virtual assistant freelancer",
       location: "kigali ,gasabo gishushu",
       duration: "2022-now",
       description: [
         "Implemented user authentication system with JWT and OAuth integration",
         "Created responsive frontend interfaces using React ,next javascript and styled-components"
       ],
-      technologies: ["Node.js", "springboot", "Oracle", "javascript", "react js", "html", "css","typescript","docker","git"]
+      technologies: ["Node.js", "springboot", "Oracle", "javascript", "react js", "html", "css","typescript","docker","git","google workspace","anydesk","zoom"]
     },
     
     {
