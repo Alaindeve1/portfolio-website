@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../styles/ContactStyles.css';
 
 const Contact = () => {
-  // Form state
+  
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -16,7 +16,7 @@ const Contact = () => {
     message: ''
   });
 
-  // Handle input changes
+  
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData(prevState => ({ ...prevState, [name]: value }));
