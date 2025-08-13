@@ -70,10 +70,10 @@ const Experience = () => {
     },
     {
       id: 6,
-      company: "desc softlab ltd",
-      role: "Full Stack Developer",
-      location: "kigali ,gasabo gishushu",
-      duration: "2025-now",
+      company: "codveda technologies",
+      role: "Frontend Developer",
+      location: "remote",
+      duration: "'12-august-2025'-now",
       description: [
         "Developed and maintained RESTful APIs using Node.js and springboot ",
         "Implemented user authentication system with JWT and OAuth integration",
