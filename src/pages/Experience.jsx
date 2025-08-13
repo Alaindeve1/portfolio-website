@@ -93,14 +93,14 @@ const Experience = () => {
       duration: "2023 - present",
       description: "Specialized in Web Technologies and Software Engineering"
     },
-     {
+     /*{
       id: 2,
       degree: "bachelor of software engineering",
       institution: "ADVENTIST UNIVERSITY OF CENTRAL AFRICA",
       location: "GASABO, GISHUSHU",
       duration: "2023 - present",
       description: "Specialized in Web Technologies and Software Engineering"
-    },
+    },*/
     {
       id: 3,
       degree: "certification in virtual assistance",
