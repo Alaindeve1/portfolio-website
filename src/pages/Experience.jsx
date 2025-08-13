@@ -67,7 +67,21 @@ const Experience = () => {
         "Created responsive frontend interfaces using React and styled-components"
       ],
       technologies: ["next js", "springboot", "html", "javascript", "react js", "css","tailwind css","git","postgresql","tailwind css"]
-    }
+    },
+    {
+      id: 6,
+      company: "desc softlab ltd",
+      role: "Full Stack Developer",
+      location: "kigali ,gasabo gishushu",
+      duration: "2025-now",
+      description: [
+        "Developed and maintained RESTful APIs using Node.js and springboot ",
+        "Implemented user authentication system with JWT and OAuth integration",
+        "Created responsive frontend interfaces using React and styled-components"
+      ],
+      technologies: ["next js", "springboot", "html", "javascript", "react js", "css","tailwind css","git","postgresql","tailwind css"]
+    },
+    
   ];
 
   const education = [
