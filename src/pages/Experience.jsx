@@ -75,11 +75,11 @@ const Experience = () => {
       location: "remote",
       duration: "'12-august-2025'-now",
       description: [
-        "Developed and maintained RESTful APIs using Node.js and springboot ",
-        "Implemented user authentication system with JWT and OAuth integration",
-        "Created responsive frontend interfaces using React and styled-components"
+       "Completed a comprehensive front-end development internship focusing on responsive web design, JavaScript frameworks, and modern web technologies.",
+        "Built interactive applications using HTML5, CSS3, JavaScript, React/Vue.js, and integrated REST APIs.",
+        " Developed skills in responsive design, performance optimization, and user experience enhancement through hands-on projects including SPAs, component libraries, and advanced animations."
       ],
-      technologies: ["next js", "springboot", "html", "javascript", "react js", "css","tailwind css","git","postgresql","tailwind css"]
+      technologies: ["Responsive Web Design", "React.js / Vue.js", "Performance Optimization", "JavaScript (ES6+)", "REST API Integration", "html&css","tailwind css","git","Single Page Applications (SPA)"]
     },
     
   ];
