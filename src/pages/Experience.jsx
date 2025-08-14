@@ -93,14 +93,14 @@ const Experience = () => {
       duration: "2023 - present",
       description: "Specialized in Web Technologies and Software Engineering"
     },
-     /*{
+     {
       id: 2,
-      degree: "bachelor of software engineering",
-      institution: "ADVENTIST UNIVERSITY OF CENTRAL AFRICA",
-      location: "GASABO, GISHUSHU",
-      duration: "2023 - present",
-      description: "Specialized in Web Technologies and Software Engineering"
-    },*/
+      degree: "PRINCE2 (Project Management)",
+      institution: "Peoplecert - Article26",
+      location: "REMOTE",
+      duration: "'june-2025'-'august-2025'",
+      description: "An international framework used in project management certification"
+    },
     {
       id: 3,
       degree: "certification in virtual assistance",
