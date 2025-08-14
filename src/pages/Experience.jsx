@@ -95,7 +95,7 @@ const Experience = () => {
     },
      {
       id: 2,
-      degree: "PRINCE2 (Project Management)",
+      degree: "PRINCE2 (Project Management) Certification",
       institution: "Peoplecert - Article26",
       location: "REMOTE",
       duration: "'june-2025'-'august-2025'",
