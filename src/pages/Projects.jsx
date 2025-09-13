@@ -59,9 +59,9 @@ const Projects = () => {
     },
     {
       id: 6,
-      title: "PORTFOLIO 2",
-      description: "A portfolio website using Next JS, Tailwind CSS, and TypeScript.",
-      technologies: ["Next JS", "Tailwind CSS", "TypeScript"],
+      title: "WeatherDash App",
+      description: "A weather dashboard app that uses OpenWeatherMap API to display current weather conditions and forecasts.",
+      technologies: ["React JS", "Tailwind CSS", "openweathermap API"],
       image: "/assets/images/nextjs.webp",
       fallbackImage: "/assets/images/nextjs.png",
       liveLink: "https://ndizeye-portfolio2.netlify.app/",
