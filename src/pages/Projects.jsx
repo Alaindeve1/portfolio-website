@@ -9,7 +9,7 @@ const Projects = () => {
       description: "Java Swing project to manage students and staff with database connection using XAMPP (MySQL)",
       technologies: ["Java", "Swing", "MySQL", "XAMPP"],
       image: "/assets/images/tinypng/student-portal-screenshot.png",
-      fallbackImage: "/assets/images/student-portal-screenshot.png",
+      fallbackImage: "/assets/images/tinypng/student-portal-screenshot.png",
       githubLink: "https://github.com/Alaindeve1/java-swing-application",
       category: "backend"
     }, 
@@ -19,7 +19,7 @@ const Projects = () => {
       description: "A backend project using springboot framework and java with postgreSQL to manage auctions for both buyers and sellers.",
       technologies: ["Spring Boot", "Java", "PostgreSQL", "REST API"], // Fixed tech stack
       image: "/assets/images/tinypng/auctionhub.png",
-      fallbackImage: "/assets/images/Screenshot 2025-06-12 141855.png",
+      fallbackImage: "/assets/images/tinypng/auctionhub.png",
       liveLink: "https://www.loom.com/share/fd0dff316dad4e50ab781445c71947cb?sid=b9a65abb-c884-43bb-be41-cc487b7325a2",
       githubLink: "https://github.com/Alaindeve1/AUCTION-MANAGMENT-SYSTEM",
       category: "fullstack"
@@ -29,8 +29,8 @@ const Projects = () => {
       title: "Auction Static Web",
       description: "A responsive static website for an auction platform, showcasing items and services.",
       technologies: ["HTML", "CSS", "JavaScript", "Responsive Design"],
-      image: "/assets/images/netlify.webp",
-      fallbackImage: "/assets/images/netlify.png",
+      image: "/assets/images/tinypng/netlify.png",
+      fallbackImage: "/assets/images/tinypng/netlify.png",
       liveLink: "https://lucky-puffpuff-669d75.netlify.app/",
       githubLink: "https://github.com/",
       category: "frontend"
@@ -40,8 +40,8 @@ const Projects = () => {
       title: "THE FOX WEB",
       description: "A static website using HTML, CSS, and JavaScript.",
       technologies: ["HTML", "CSS", "JavaScript"],
-      image: "/assets/images/the fox.webp",
-      fallbackImage: "/assets/images/the fox.png",
+      image: "/assets/images/tinypng/the fox.png",
+      fallbackImage: "/assets/images/tinypng/the fox.png",
       liveLink: "https://www.loom.com/share/746caed9489647509e4b167a87293ad2?sid=9e60118d-dc52-4d47-b64b-a6dc508afb94",
       githubLink: "https://github.com/Alaindeve1/the-fox-website", 
       category: "frontend"
@@ -51,8 +51,8 @@ const Projects = () => {
       title: "PORTFOLIO 2",
       description: "A portfolio website using Next JS, Tailwind CSS, and TypeScript.",
       technologies: ["Next.js", "Tailwind CSS", "TypeScript"],
-      image: "/assets/images/nextjs.webp",
-      fallbackImage: "/assets/images/nextjs.png",
+      image: "/assets/images/tinypng/nextjs.png",
+      fallbackImage: "/assets/images/tinypng/nextjs.png",
       liveLink: "https://ndizeye-portfolio2.netlify.app/",
       githubLink: "https://github.com/Alaindeve1/typescript-nextjs", 
       category: "frontend"
@@ -62,8 +62,8 @@ const Projects = () => {
       title: "WeatherDash App",
       description: "A weather dashboard app that uses OpenWeatherMap API to display current weather conditions and forecasts.",
       technologies: ["React.js", "Tailwind CSS", "OpenWeatherMap API"],
-      image: "/assets/images/weather-dashboard.webp", // Update with actual image
-      fallbackImage: "/assets/images/weather-dashboard.png",
+      image: "/assets/images/tinypng/weather-dashboard.png", // Update with actual image
+      fallbackImage: "/assets/images/tinypng/weather-dashboard.png",
       liveLink: "https://weather-dash-app.netlify.app/", // Update with actual link
       githubLink: "https://github.com/Alaindeve1/weather-dashboard", 
       category: "frontend"
