@@ -62,8 +62,8 @@ const Projects = () => {
       title: "WeatherDash App",
       description: "A weather dashboard app that uses OpenWeatherMap API to display current weather conditions and forecasts.",
       technologies: ["React JS", "Tailwind CSS", "openweathermap API"],
-      image: "/assets/images/nextjs.webp",
-      fallbackImage: "/assets/images/nextjs.png",
+      image: "/assets/images/weatherdash1.webp",
+      fallbackImage: "/assets/images/weatherdash2.png",
       liveLink: "https://weatherdash-alain.vercel.app/",
       githubLink: "https://github.com/Alaindeve1/frontend-intermediate-codveda", 
       category: "frontend"
