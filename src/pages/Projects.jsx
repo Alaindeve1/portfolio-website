@@ -65,7 +65,7 @@ const Projects = () => {
       image: "/assets/images/nextjs.webp",
       fallbackImage: "/assets/images/nextjs.png",
       liveLink: "https://weatherdash-alain.vercel.app/",
-      githubLink: "https://github.com/Alaindeve1/typescript-nextjs", 
+      githubLink: "https://github.com/Alaindeve1/frontend-intermediate-codveda", 
       category: "frontend"
     },
   ];
