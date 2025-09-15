@@ -65,7 +65,7 @@ const Projects = () => {
       image: "/assets/images/tinypng/weatherdash.png", // Update with actual image
       fallbackImage: "/assets/images/tinypng/weatherdash.png",
       liveLink: "https://weatherdash-alain.vercel.app/", // Update with actual link
-      githubLink: "https://github.com/Alaindeve1/weather-dashboard", 
+      githubLink: "https://github.com/Alaindeve1/frontend-intermediate-codveda", 
       category: "frontend"
     },
   ];
