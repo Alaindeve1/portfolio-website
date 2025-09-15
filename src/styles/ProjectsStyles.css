@@ -266,7 +266,7 @@
   }
   
   .screen-content {
-    height: 140px;
+    height: 160px; /* Increased small mobile height */
   }
   
   .project-links {

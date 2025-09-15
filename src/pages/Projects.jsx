@@ -62,9 +62,9 @@ const Projects = () => {
       title: "WeatherDash App",
       description: "A weather dashboard app that uses OpenWeatherMap API to display current weather conditions and forecasts.",
       technologies: ["React.js", "Tailwind CSS", "OpenWeatherMap API"],
-      image: "/assets/images/tinypng/weather-dashboard.png", // Update with actual image
-      fallbackImage: "/assets/images/tinypng/weather-dashboard.png",
-      liveLink: "https://weather-dash-app.netlify.app/", // Update with actual link
+      image: "/assets/images/tinypng/weatherdash.png", // Update with actual image
+      fallbackImage: "/assets/images/tinypng/weatherdash.png",
+      liveLink: "https://weatherdash-alain.vercel.app/", // Update with actual link
       githubLink: "https://github.com/Alaindeve1/weather-dashboard", 
       category: "frontend"
     },
