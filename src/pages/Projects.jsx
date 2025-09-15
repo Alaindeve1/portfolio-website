@@ -64,7 +64,7 @@ const Projects = () => {
       technologies: ["React JS", "Tailwind CSS", "openweathermap API"],
       image: "/assets/images/nextjs.webp",
       fallbackImage: "/assets/images/nextjs.png",
-      liveLink: "https://ndizeye-portfolio2.netlify.app/",
+      liveLink: "https://weatherdash-alain.vercel.app/",
       githubLink: "https://github.com/Alaindeve1/typescript-nextjs", 
       category: "frontend"
     },
