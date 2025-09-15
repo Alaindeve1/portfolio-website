@@ -8,18 +8,18 @@ const Projects = () => {
       title: "STUDENT-STAFF PORTAL",
       description: "Java Swing project to manage students and staff with database connection using XAMPP (MySQL)",
       technologies: ["Java", "Swing", "MySQL", "XAMPP"],
-      image: "/assets/images/tinypng/student-portal-screenshot.png",
-      fallbackImage: "/assets/images/tinypng/student-portal-screenshot.png",
+      image: "/assets/images/student-portal-screenshot.webp",
+      fallbackImage: "/assets/images/student-portal-screenshot.png",
       githubLink: "https://github.com/Alaindeve1/java-swing-application",
       category: "backend"
     }, 
     {
       id: 2,
-      title: "AUCTION MANAGEMENT SYSTEM",
+      title: "AUCTION MANAGMENT SYSTEM",
       description: "A backend project using springboot framework and java with postgreSQL to manage auctions for both buyers and sellers.",
-      technologies: ["Spring Boot", "Java", "PostgreSQL", "REST API"], // Fixed tech stack
-      image: "/assets/images/tinypng/auctionhub.png",
-      fallbackImage: "/assets/images/tinypng/auctionhub.png",
+      technologies: ["React", "Firebase", "Styled Components"],
+      image: "/assets/images/Screenshot 2025-06-12 141855.webp",
+      fallbackImage: "/assets/images/Screenshot 2025-06-12 141855.png",
       liveLink: "https://www.loom.com/share/fd0dff316dad4e50ab781445c71947cb?sid=b9a65abb-c884-43bb-be41-cc487b7325a2",
       githubLink: "https://github.com/Alaindeve1/AUCTION-MANAGMENT-SYSTEM",
       category: "fullstack"
@@ -29,19 +29,19 @@ const Projects = () => {
       title: "Auction Static Web",
       description: "A responsive static website for an auction platform, showcasing items and services.",
       technologies: ["HTML", "CSS", "JavaScript", "Responsive Design"],
-      image: "/assets/images/tinypng/netlify.png",
-      fallbackImage: "/assets/images/tinypng/netlify.png",
+      image: "/assets/images/netlify.webp",
+      fallbackImage: "/assets/images/netlify.png",
       liveLink: "https://lucky-puffpuff-669d75.netlify.app/",
       githubLink: "https://github.com/",
       category: "frontend"
     },
     {
       id: 4,
-      title: "THE FOX WEB",
+      title: "THE FOX WEB ",
       description: "A static website using HTML, CSS, and JavaScript.",
       technologies: ["HTML", "CSS", "JavaScript"],
-      image: "/assets/images/tinypng/the fox.png",
-      fallbackImage: "/assets/images/tinypng/the fox.png",
+      image: "/assets/images/the fox.webp",
+      fallbackImage: "/assets/images/the fox.png",
       liveLink: "https://www.loom.com/share/746caed9489647509e4b167a87293ad2?sid=9e60118d-dc52-4d47-b64b-a6dc508afb94",
       githubLink: "https://github.com/Alaindeve1/the-fox-website", 
       category: "frontend"
@@ -50,9 +50,9 @@ const Projects = () => {
       id: 5,
       title: "PORTFOLIO 2",
       description: "A portfolio website using Next JS, Tailwind CSS, and TypeScript.",
-      technologies: ["Next.js", "Tailwind CSS", "TypeScript"],
-      image: "/assets/images/tinypng/nextjs.png",
-      fallbackImage: "/assets/images/tinypng/nextjs.png",
+      technologies: ["Next JS", "Tailwind CSS", "TypeScript"],
+      image: "/assets/images/nextjs.webp",
+      fallbackImage: "/assets/images/nextjs.png",
       liveLink: "https://ndizeye-portfolio2.netlify.app/",
       githubLink: "https://github.com/Alaindeve1/typescript-nextjs", 
       category: "frontend"
@@ -61,11 +61,11 @@ const Projects = () => {
       id: 6,
       title: "WeatherDash App",
       description: "A weather dashboard app that uses OpenWeatherMap API to display current weather conditions and forecasts.",
-      technologies: ["React.js", "Tailwind CSS", "OpenWeatherMap API"],
-      image: "/assets/images/tinypng/weatherdash.png", // Update with actual image
-      fallbackImage: "/assets/images/tinypng/weatherdash.png",
-      liveLink: "https://weatherdash-alain.vercel.app/", // Update with actual link
-      githubLink: "https://github.com/Alaindeve1/frontend-intermediate-codveda", 
+      technologies: ["React JS", "Tailwind CSS", "openweathermap API"],
+      image: "/assets/images/nextjs.webp",
+      fallbackImage: "/assets/images/nextjs.png",
+      liveLink: "https://ndizeye-portfolio2.netlify.app/",
+      githubLink: "https://github.com/Alaindeve1/typescript-nextjs", 
       category: "frontend"
     },
   ];
@@ -111,38 +111,28 @@ const Projects = () => {
         <div className="projects-grid">
           {filteredProjects.map(project => (
             <div className="project-card" key={project.id}>
-              {/* Computer Mockup Container */}
-              <div className="project-mockup">
-                <div className="laptop-frame">
-                  <div className="laptop-screen">
-                    <div className="screen-bezel">
-                      <div className="screen-content">
-                        <picture>
-                          {project.image && project.image.endsWith('.webp') && (
-                            <source 
-                              srcSet={project.image} 
-                              type="image/webp" 
-                            />
-                          )}
-                          <img 
-                            src={project.fallbackImage || project.image || '/assets/images/project-placeholder.jpg'} 
-                            alt={project.title} 
-                            className="project-screenshot"
-                            loading="lazy"
-                            onError={(e) => {
-                              if (e.target.src !== '/assets/images/project-placeholder.jpg') {
-                                e.target.src = '/assets/images/project-placeholder.jpg';
-                              }
-                            }}
-                          />
-                        </picture>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="laptop-base">
-                    <div className="laptop-bottom"></div>
-                  </div>
-                </div>
+              <div className="project-image">
+                <picture>
+                  {project.image && project.image.endsWith('.webp') && (
+                    <source 
+                      srcSet={project.image} 
+                      type="image/webp" 
+                    />
+                  )}
+                  <img 
+                    src={project.fallbackImage || project.image || '/assets/images/project-placeholder.jpg'} 
+                    alt={project.title} 
+                    className="project-img"
+                    loading="lazy"
+                    width="600"
+                    height="400"
+                    onError={(e) => {
+                      if (e.target.src !== '/assets/images/project-placeholder.jpg') {
+                        e.target.src = '/assets/images/project-placeholder.jpg';
+                      }
+                    }}
+                  />
+                </picture>
               </div>
               
               <div className="project-info">
