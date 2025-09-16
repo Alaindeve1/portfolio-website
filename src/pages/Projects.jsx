@@ -73,11 +73,10 @@ const Projects = () => {
       title: "Amusement Hub",
       description: "A weather dashboard app that uses OpenWeatherMap API to display current weather conditions and forecasts.",
       technologies: ["React JS", "Tailwind CSS", "openweathermap API"],
-      image: "/assets/images/weatherdash1.webp",
-      fallbackImage: "/assets/images/weatherdash2.png",
-      liveLink: "https://weatherdash-alain.vercel.app/",
+      image: "/assets/images/amusement-hub2.webp",
+      fallbackImage: "/assets/images/amusement-hub2.png",
       githubLink: "https://github.com/Alaindeve1/frontend-intermediate-codveda", 
-      category: "frontend"
+      category: "Backend"
     },
   ];
 
