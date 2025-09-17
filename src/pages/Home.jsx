@@ -81,11 +81,11 @@ const Home = () => {
                 <div className="image-container">
                   <picture>
                     <source 
-                      srcSet="/assets/images/student-portal-screenshot.webp" 
+                      srcSet="/assets/images/Screenshot 2025-06-12 141855.webp" 
                       type="image/webp" 
                     />
                     <img 
-                      src="/assets/images/student-portal-screenshot.png" 
+                      src="/assets/images/Screenshot 2025-06-12 141855.png" 
                       alt="Student Portal" 
                       className="project-img"
                       loading="lazy"
