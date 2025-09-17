@@ -107,8 +107,8 @@ const Home = () => {
                 </div>
               </div>
               <div className="project-info">
-                <h3>STUDENT-STAFF PORTAL</h3>
-                <p>Java Swing project to manage students and staff with database connection using XAMPP (MySQL)</p>
+                <h3>AUCTION MANAGMENT SYSTEM</h3>
+                <p>A backend project using springboot framework and java with postgreSQL to manage auctions for both buyers and sellers.</p>
                 <Link to="/projects" className="project-link">
                   Learn More
                   <span>→</span>
