@@ -100,8 +100,10 @@ const Home = () => {
                 </div>
                 <div className="project-tech">
                   <span>Java</span>
-                  <span>Swing</span>
-                  <span>MySQL</span>
+                  <span>React.js</span>
+                  <span>PostgreSQL</span>
+                  <span>Springboot</span>
+                  <span>Tailwind CSS</span>
                 </div>
               </div>
               <div className="project-info">
