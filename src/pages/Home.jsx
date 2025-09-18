@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { FaReact, FaNodeJs, FaJava, FaDatabase, FaHtml5 } from 'react-icons/fa';
 import { SiJavascript, SiC } from 'react-icons/si';
 import '../styles/HomeStyles.css';
+import WhatsAppCTA from '../components/WhatsAppCTA';
 
 const Home = () => {
   return (
@@ -154,6 +155,13 @@ const Home = () => {
               </div>
             </div>
           </div>
+        </div>
+        {/* WhatsApp CTA Card */}
+        <div style={{ marginTop: '2.5rem' }}>
+          <WhatsAppCTA
+            variant="card"
+            message="Hi Alain! I saw your portfolio home page and would love to chat."
+          />
         </div>
       </div>
     </section>

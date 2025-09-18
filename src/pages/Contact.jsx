@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/ContactStyles.css';
+import WhatsAppCTA from '../components/WhatsAppCTA';
 
 const Contact = () => {
   
@@ -188,6 +189,13 @@ const Contact = () => {
               <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
                 <i className="fab fa-twitter"></i>
               </a>
+            </div>
+            {/* WhatsApp CTA Card */}
+            <div style={{ marginTop: '1rem' }}>
+              <WhatsAppCTA
+                variant="card"
+                message="Hi Alain! I’m on your contact page and would like to chat on WhatsApp."
+              />
             </div>
           </div>
         </div>
