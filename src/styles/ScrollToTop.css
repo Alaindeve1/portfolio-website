@@ -1,0 +1,65 @@
+/* Scroll To Top Button */
+.scroll-to-top {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.5rem;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--border-color);
+  background: var(--card-bg);
+  color: var(--primary-color);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(16px) scale(0.96);
+  pointer-events: none;
+  transition: opacity 220ms ease, transform 220ms ease, box-shadow 220ms ease, background 220ms ease, color 220ms ease;
+  z-index: 999;
+}
+
+.scroll-to-top .arrow-icon {
+  display: block;
+}
+
+.scroll-to-top.show {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  pointer-events: auto;
+  animation: float 3.2s ease-in-out infinite;
+}
+
+.scroll-to-top:hover {
+  box-shadow: 0 12px 28px rgba(0,0,0,0.18);
+  transform: translateY(-2px) scale(1.02);
+}
+
+.scroll-to-top:active {
+  transform: translateY(0) scale(0.98);
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .scroll-to-top {
+    transition: opacity 150ms ease;
+    animation: none !important;
+  }
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
+  100% { transform: translateY(0); }
+}
+
+/* Smaller screens tweak */
+@media (max-width: 480px) {
+  .scroll-to-top {
+    right: 0.9rem;
+    bottom: 1rem;
+    width: 40px;
+    height: 40px;
+  }
+}
