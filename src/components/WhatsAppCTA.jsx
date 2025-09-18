@@ -27,7 +27,6 @@ const WhatsAppCTA = ({
           </div>
           <div className="wa-texts">
             <h3>Chat on WhatsApp</h3>
-            <p>Fastest response. Typically replies within minutes.</p>
           </div>
         </div>
         <a

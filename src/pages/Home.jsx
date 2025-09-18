@@ -28,6 +28,13 @@ const Home = () => {
                 
               </Link>
             </div>
+            {/* WhatsApp CTA Card */}
+        <div style={{ marginTop: '2.5rem' }}>
+          <WhatsAppCTA
+            variant="card"
+            message="Hi Alain! I saw your portfolio home page and would love to chat."
+          />
+        </div>
           </div>
           
           <div className="hero-skills">
@@ -156,13 +163,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        {/* WhatsApp CTA Card */}
-        <div style={{ marginTop: '2.5rem' }}>
-          <WhatsAppCTA
-            variant="card"
-            message="Hi Alain! I saw your portfolio home page and would love to chat."
-          />
-        </div>
+        
       </div>
     </section>
   );
