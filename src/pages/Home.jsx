@@ -80,7 +80,7 @@ const Home = () => {
         </div>
         
         <div className="featured-projects">
-          <h2 className="section-title">Featured Projects</h2>
+          <h2 className="section-title">{t('home.featured.title')}</h2>
           <div className="projects-preview">
             <div className="project-card">
               <div className="project-image">
@@ -114,9 +114,9 @@ const Home = () => {
               </div>
               <div className="project-info">
                 <h3>AUCTION MANAGMENT SYSTEM</h3>
-                <p>A backend project using springboot framework and java with postgreSQL to manage auctions for both buyers and sellers.</p>
+                <p>{t('home.featured.descriptions.auction')}</p>
                 <Link to="/projects" className="project-link">
-                  Learn More
+                  {t('home.featured.learnMore')}
                   <span>→</span>
                 </Link>
               </div>
@@ -152,9 +152,9 @@ const Home = () => {
               </div>
               <div className="project-info">
                 <h3>E-COMMERCE</h3>
-                <p>Full-featured online shopping platform with user authentication and payment processing</p>
+                <p>{t('home.featured.descriptions.ecommerce')}</p>
                 <Link to="/projects" className="project-link">
-                  Learn More
+                  {t('home.featured.learnMore')}
                   <span>→</span>
                 </Link>
               </div>

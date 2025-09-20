@@ -16,6 +16,14 @@
     "cta": {
       "projects": "View Projects",
       "contact": "Contact Me"
+    },
+    "featured": {
+      "title": "Featured Projects",
+      "learnMore": "Learn More",
+      "descriptions": {
+        "auction": "A backend project using Spring Boot and Java with PostgreSQL to manage auctions for both buyers and sellers.",
+        "ecommerce": "Full-featured online shopping platform with user authentication and payment processing."
+      }
     }
   },
   "about": {
