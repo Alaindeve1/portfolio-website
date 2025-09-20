@@ -135,7 +135,7 @@ const Experience = () => {
                 <div className="timeline-dot"></div>
                 <div className="timeline-content">
                   <div className="timeline-header">
-                    <h3>{job.role}</h3>
+                    <h3>{t(`experience.jobs.${job.id}.role`, { defaultValue: job.role })}</h3>
                     <span className="timeline-period">{job.duration}</span>
                   </div>
                   <div className="timeline-company">
@@ -144,7 +144,7 @@ const Experience = () => {
                   <div className="timeline-description">
                     <ul>
                       {job.description.map((item, index) => (
-                        <li key={index}>{item}</li>
+                        <li key={index}>{t(`experience.jobs.${job.id}.desc.${index}`, { defaultValue: item })}</li>
                       ))}
                     </ul>
                   </div>
@@ -166,14 +166,14 @@ const Experience = () => {
                 <div className="timeline-dot"></div>
                 <div className="timeline-content">
                   <div className="timeline-header">
-                    <h3>{edu.degree}</h3>
+                    <h3>{t(`experience.educationItems.${edu.id}.degree`, { defaultValue: edu.degree })}</h3>
                     <span className="timeline-period">{edu.duration}</span>
                   </div>
                   <div className="timeline-company">
                     {edu.institution} | {edu.location}
                   </div>
                   <div className="timeline-description">
-                    <p>{edu.description}</p>
+                    <p>{t(`experience.educationItems.${edu.id}.description`, { defaultValue: edu.description })}</p>
                   </div>
                 </div>
               </div>

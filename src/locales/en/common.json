@@ -70,7 +70,72 @@
   "experience": {
     "title": "Experience & Education",
     "work": "Work Experience",
-    "education": "Education"
+    "education": "Education",
+    "jobs": {
+      "1": {
+        "role": "Junior software developer & IT personnel",
+        "desc": {
+          "0": "Development of a website using HTML, CSS and JavaScript",
+          "1": "Helped with graphic design, flyers, etc.",
+          "2": "Optimized application performance resulting in a 30% decrease in load time"
+        }
+      },
+      "2": {
+        "role": "Full Stack developer, data entry & virtual assistant freelancer",
+        "desc": {
+          "0": "Implemented user authentication system with JWT and OAuth integration",
+          "1": "Created responsive frontend interfaces using React, Next.js and styled-components"
+        }
+      },
+      "3": {
+        "role": "IT Personnel",
+        "desc": {
+          "0": "Data analyst and virtual assistant as well as data entry clerk",
+          "1": "Performed website maintenance & development and troubleshooting for clients"
+        }
+      },
+      "4": {
+        "role": "Web developer & Data entry clerk",
+        "desc": {
+          "0": "Data analyst and virtual assistant as well as data entry clerk",
+          "1": "Performed website development and IT support for clients"
+        }
+      },
+      "5": {
+        "role": "Full Stack Developer",
+        "desc": {
+          "0": "Developed and maintained RESTful APIs using Node.js and Spring Boot",
+          "1": "Implemented user authentication system with JWT and OAuth integration",
+          "2": "Created responsive frontend interfaces using React and styled-components"
+        }
+      },
+      "6": {
+        "role": "Frontend Developer",
+        "desc": {
+          "0": "Completed a comprehensive front-end development internship focusing on responsive web design, JavaScript frameworks, and modern web technologies.",
+          "1": "Built interactive applications using HTML5, CSS3, JavaScript, React/Vue.js, and integrated REST APIs.",
+          "2": "Developed skills in responsive design, performance optimization, and user experience enhancement through hands-on projects including SPAs, component libraries, and advanced animations."
+        }
+      }
+    },
+    "educationItems": {
+      "1": {
+        "degree": "Bachelor of Software Engineering",
+        "description": "Specialized in Web Technologies and Software Engineering"
+      },
+      "2": {
+        "degree": "PRINCE2 (Project Management) Certification",
+        "description": "An international framework used in project management certification"
+      },
+      "3": {
+        "degree": "Certification in Virtual Assistance",
+        "description": "8-week intensive training in virtual assistance using various technologies."
+      },
+      "4": {
+        "degree": "Certification in Network Operations 1",
+        "description": "4 weeks training in introduction to network operations."
+      }
+    }
   },
   "footer": {
     "title": "Ndizeye Alain",

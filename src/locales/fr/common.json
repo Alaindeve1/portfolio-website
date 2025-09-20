@@ -70,7 +70,72 @@
   "experience": {
     "title": "Expérience & Formation",
     "work": "Expériences professionnelles",
-    "education": "Formation"
+    "education": "Formation",
+    "jobs": {
+      "1": {
+        "role": "Développeur logiciel junior & support IT",
+        "desc": {
+          "0": "Développement d'un site web avec HTML, CSS et JavaScript",
+          "1": "Aide au design graphique, flyers, etc.",
+          "2": "Optimisation des performances avec une réduction de 30% du temps de chargement"
+        }
+      },
+      "2": {
+        "role": "Développeur Full Stack, saisie de données & assistant virtuel (freelance)",
+        "desc": {
+          "0": "Mise en place de l'authentification avec JWT et intégration OAuth",
+          "1": "Interfaces frontend responsives avec React, Next.js et styled-components"
+        }
+      },
+      "3": {
+        "role": "Technicien IT",
+        "desc": {
+          "0": "Analyste de données et assistant virtuel ainsi que opérateur de saisie",
+          "1": "Maintenance, développement et dépannage de sites web pour des clients"
+        }
+      },
+      "4": {
+        "role": "Développeur web & opérateur de saisie",
+        "desc": {
+          "0": "Analyste de données et assistant virtuel ainsi que opérateur de saisie",
+          "1": "Développement de sites web et support IT pour des clients"
+        }
+      },
+      "5": {
+        "role": "Développeur Full Stack",
+        "desc": {
+          "0": "Développement et maintenance d'API REST avec Node.js et Spring Boot",
+          "1": "Mise en place de l'authentification avec JWT et intégration OAuth",
+          "2": "Création d'interfaces frontend responsives avec React et styled-components"
+        }
+      },
+      "6": {
+        "role": "Développeur Frontend",
+        "desc": {
+          "0": "Stage intensif en développement front-end axé sur le responsive design, les frameworks JavaScript et les technologies web modernes.",
+          "1": "Applications interactives avec HTML5, CSS3, JavaScript, React/Vue.js et intégration d'API REST.",
+          "2": "Compétences en optimisation des performances et UX via des projets concrets (SPA, bibliothèques de composants, animations avancées)."
+        }
+      }
+    },
+    "educationItems": {
+      "1": {
+        "degree": "Licence en génie logiciel",
+        "description": "Spécialisation en technologies web et en ingénierie logicielle"
+      },
+      "2": {
+        "degree": "Certification PRINCE2 (Gestion de projet)",
+        "description": "Cadre international utilisé pour la certification en gestion de projet"
+      },
+      "3": {
+        "degree": "Certification en assistance virtuelle",
+        "description": "Formation intensive de 8 semaines en assistance virtuelle avec divers outils."
+      },
+      "4": {
+        "degree": "Certification en opérations réseau 1",
+        "description": "Formation de 4 semaines d'introduction aux opérations réseau."
+      }
+    }
   },
   "footer": {
     "title": "Ndizeye Alain",
