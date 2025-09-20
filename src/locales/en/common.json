@@ -1,0 +1,99 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "experience": "Experience",
+    "contact": "Contact",
+    "toggleTheme": "Toggle theme"
+  },
+  "home": {
+    "hero": {
+      "title": "Hi, I'm {{name}}",
+      "role": "Full Stack Developer",
+      "desc": "I design and develop web applications that deliver exceptional user experiences. Passionate about clean code and innovative solutions with broad understanding of database management systems and big data analytics as well."
+    },
+    "cta": {
+      "projects": "View Projects",
+      "contact": "Contact Me"
+    }
+  },
+  "about": {
+    "title": "About Me",
+    "headline": "Transforming Ideas Into Digital Excellence",
+    "description": "I'm a results-driven Full Stack Developer who specializes in crafting scalable, high-performance web applications that deliver exceptional user experiences. With over 2 years of hands-on experience, I've successfully delivered solutions for clients ranging from innovative startups to established enterprises, consistently exceeding expectations and driving measurable business impact.",
+    "journeyTitle": "My Journey",
+    "journeyDesc": "My passion for technology ignited at a young age when I first discovered the power of software engineering to solve real-world problems. What started as curiosity evolved into a dedicated career focused on pushing the boundaries of what's possible in web development. I thrive on staying ahead of industry trends, continuously mastering emerging technologies, and applying cutting-edge best practices to create solutions that make a difference.",
+    "drivesTitle": "What Drives Me",
+    "drivesDesc": "I'm passionate about creating clean, efficient code and solving complex problems. I believe in the power of technology to transform businesses and improve lives, and I'm committed to building solutions that make a real impact.",
+    "skillsTitle": "Technical Skills",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "databases": "Databases",
+    "tools": "Tools & More",
+    "ctaTitle": "Let's Build Something Amazing Together",
+    "ctaDesc": "I'm always excited to take on new challenges and collaborate on interesting projects. Whether you need a complete web application, API development, or technical consultation, I'm here to help bring your ideas to life with clean, efficient code and innovative solutions.",
+    "getInTouch": "Get In Touch",
+    "availability": "Currently available for freelance projects and full-time opportunities. Let's discuss how I can help with your next project!",
+    "emailMe": "Email Me"
+  },
+  "projects": {
+    "title": "My Projects",
+    "filters": {
+      "all": "All",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "fullstack": "Full Stack"
+    },
+    "buttons": {
+      "liveDemo": "Live Demo",
+      "github": "GitHub"
+    }
+  },
+  "projectDescriptions": {
+    "1": "Java Swing project to manage students and staff with database connection using XAMPP (MySQL)",
+    "2": "A backend project using springboot framework and java with postgreSQL to manage auctions for both buyers and sellers.",
+    "3": "A responsive static website for an auction platform, showcasing items and services.",
+    "4": "A static website using HTML, CSS, and JavaScript.",
+    "5": "A portfolio website using Next JS, Tailwind CSS, and TypeScript.",
+    "6": "A weather dashboard app that uses OpenWeatherMap API to display current weather conditions and forecasts.",
+    "7": "An backend amusement hub project developed using express.js and node.js with postgresql database ."
+  },
+  "experience": {
+    "title": "Experience & Education",
+    "work": "Work Experience",
+    "education": "Education"
+  },
+  "footer": {
+    "title": "Ndizeye Alain",
+    "tagline": "Showcasing my journey and projects in software engineering",
+    "quickLinks": "Quick Links",
+    "connect": "Connect With Me",
+    "copyright": "All rights reserved."
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "infoTitle": "Contact Information",
+    "infoCopy": "Feel free to reach out to me using the form or through the contact information below.",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "submit": "Send Message"
+    },
+    "messages": {
+      "required": "Please fill out all required fields",
+      "invalidEmail": "Please enter a valid email address",
+      "success": "Thank you for your message! I will get back to you soon.",
+      "errorPrefix": "Sorry, there was an error:"
+    }
+  },
+  "wa": {
+    "card": {
+      "title": "Chat on WhatsApp",
+      "cta": "Message me",
+      "messagePreset": "Hi Alain! I came from your portfolio website and would love to chat."
+    }
+  }
+}

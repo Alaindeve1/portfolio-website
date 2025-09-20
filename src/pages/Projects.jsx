@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import '../styles/ProjectsStyles.css';
+import { useTranslation } from 'react-i18next';
 
 const Projects = () => {
+  const { t } = useTranslation('common');
   const projectsData = [
     {
       id: 1,
@@ -89,32 +91,32 @@ const Projects = () => {
   return (
     <section className="projects-section">
       <div className="container">
-        <h1 className="section-title">My Projects</h1>
+        <h1 className="section-title">{t('projects.title')}</h1>
         
         <div className="filter-buttons">
           <button 
             className={filter === "all" ? "active" : ""} 
             onClick={() => setFilter("all")}
           >
-            All
+            {t('projects.filters.all')}
           </button>
           <button 
             className={filter === "frontend" ? "active" : ""}
             onClick={() => setFilter("frontend")}
           >
-            Frontend
+            {t('projects.filters.frontend')}
           </button>
           <button 
             className={filter === "backend" ? "active" : ""}
             onClick={() => setFilter("backend")}
           >
-            Backend
+            {t('projects.filters.backend')}
           </button>
           <button 
             className={filter === "fullstack" ? "active" : ""}
             onClick={() => setFilter("fullstack")}
           >
-            Full Stack
+            {t('projects.filters.fullstack')}
           </button>
         </div>
         
@@ -147,7 +149,7 @@ const Projects = () => {
               
               <div className="project-info">
                 <h3>{project.title}</h3>
-                <p>{project.description}</p>
+                <p>{t(`projectDescriptions.${project.id}`)}</p>
                 
                 <div className="project-tech">
                   {project.technologies.map((tech, index) => (
@@ -163,7 +165,7 @@ const Projects = () => {
                       rel="noopener noreferrer"
                       className="btn btn-primary"
                     >
-                      Live Demo
+                      {t('projects.buttons.liveDemo')}
                     </a>
                   )}
                   <a 
@@ -172,7 +174,7 @@ const Projects = () => {
                     rel="noopener noreferrer"
                     className={`btn ${project.liveLink ? 'btn-secondary' : 'btn-primary'}`}
                   >
-                    GitHub
+                    {t('projects.buttons.github')}
                   </a>
                 </div>
               </div>

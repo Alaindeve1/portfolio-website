@@ -1,7 +1,9 @@
 import React from 'react';
 import '../styles/ExperienceStyles.css';
+import { useTranslation } from 'react-i18next';
 
 const Experience = () => {
+  const { t } = useTranslation('common');
   
   const workExperience = [
     {
@@ -122,11 +124,11 @@ const Experience = () => {
   return (
     <section className="experience-section">
       <div className="container">
-        <h1 className="section-title">Experience & Education</h1>
+        <h1 className="section-title">{t('experience.title')}</h1>
         
         <div className="experience-container">
           <div className="timeline">
-            <h2 className="timeline-title">Work Experience</h2>
+            <h2 className="timeline-title">{t('experience.work')}</h2>
             
             {workExperience.map(job => (
               <div className="timeline-item" key={job.id}>
@@ -157,7 +159,7 @@ const Experience = () => {
           </div>
           
           <div className="timeline">
-            <h2 className="timeline-title">Education</h2>
+            <h2 className="timeline-title">{t('experience.education')}</h2>
             
             {education.map(edu => (
               <div className="timeline-item" key={edu.id}>

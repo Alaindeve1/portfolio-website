@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import '../styles/ContactStyles.css';
 import WhatsAppCTA from '../components/WhatsAppCTA';
+import { useTranslation } from 'react-i18next';
 
 const Contact = () => {
+  const { t } = useTranslation('common');
   
   const [formData, setFormData] = useState({
     name: '',
@@ -32,7 +34,7 @@ const Contact = () => {
       setFormStatus({
         submitted: true,
         success: false,
-        message: 'Please fill out all required fields'
+        message: t('contact.messages.required')
       });
       return;
     }
@@ -43,7 +45,7 @@ const Contact = () => {
       setFormStatus({
         submitted: true,
         success: false,
-        message: 'Please enter a valid email address'
+        message: t('contact.messages.invalidEmail')
       });
       return;
     }
@@ -70,7 +72,7 @@ const Contact = () => {
         setFormStatus({
           submitted: true,
           success: true,
-          message: 'Thank you for your message! I will get back to you soon.'
+          message: t('contact.messages.success')
         });
         
         // Reset form after successful submission
@@ -88,7 +90,7 @@ const Contact = () => {
       setFormStatus({
         submitted: true,
         success: false,
-        message: `Sorry, there was an error: ${error.message || 'Please try again later.'}`
+        message: `${t('contact.messages.errorPrefix')} ${error.message || ''}`.trim()
       });
     }
   };
@@ -96,7 +98,7 @@ const Contact = () => {
   return (
     <section className="contact-section">
       <div className="container">
-        <h1 className="section-title">Get In Touch</h1>
+        <h1 className="section-title">{t('contact.title')}</h1>
         
         <div className="contact-container">
           <form 
@@ -111,7 +113,7 @@ const Contact = () => {
             )}
             
             <div className="form-group">
-              <label htmlFor="name">Name <span className="required">*</span></label>
+              <label htmlFor="name">{t('contact.form.name')} <span className="required">*</span></label>
               <input
                 type="text"
                 id="name"
@@ -123,7 +125,7 @@ const Contact = () => {
             </div>
             
             <div className="form-group">
-              <label htmlFor="email">Email <span className="required">*</span></label>
+              <label htmlFor="email">{t('contact.form.email')} <span className="required">*</span></label>
               <input
                 type="email"
                 id="email"
@@ -135,7 +137,7 @@ const Contact = () => {
             </div>
             
             <div className="form-group">
-              <label htmlFor="subject">Subject</label>
+              <label htmlFor="subject">{t('contact.form.subject')}</label>
               <input
                 type="text"
                 id="subject"
@@ -146,7 +148,7 @@ const Contact = () => {
             </div>
             
             <div className="form-group">
-              <label htmlFor="message">Message <span className="required">*</span></label>
+              <label htmlFor="message">{t('contact.form.message')} <span className="required">*</span></label>
               <textarea
                 id="message"
                 name="message"
@@ -157,12 +159,12 @@ const Contact = () => {
               ></textarea>
             </div>
             
-            <button type="submit" className="btn btn-primary">Send Message</button>
+            <button type="submit" className="btn btn-primary">{t('contact.form.submit')}</button>
           </form>
           
           <div className="contact-info">
-            <h2>Contact Information</h2>
-            <p>Feel free to reach out to me using the form or through the contact information below.</p>
+            <h2>{t('contact.infoTitle')}</h2>
+            <p>{t('contact.infoCopy')}</p>
             
             <div className="info-item">
               <i className="fas fa-envelope"></i>

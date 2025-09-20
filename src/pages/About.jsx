@@ -1,13 +1,15 @@
 import React from 'react';
 import '../styles/AboutStyles.css';
 import { FaGithub, FaLinkedin, FaEnvelope, FaCode, FaServer, FaDatabase, FaTools } from 'react-icons/fa';
+import { useTranslation } from 'react-i18next';
 
 const About = () => {
+  const { t } = useTranslation('common');
 
   return (
     <section className="about-section">
       <div className="container">
-        <h1 className="section-title">About Me</h1>
+        <h1 className="section-title">{t('about.title')}</h1>
         
         <div className="about-content">
           <div className="about-image">
@@ -29,37 +31,29 @@ const About = () => {
           </div>
           
           <div className="about-text">
-            <h2>Transforming Ideas Into Digital Excellence</h2>
+            <h2>{t('about.headline')}</h2>
             <p>
-            I'm a results-driven Full Stack Developer who specializes in crafting scalable, high-performance web applications
-             that deliver exceptional user experiences. With over 2 years of hands-on experience, I've successfully delivered
-              solutions for clients ranging from innovative startups to established enterprises, consistently exceeding
-               expectations and driving measurable business impact.
+            {t('about.description')}
             </p>
             
-            <h3>My Journey</h3>
+            <h3>{t('about.journeyTitle')}</h3>
             <p>
-            My passion for technology ignited at a young age when I first discovered the power of software engineering to solve
-             real-world problems. What started as curiosity evolved into a dedicated career focused on pushing the boundaries 
-             of what's possible in web development. I thrive on staying ahead of industry trends, continuously mastering 
-             emerging technologies, and applying cutting-edge best practices to create solutions that make a difference.
+            {t('about.journeyDesc')}
             </p>
             
-            <h3>What Drives Me</h3>
+            <h3>{t('about.drivesTitle')}</h3>
             <p>
-              I'm passionate about creating clean, efficient code and solving complex problems. I believe in the power of 
-              technology to transform businesses and improve lives, and I'm committed to building solutions that make a 
-              real impact.
+              {t('about.drivesDesc')}
             </p>
           </div>
         </div>
         
         <div className="skills-section">
-          <h2>Technical Skills</h2>
+          <h2>{t('about.skillsTitle')}</h2>
           
           <div className="skills-categories">
             <div className="skill-category">
-              <h3><FaCode className="skill-icon" /> Frontend</h3>
+              <h3><FaCode className="skill-icon" /> {t('about.frontend')}</h3>
               <ul>
                 <li>React JS</li>
                 <li>JavaScript (ES6+)</li>
@@ -72,7 +66,7 @@ const About = () => {
             </div>
             
             <div className="skill-category">
-              <h3><FaServer className="skill-icon" /> Backend</h3>
+              <h3><FaServer className="skill-icon" /> {t('about.backend')}</h3>
               <ul>
                 <li>Node.js</li>
                 <li>Express JS</li>
@@ -85,7 +79,7 @@ const About = () => {
             </div>
             
             <div className="skill-category">
-              <h3><FaDatabase className="skill-icon" /> Databases</h3>
+              <h3><FaDatabase className="skill-icon" /> {t('about.databases')}</h3>
               <ul>
                 <li>Oracle (PL/SQL)</li>
                 <li>PostgreSQL</li>
@@ -95,7 +89,7 @@ const About = () => {
             </div>
             
             <div className="skill-category">
-              <h3><FaTools className="skill-icon" /> Tools & More</h3>
+              <h3><FaTools className="skill-icon" /> {t('about.tools')}</h3>
               <ul>
                 <li>Git & GitHub</li>
                 <li>Docker</li>
@@ -108,14 +102,12 @@ const About = () => {
           </div>
         </div>
         <div className="contact-section">
-          <h2>Let's Build Something Amazing Together</h2>
+          <h2>{t('about.ctaTitle')}</h2>
           <p>
-            I'm always excited to take on new challenges and collaborate on interesting projects. 
-            Whether you need a complete web application, API development, or technical consultation, 
-            I'm here to help bring your ideas to life with clean, efficient code and innovative solutions.
+            {t('about.ctaDesc')}
           </p>
           
-          <h3>Get In Touch</h3>
+          <h3>{t('about.getInTouch')}</h3>
           <div className="contact-links">
             <a href="https://github.com/" target="_blank" rel="noopener noreferrer" className="contact-link">
               <FaGithub className="contact-icon" /> GitHub
@@ -124,13 +116,11 @@ const About = () => {
               <FaLinkedin className="contact-icon" /> LinkedIn
             </a>
             <a href="/contact" className="contact-link">
-              <FaEnvelope className="contact-icon" /> Email Me
+              <FaEnvelope className="contact-icon" /> {t('about.emailMe')}
             </a>
           </div>
           
-          <p className="availability">
-            Currently available for freelance projects and full-time opportunities. Let's discuss how I can help with your next project!
-          </p>
+          <p className="availability">{t('about.availability')}</p>
         </div>
       </div>
     </section>

@@ -1,5 +1,7 @@
 import React, { useState, useContext, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import LanguageSwitcher from './LanguageSwitcher';
 import { ThemeContext } from '../context/ThemeContext';
 import '../styles/NavbarStyles.css';
 
@@ -8,6 +10,7 @@ const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const { isDarkMode, toggleTheme } = useContext(ThemeContext);
   const location = useLocation();
+  const { t } = useTranslation('common');
 
   // Handle scroll effect
   useEffect(() => {
@@ -37,6 +40,23 @@ const Navbar = () => {
     { path: '/contact', label: 'Contact' }
   ];
 
+  const getLabel = (path, fallback) => {
+    switch (path) {
+      case '/':
+        return t('nav.home');
+      case '/about':
+        return t('nav.about');
+      case '/projects':
+        return t('nav.projects');
+      case '/experience':
+        return t('nav.experience');
+      case '/contact':
+        return t('nav.contact');
+      default:
+        return fallback;
+    }
+  };
+
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="container navbar-container">
@@ -52,6 +72,8 @@ const Navbar = () => {
           >
             {isDarkMode ? '☀️' : '🌙'}
           </button>
+
+          <LanguageSwitcher />
 
           <button 
             className={`menu-toggle ${menuOpen ? 'active' : ''}`}
@@ -71,7 +93,7 @@ const Navbar = () => {
                 to={link.path} 
                 className={location.pathname === link.path ? 'active' : ''}
               >
-                {link.label}
+                {getLabel(link.path, link.label)}
               </Link>
             </li>
           ))}

@@ -4,27 +4,25 @@ import { FaReact, FaNodeJs, FaJava, FaDatabase, FaHtml5 } from 'react-icons/fa';
 import { SiJavascript, SiC } from 'react-icons/si';
 import '../styles/HomeStyles.css';
 import WhatsAppCTA from '../components/WhatsAppCTA';
+import { useTranslation } from 'react-i18next';
 
 const Home = () => {
+  const { t } = useTranslation('common');
   return (
     <section className="home-section">
       <div className="container">
         <div className="hero">
           <div className="hero-content">
-            <h1>Hi, I'm <span className="highlight">Ndizeye Alain</span></h1>
-            <h2>Full Stack Developer</h2>
-            <p className="hero-description">
-              I design and develop web applications that deliver exceptional user experiences.
-              Passionate about clean code and innovative solutions with broad understanding of 
-              database management systems and bigdata analystics as well.
-            </p>
+            <h1>{t('home.hero.title', { name: 'Ndizeye Alain' })}</h1>
+            <h2>{t('home.hero.role')}</h2>
+            <p className="hero-description">{t('home.hero.desc')}</p>
             <div className="hero-buttons">
               <Link to="/projects" className="btn btn-primary">
-                View Projects
+                {t('home.cta.projects')}
                 <span className="btn-icon">→</span>
               </Link>
               <Link to="/contact" className="btn btn-secondary">
-                Contact Me
+                {t('home.cta.contact')}
                 
               </Link>
             </div>

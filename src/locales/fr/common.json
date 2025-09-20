@@ -1,0 +1,99 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "projects": "Projets",
+    "experience": "Expérience",
+    "contact": "Contact",
+    "toggleTheme": "Changer le thème"
+  },
+  "home": {
+    "hero": {
+      "title": "Bonjour, je suis {{name}}",
+      "role": "Développeur Full Stack",
+      "desc": "Je conçois et développe des applications web offrant une expérience utilisateur exceptionnelle. Passionné par le code propre et les solutions innovantes, avec une solide compréhension des systèmes de gestion de bases de données et de l'analyse de données."
+    },
+    "cta": {
+      "projects": "Voir les projets",
+      "contact": "Me contacter"
+    }
+  },
+  "about": {
+    "title": "À propos de moi",
+    "headline": "Transformer les idées en excellence numérique",
+    "description": "Je suis un développeur Full Stack axé sur les résultats, spécialisé dans la création d'applications web évolutives et performantes offrant une expérience utilisateur exceptionnelle. Avec plus de 2 ans d'expérience pratique, j'ai livré des solutions pour des startups innovantes comme pour des entreprises établies, en dépassant systématiquement les attentes et en générant un impact mesurable.",
+    "journeyTitle": "Mon parcours",
+    "journeyDesc": "Ma passion pour la technologie est née très tôt lorsque j'ai découvert le pouvoir de l'ingénierie logicielle pour résoudre des problèmes concrets. Partie d'une simple curiosité, elle est devenue une carrière dédiée à repousser les limites du développement web. J'aime anticiper les tendances, maîtriser en continu les technologies émergentes et appliquer les meilleures pratiques pour créer des solutions qui font la différence.",
+    "drivesTitle": "Ce qui me motive",
+    "drivesDesc": "Je suis passionné par l'écriture d'un code propre et efficace et par la résolution de problèmes complexes. Je crois au pouvoir de la technologie pour transformer les entreprises et améliorer la vie, et je m'engage à créer des solutions à impact réel.",
+    "skillsTitle": "Compétences techniques",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "databases": "Bases de données",
+    "tools": "Outils et plus",
+    "ctaTitle": "Construisons quelque chose d'exceptionnel ensemble",
+    "ctaDesc": "Je suis toujours ravi de relever de nouveaux défis et de collaborer sur des projets intéressants. Que vous ayez besoin d'une application web complète, du développement d'API ou d'un accompagnement technique, je transforme vos idées en réalité avec un code propre et des solutions innovantes.",
+    "getInTouch": "Entrer en contact",
+    "availability": "Disponible pour des missions freelance et des opportunités à temps plein. Discutons de votre prochain projet !",
+    "emailMe": "M'écrire"
+  },
+  "projects": {
+    "title": "Mes projets",
+    "filters": {
+      "all": "Tous",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "fullstack": "Full Stack"
+    },
+    "buttons": {
+      "liveDemo": "Démo en ligne",
+      "github": "GitHub"
+    }
+  },
+  "projectDescriptions": {
+    "1": "Application Java Swing pour gérer les étudiants et le personnel avec connexion à la base de données via XAMPP (MySQL)",
+    "2": "Projet backend en Spring Boot et Java avec PostgreSQL pour gérer les enchères côté acheteurs et vendeurs.",
+    "3": "Site vitrine responsive pour une plateforme d'enchères, présentant les articles et services.",
+    "4": "Site statique réalisé en HTML, CSS et JavaScript.",
+    "5": "Site portfolio développé avec Next JS, Tailwind CSS et TypeScript.",
+    "6": "Application météo utilisant l'API OpenWeatherMap pour afficher les conditions actuelles et les prévisions.",
+    "7": "Projet backend d'espace de divertissement développé avec Express.js, Node.js et PostgreSQL."
+  },
+  "experience": {
+    "title": "Expérience & Formation",
+    "work": "Expériences professionnelles",
+    "education": "Formation"
+  },
+  "footer": {
+    "title": "Ndizeye Alain",
+    "tagline": "Présenter mon parcours et mes projets en ingénierie logicielle",
+    "quickLinks": "Liens rapides",
+    "connect": "Réseaux sociaux",
+    "copyright": "Tous droits réservés."
+  },
+  "contact": {
+    "title": "Entrer en contact",
+    "infoTitle": "Informations de contact",
+    "infoCopy": "N'hésitez pas à me contacter via le formulaire ou grâce aux informations ci-dessous.",
+    "form": {
+      "name": "Nom",
+      "email": "E-mail",
+      "subject": "Objet",
+      "message": "Message",
+      "submit": "Envoyer"
+    },
+    "messages": {
+      "required": "Veuillez remplir tous les champs obligatoires",
+      "invalidEmail": "Veuillez entrer une adresse e-mail valide",
+      "success": "Merci pour votre message ! Je vous répondrai bientôt.",
+      "errorPrefix": "Désolé, une erreur s'est produite :"
+    }
+  },
+  "wa": {
+    "card": {
+      "title": "Discuter sur WhatsApp",
+      "cta": "M'écrire",
+      "messagePreset": "Bonjour Alain ! Je viens de votre portfolio et j'aimerais discuter."
+    }
+  }
+}
