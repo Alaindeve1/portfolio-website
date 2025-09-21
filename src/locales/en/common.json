@@ -60,7 +60,7 @@
   },
   "projectDescriptions": {
     "1": "Java Swing project to manage students and staff with database connection using XAMPP (MySQL)",
-    "2": "A backend project using springboot framework and java with postgreSQL to manage auctions for both buyers and sellers.",
+    "2": "A fullstack project using springboot framework and java with postgreSQL to manage auctions for both buyers and sellers in a realtime based environment.",
     "3": "A responsive static website for an auction platform, showcasing items and services.",
     "4": "A static website using HTML, CSS, and JavaScript.",
     "5": "A portfolio website using Next JS, Tailwind CSS, and TypeScript.",

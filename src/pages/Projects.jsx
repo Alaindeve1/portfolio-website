@@ -18,8 +18,8 @@ const Projects = () => {
     {
       id: 2,
       title: "AUCTION MANAGMENT SYSTEM",
-      description: "A fullstack project using springboot framework and java with postgreSQL to manage auctions for both buyers and sellers in a realtime environment.",
-      technologies: ["React.js", "Tailwind CSS", "Springboot", "Java", "PostgreSQL","WebSocket".],
+      description: "",
+      technologies: ["React.js", "Tailwind CSS", "Springboot", "Java", "PostgreSQL","WebSocket"],
       image: "/assets/images/Screenshot 2025-06-12 141855.webp",
       fallbackImage: "/assets/images/Screenshot 2025-06-12 141855.png",
       liveLink: "https://www.loom.com/share/fd0dff316dad4e50ab781445c71947cb?sid=b9a65abb-c884-43bb-be41-cc487b7325a2",
