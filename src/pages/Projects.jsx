@@ -18,7 +18,7 @@ const Projects = () => {
     {
       id: 2,
       title: "AUCTION MANAGMENT SYSTEM",
-      description: "",
+      description: "A fullstack project using springboot framework and java with postgreSQL to manage auctions for both buyers and sellers in a realtime environment.",
       technologies: ["React.js", "Tailwind CSS", "Springboot", "Java", "PostgreSQL","WebSocket"],
       image: "/assets/images/Screenshot 2025-06-12 141855.webp",
       fallbackImage: "/assets/images/Screenshot 2025-06-12 141855.png",
@@ -149,7 +149,7 @@ const Projects = () => {
               
               <div className="project-info">
                 <h3>{project.title}</h3>
-                <p>{t(`projectDescriptions.${project.id}`)}</p>
+                <p>{project.description || t(`projectDescriptions.${project.id}`)}</p>
                 
                 <div className="project-tech">
                   {project.technologies.map((tech, index) => (
