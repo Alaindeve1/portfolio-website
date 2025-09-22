@@ -5,9 +5,11 @@ import { SiJavascript, SiC } from 'react-icons/si';
 import '../styles/HomeStyles.css';
 import WhatsAppCTA from '../components/WhatsAppCTA';
 import { useTranslation } from 'react-i18next';
+import projectsData from '../data/projectsData';
 
 const Home = () => {
   const { t } = useTranslation('common');
+  const auctionProject = projectsData.find(p => p.id === 2);
   return (
     <section className="home-section">
       <div className="container">
@@ -114,7 +116,7 @@ const Home = () => {
               </div>
               <div className="project-info">
                 <h3>AUCTION MANAGMENT SYSTEM</h3>
-                <p>{t('home.featured.descriptions.auction')}</p>
+                <p>{auctionProject?.description || t('home.featured.descriptions.auction')}</p>
                 <Link to="/projects" className="project-link">
                   {t('home.featured.learnMore')}
                   <span>→</span>
