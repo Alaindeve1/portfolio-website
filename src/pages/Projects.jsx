@@ -74,7 +74,7 @@ const Projects = () => {
               
               <div className="project-info">
                 <h3>{project.title}</h3>
-                <p>{project.description || t(`projectDescriptions.${project.id}`)}</p>
+                <p>{t(`projectDescriptions.${project.id}`, { defaultValue: project.description })}</p>
                 
                 <div className="project-tech">
                   {project.technologies.map((tech, index) => (

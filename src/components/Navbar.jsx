@@ -61,13 +61,13 @@ const Navbar = () => {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="container navbar-container">
         <Link to="/" className="logo">
-          <h1>Ndizeye Alain</h1>
+          <h1 className="full-name">Ndizeye Alain</h1>
+          <h1 className="initials d-none d-md-block">NA</h1>
         </Link>
 
         <div className="navbar-buttons">
           <button 
             className="theme-toggle"
-            onClick={toggleTheme}
             aria-label="Toggle theme"
           >
             {isDarkMode ? '☀️' : '🌙'}
@@ -103,8 +103,8 @@ const Navbar = () => {
   );
 };
 
-// Export navLinks to be used in other components
-export const navLinks = [
+// Export navLinks for other components to use
+const exportedNavLinks = [
   { path: '/', label: 'Home' },
   { path: '/about', label: 'About' },
   { path: '/projects', label: 'Projects' },
@@ -112,4 +112,5 @@ export const navLinks = [
   { path: '/contact', label: 'Contact' }
 ];
 
+export { exportedNavLinks as navLinks };
 export default Navbar;

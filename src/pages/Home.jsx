@@ -116,7 +116,7 @@ const Home = () => {
               </div>
               <div className="project-info">
                 <h3>AUCTION MANAGMENT SYSTEM</h3>
-                <p>{auctionProject?.description || t('home.featured.descriptions.auction')}</p>
+                <p>{t('projectDescriptions.2', { defaultValue: auctionProject?.description })}</p>
                 <Link to="/projects" className="project-link">
                   {t('home.featured.learnMore')}
                   <span>→</span>

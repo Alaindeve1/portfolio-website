@@ -60,7 +60,7 @@
   },
   "projectDescriptions": {
     "1": "Application Java Swing pour gérer les étudiants et le personnel avec connexion à la base de données via XAMPP (MySQL)",
-    "2": "Projet backend en Spring Boot et Java avec PostgreSQL pour gérer les enchères côté acheteurs et vendeurs.",
+    "2": "Un projet fullstack utilisant le framework Spring Boot et Java avec PostgreSQL pour gérer les enchères pour les acheteurs et les vendeurs dans un environnement basé sur le temps réel.",
     "3": "Site vitrine responsive pour une plateforme d'enchères, présentant les articles et services.",
     "4": "Site statique réalisé en HTML, CSS et JavaScript.",
     "5": "Site portfolio développé avec Next JS, Tailwind CSS et TypeScript.",

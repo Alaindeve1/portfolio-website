@@ -34,15 +34,17 @@
   transition: var(--transition);
 }
 
-.logo::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background-color: var(--primary-color);
-  transition: width 0.3s ease;
+/* Show full name on larger screens, hide initials */
+.logo .full-name {
+  display: block;
+}
+
+.logo .initials {
+  display: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin: 0;
 }
 
 .logo:hover::after {
@@ -138,6 +140,15 @@
 }
 
 @media (max-width: 768px) {
+  /* Show only initials on mobile, hide full name */
+  .logo .full-name {
+    display: none;
+  }
+  
+  .logo .initials {
+    display: block;
+  }
+  
   .menu-toggle {
     display: flex;
   }
