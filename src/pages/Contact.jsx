@@ -182,13 +182,13 @@ const Contact = () => {
             </div>
             
             <div className="social-links">
-              <a href="https://github.com/dashboard" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <a href="https://github.com/Alaindeve1" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                 <i className="fab fa-github"></i>
               </a>
               <a href="https://www.linkedin.com/in/ndizeye-alain/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                 <i className="fab fa-linkedin"></i>
               </a>
-              <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+              <a href="https://x.com/ndizeyealain1" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
                 <i className="fab fa-twitter"></i>
               </a>
             </div>

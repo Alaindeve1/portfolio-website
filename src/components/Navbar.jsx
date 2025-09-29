@@ -68,6 +68,7 @@ const Navbar = () => {
         <div className="navbar-buttons">
           <button 
             className="theme-toggle"
+            onClick={toggleTheme}
             aria-label="Toggle theme"
           >
             {isDarkMode ? '☀️' : '🌙'}
