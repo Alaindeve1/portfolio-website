@@ -73,7 +73,7 @@ const Experience = () => {
     {
       id: 6,
       company: "codveda technologies",
-      role: "Frontend Developer",
+      role: "Java and react.js developer",
       location: "remote",
       duration: "'12-august-2025'-now",
       description: [
