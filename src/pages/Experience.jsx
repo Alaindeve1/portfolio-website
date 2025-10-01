@@ -73,9 +73,9 @@ const Experience = () => {
     {
       id: 6,
       company: "codveda technologies",
-      role: "Java and react.js developer",
+      role: "Fullstack developer",
       location: "remote",
-      duration: "'12-august-2025'-now",
+      duration: "'may-2025'-'september-2025'",
       description: [
        "Completed a comprehensive front-end development internship focusing on responsive web design, JavaScript frameworks, and modern web technologies.",
         "Built interactive applications using HTML5, CSS3, JavaScript, React/Vue.js, and integrated REST APIs.",
