@@ -77,11 +77,11 @@ const Experience = () => {
       location: "remote",
       duration: "'may-2025'-'september-2025'",
       description: [
-       "Completed a comprehensive front-end development internship focusing on responsive web design, JavaScript frameworks, and modern web technologies.",
+       "Completed a comprehensive fullstack development internship focusing on java , responsive web design, JavaScript frameworks, and modern web technologies.",
         "Built interactive applications using HTML5, CSS3, JavaScript, React/Vue.js, and integrated REST APIs.",
         " Developed skills in responsive design, performance optimization, and user experience enhancement through hands-on projects including SPAs, component libraries, and advanced animations."
       ],
-      technologies: ["Responsive Web Design", "React.js / Vue.js", "Performance Optimization", "JavaScript (ES6+)", "REST API Integration", "html&css","tailwind css","git","Single Page Applications (SPA)"]
+      technologies: ["Responsive Web Design", "React.js", "Performance Optimization", "JavaScript (ES6+)", "REST API Integration", "html&css","tailwind css","git","java"]
     },
     
   ];
