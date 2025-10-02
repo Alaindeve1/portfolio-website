@@ -119,7 +119,7 @@ const Home = () => {
                 <p>{t('projectDescriptions.2', { defaultValue: auctionProject?.description })}</p>
                 <Link to="/projects" className="project-link">
                   {t('home.featured.learnMore')}
-                  <span>â†’</span>
+                  <span>→</span>
                 </Link>
               </div>
             </div>
@@ -157,7 +157,7 @@ const Home = () => {
                 <p>{t('home.featured.descriptions.ecommerce')}</p>
                 <Link to="/projects" className="project-link">
                   {t('home.featured.learnMore')}
-                  <span>â†’</span>
+                  <span>→</span>
                 </Link>
               </div>
             </div>
