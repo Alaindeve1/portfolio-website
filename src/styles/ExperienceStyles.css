@@ -53,21 +53,21 @@
   }
   
   .timeline-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin-bottom: 0.5rem;
-    flex-wrap: wrap;
   }
   
   .timeline-header h3 {
     font-size: 1.4rem;
-    margin-right: 1rem;
+    margin: 0 0 0.3rem 0;
+    text-transform: capitalize;
   }
   
   .timeline-period {
     font-weight: 500;
     color: var(--primary-color);
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
   }
   
   .timeline-company {
