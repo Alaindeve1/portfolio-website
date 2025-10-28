@@ -10,8 +10,8 @@
   "home": {
     "hero": {
       "title": "Hi, I'm {{name}}",
-      "role": "Full Stack Developer",
-      "desc": "I design and develop web applications that deliver exceptional user experiences. Passionate about clean code and innovative solutions with broad understanding of database management systems and big data analytics as well."
+      "role": "Versatile Backend Developer | Full-Stack Capable | Certified Project Manager",
+      "desc": "Backend developer specializing in robust server-side solutions with full-stack capabilities from hands-on frontend work. PeopleCert-certified project manager with experience in network operations and virtual assistance. I create efficient, maintainable systems while bridging technical execution with strategic delivery."
     },
     "cta": {
       "projects": "View Projects",
@@ -29,7 +29,7 @@
   "about": {
     "title": "About Me",
     "headline": "Transforming Ideas Into Digital Excellence",
-    "description": "I'm a results-driven Full Stack Developer who specializes in crafting scalable, high-performance web applications that deliver exceptional user experiences. With over 2 years of hands-on experience, I've successfully delivered solutions for clients ranging from innovative startups to established enterprises, consistently exceeding expectations and driving measurable business impact.",
+    "description": "Backend developer specializing in scalable server-side architecture with full-stack capabilities from hands-on frontend work. PeopleCert-certified project manager who bridges technical execution and strategic delivery. Experience in network operations and virtual assistance gives me a holistic view of how systems interconnect and teams collaborate. I build efficient, maintainable solutions while keeping the bigger picture in focus—from infrastructure to interface, sprint planning to stakeholder communication.",
     "journeyTitle": "My Journey",
     "journeyDesc": "My passion for technology ignited at a young age when I first discovered the power of software engineering to solve real-world problems. What started as curiosity evolved into a dedicated career focused on pushing the boundaries of what's possible in web development. I thrive on staying ahead of industry trends, continuously mastering emerging technologies, and applying cutting-edge best practices to create solutions that make a difference.",
     "drivesTitle": "What Drives Me",
