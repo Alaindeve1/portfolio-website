@@ -10,8 +10,8 @@
   "home": {
     "hero": {
       "title": "Bonjour, je suis {{name}}",
-      "role": "Développeur Full Stack",
-      "desc": "Je conçois et développe des applications web offrant une expérience utilisateur exceptionnelle. Passionné par le code propre et les solutions innovantes, avec une solide compréhension des systèmes de gestion de bases de données et de l'analyse de données."
+      "role": "Développeur back-end polyvalent | Compétences full-stack | Chef de projet certifié",
+      "desc": "Développeur back-end spécialisé dans les solutions serveur robustes, avec des compétences full-stack issues d'une expérience front-end concrète. Chef de projet certifié PeopleCert, je possède une expérience en exploitation réseau et en assistance virtuelle. Je crée des systèmes performants et maintenables, alliant exécution technique et livraison stratégique."
     },
     "cta": {
       "projects": "Voir les projets",
@@ -29,7 +29,7 @@
   "about": {
     "title": "À propos de moi",
     "headline": "Transformer les idées en excellence numérique",
-    "description": "Je suis un développeur Full Stack axé sur les résultats, spécialisé dans la création d'applications web évolutives et performantes offrant une expérience utilisateur exceptionnelle. Avec plus de 2 ans d'expérience pratique, j'ai livré des solutions pour des startups innovantes comme pour des entreprises établies, en dépassant systématiquement les attentes et en générant un impact mesurable.",
+    "description": "Développeur back-end spécialisé dans les architectures côté serveur évolutives, avec des capacités full-stack issues d'une expérience front-end concrète. Chef de projet certifié PeopleCert, je fais le lien entre exécution technique et livraison stratégique. Mon expérience en exploitation réseau et en assistance virtuelle me donne une vision globale de l'interconnexion des systèmes et de la collaboration entre les équipes. Je conçois des solutions efficaces et maintenables, tout en gardant une vision globale : de l'infrastructure à l'interface, de la planification des sprints à la communication avec les parties prenantes.",
     "journeyTitle": "Mon parcours",
     "journeyDesc": "Ma passion pour la technologie est née très tôt lorsque j'ai découvert le pouvoir de l'ingénierie logicielle pour résoudre des problèmes concrets. Partie d'une simple curiosité, elle est devenue une carrière dédiée à repousser les limites du développement web. J'aime anticiper les tendances, maîtriser en continu les technologies émergentes et appliquer les meilleures pratiques pour créer des solutions qui font la différence.",
     "drivesTitle": "Ce qui me motive",
