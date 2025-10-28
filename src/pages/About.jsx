@@ -109,7 +109,7 @@ const About = () => {
           
           <h3>{t('about.getInTouch')}</h3>
           <div className="contact-links">
-            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" className="contact-link">
+            <a href="https://github.com/Alaindeve1" target="_blank" rel="noopener noreferrer" className="contact-link">
               <FaGithub className="contact-icon" /> GitHub
             </a>
             <a href="https://www.linkedin.com/in/ndizeye-alain/" target="_blank" rel="noopener noreferrer" className="contact-link">
