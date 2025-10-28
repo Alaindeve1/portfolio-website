@@ -26,7 +26,7 @@ const projectsData = [
     image: "/assets/images/Screenshot 2025-06-12 141855.webp",
     fallbackImage: "/assets/images/Screenshot 2025-06-12 141855.png",
     liveLink:
-      "https://www.loom.com/share/fd0dff316dad4e50ab781445c71947cb?sid=b9a65abb-c884-43bb-be41-cc487b7325a2",
+      "https://auction-managment-system-chi.vercel.app/",
     githubLink: "https://github.com/Alaindeve1/AUCTION-MANAGMENT-SYSTEM",
     category: "fullstack",
   },
