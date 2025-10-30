@@ -121,7 +121,7 @@ const Experience = () => {
       location: "Remote",
       duration: "2024",
       description: "4 weeks training in introduction to network operations.",
-      certificateUrl: "#" // Add your certificate URL here when available
+      certificateUrl: "/assets/certificates/netops certificate.pdf" 
     },
   ];
 
