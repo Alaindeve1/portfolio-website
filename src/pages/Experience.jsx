@@ -103,7 +103,7 @@ const Experience = () => {
       location: "REMOTE",
       duration: "'june-2025'-'august-2025'",
       description: "An international framework used in project management certification",
-      certificateUrl: "#" // Add your certificate URL here when available
+      certificateUrl: "/assets/certificates/e-cert prince2 certificate.pdf"
     },
     {
       id: 3,
