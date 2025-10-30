@@ -112,7 +112,7 @@ const Experience = () => {
       location: "Remote",
       duration: "2024",
       description: "8 week intensive training in virtual assistance using various technologies.",
-      certificateUrl: "#" // Add your certificate URL here when available
+      certificateUrl: "/assets/certificates/alx certificate .pdf" 
     },
     {
       id: 4,
