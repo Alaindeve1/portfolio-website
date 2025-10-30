@@ -97,6 +97,51 @@
     flex-wrap: wrap;
     gap: 0.5rem;
   }
+
+  .certificate-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .certificate-download:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+
+  .certificate-download:active {
+    transform: translateY(0);
+  }
+
+  .certificate-download .download-icon {
+    font-size: 1.1em;
+    transition: transform 0.3s ease;
+  }
+
+  .certificate-download:hover .download-icon {
+    animation: bounce 0.5s ease infinite alternate;
+  }
+
+  @keyframes bounce {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-3px);
+    }
+  }
   
   @media (min-width: 992px) {
     .experience-container {
