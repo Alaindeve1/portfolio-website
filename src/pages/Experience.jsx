@@ -93,15 +93,17 @@ const Experience = () => {
       institution: "ADVENTIST UNIVERSITY OF CENTRAL AFRICA",
       location: "GASABO, GISHUSHU",
       duration: "2023 - present",
-      description: "Specialized in Web Technologies and Software Engineering"
+      description: "Specialized in Web Technologies and Software Engineering",
+      certificateUrl: "#" // Add your certificate URL here when available
     },
-     {
+    {
       id: 2,
       degree: "PRINCE2 (Project Management) Certification",
       institution: "Peoplecert - Article26",
       location: "REMOTE",
       duration: "'june-2025'-'august-2025'",
-      description: "An international framework used in project management certification"
+      description: "An international framework used in project management certification",
+      certificateUrl: "#" // Add your certificate URL here when available
     },
     {
       id: 3,
@@ -109,7 +111,8 @@ const Experience = () => {
       institution: "ALX",
       location: "Remote",
       duration: "2024",
-      description: "8 week intensive training in virtual assistance using various technologies."
+      description: "8 week intensive training in virtual assistance using various technologies.",
+      certificateUrl: "#" // Add your certificate URL here when available
     },
     {
       id: 4,
@@ -117,9 +120,24 @@ const Experience = () => {
       institution: "Internet society",
       location: "Remote",
       duration: "2024",
-      description: "4 weeks training in introduction to network operations."
+      description: "4 weeks training in introduction to network operations.",
+      certificateUrl: "#" // Add your certificate URL here when available
     },
   ];
+
+  const handleDownloadCertificate = (url, institution) => {
+    if (url && url !== '#') {
+      // Create a temporary anchor element
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = `${institution}_certificate`;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    } else {
+      alert('Certificate URL not available yet');
+    }
+  };
 
   return (
     <section className="experience-section">
@@ -174,6 +192,15 @@ const Experience = () => {
                   </div>
                   <div className="timeline-description">
                     <p>{t(`experience.educationItems.${edu.id}.description`, { defaultValue: edu.description })}</p>
+                    {edu.certificateUrl && (
+                      <button 
+                        className="certificate-download"
+                        onClick={() => handleDownloadCertificate(edu.certificateUrl, edu.institution)}
+                        aria-label={`Download ${edu.degree} certificate`}
+                      >
+                        <span className="download-icon">↓</span> Download Certificate
+                      </button>
+                    )}
                   </div>
                 </div>
               </div>
