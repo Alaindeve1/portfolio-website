@@ -94,7 +94,7 @@ const Experience = () => {
       location: "GASABO, GISHUSHU",
       duration: "2023 - present",
       description: "Specialized in Web Technologies and Software Engineering",
-      certificateUrl: "#" // Add your certificate URL here when available
+      
     },
     {
       id: 2,
