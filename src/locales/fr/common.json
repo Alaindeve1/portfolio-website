@@ -10,6 +10,9 @@
   "home": {
     "hero": {
       "title": "Bonjour, je suis {{name}}",
+      "role1": "Développeur back-end polyvalent",
+      "role2": "Compétences full-stack",
+      "role3": "Chef de projet certifié",
       "role": "Développeur back-end polyvalent | Compétences full-stack | Chef de projet certifié",
       "desc": "Développeur back-end spécialisé dans les solutions serveur robustes, avec des compétences full-stack issues d'une expérience front-end concrète. Chef de projet certifié PeopleCert, je possède une expérience en exploitation réseau et en assistance virtuelle. Je crée des systèmes performants et maintenables, alliant exécution technique et livraison stratégique."
     },
