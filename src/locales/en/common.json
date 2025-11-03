@@ -10,6 +10,9 @@
   "home": {
     "hero": {
       "title": "Hi, I'm {{name}}",
+      "role1": "Versatile Backend Developer",
+      "role2": "Full-Stack Capable",
+      "role3": "Certified Project Manager",
       "role": "Versatile Backend Developer | Full-Stack Capable | Certified Project Manager",
       "desc": "Backend developer specializing in robust server-side solutions with full-stack capabilities from hands-on frontend work. PeopleCert-certified project manager with experience in network operations and virtual assistance. I create efficient, maintainable systems while bridging technical execution with strategic delivery."
     },
