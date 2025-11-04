@@ -1,12 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 
 const Typewriter = ({ text, speed = 100, eraseSpeed = 50, delay = 1000, loop = true }) => {
   const [displayText, setDisplayText] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
-  const [currentIndex, setCurrentIndex] = useState(0);
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
   
-  const textArray = Array.isArray(text) ? text : [text];
+  const textArray = useMemo(() => Array.isArray(text) ? text : [text], [text]);
   const currentText = textArray[currentTextIndex];
   
   useEffect(() => {
