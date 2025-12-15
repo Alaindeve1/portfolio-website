@@ -131,10 +131,14 @@
         "description": "An international framework used in project management certification"
       },
       "3": {
-        "degree": "Certification in Virtual Assistance",
-        "description": "8-week intensive training in virtual assistance using various technologies."
+        "degree": "Duolingo English Test",
+        "description": "Performed an online duolingo english test and passed with a score of 130."
       },
       "4": {
+        "degree": "Duolingo English Test",
+        "description": "8-week intensive training in virtual assistance using various technologies."
+      },
+      "5": {
         "degree": "Certification in Network Operations 1",
         "description": "4 weeks training in introduction to network operations."
       }
