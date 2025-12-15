@@ -112,7 +112,7 @@ const Experience = () => {
       location: "Remote",
       duration: "2025",
       description: "Performed an online duolingo english test and passed with a score of 130.",
-      certificateUrl: "/assets/certificates/alx certificate .pdf"
+
     },
     {
       id: 4,
