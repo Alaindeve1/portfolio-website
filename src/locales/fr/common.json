@@ -131,10 +131,14 @@
         "description": "Cadre international utilisé pour la certification en gestion de projet"
       },
       "3": {
+        "degree": "Duolingo English Test",
+        "description": "J'ai effectué un test d'anglais duolingo en ligne et j'ai réussi avec un score de 130."
+      },
+      "4": {
         "degree": "Certification en assistance virtuelle",
         "description": "Formation intensive de 8 semaines en assistance virtuelle avec divers outils."
       },
-      "4": {
+      "5": {
         "degree": "Certification en opérations réseau 1",
         "description": "Formation de 4 semaines d'introduction aux opérations réseau."
       }
