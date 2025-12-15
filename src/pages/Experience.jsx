@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 
 const Experience = () => {
   const { t } = useTranslation('common');
-  
+
   const workExperience = [
     {
       id: 1,
@@ -17,7 +17,7 @@ const Experience = () => {
         "helped with graphical design ,flyers ,etc",
         "Optimized application performance resulting in a 30% decrease in load time"
       ],
-      technologies: ["css", "html", "javascript", "canva" , "wordpress" , "oracle", "pl/sql", "python", "excel","postgresql","java","springboot","docker","git","typescript","react js","word","virtualbox"]
+      technologies: ["css", "html", "javascript", "canva", "wordpress", "oracle", "pl/sql", "python", "excel", "postgresql", "java", "springboot", "docker", "git", "typescript", "react js", "word", "virtualbox"]
     },
     {
       id: 2,
@@ -28,9 +28,9 @@ const Experience = () => {
         "Implemented user authentication system with JWT and OAuth integration",
         "Created responsive frontend interfaces using React ,next javascript and styled-components"
       ],
-      technologies: ["Node.js", "springboot", "Oracle", "javascript", "react js", "html", "css","typescript","docker","git","google workspace","anydesk","zoom"]
+      technologies: ["Node.js", "springboot", "Oracle", "javascript", "react js", "html", "css", "typescript", "docker", "git", "google workspace", "anydesk", "zoom"]
     },
-    
+
     {
       id: 3,
       role: "IT Personnel",
@@ -38,11 +38,11 @@ const Experience = () => {
       location: "kigali ,gasabo gishushu",
       duration: "2022-2023",
       description: [
-        
-       "data analyst and virtual assistant as well as data entry clerk",
+
+        "data analyst and virtual assistant as well as data entry clerk",
         "Performed website maintenance & development and troubleshooting for clients"
       ],
-      technologies: ["JavaScript",  "HTML/CSS", "MySQL" , "oracle", "pl/sql", "python", "google workspace",]
+      technologies: ["JavaScript", "HTML/CSS", "MySQL", "oracle", "pl/sql", "python", "google workspace",]
     },
     {
       id: 4,
@@ -51,11 +51,11 @@ const Experience = () => {
       location: "kigali ,gasabo gishushu",
       duration: "2022-2023",
       description: [
-        
-       "data analyst and virtual assistant as well as data entry clerk",
+
+        "data analyst and virtual assistant as well as data entry clerk",
         "Performed website development and IT support for clients"
       ],
-      technologies: ["JavaScript",  "HTML/CSS", "MySQL" , "oracle", "pl/sql", "python", "google workspace",]
+      technologies: ["JavaScript", "HTML/CSS", "MySQL", "oracle", "pl/sql", "python", "google workspace",]
     },
     {
       id: 5,
@@ -68,7 +68,7 @@ const Experience = () => {
         "Implemented user authentication system with JWT and OAuth integration",
         "Created responsive frontend interfaces using React and styled-components"
       ],
-      technologies: ["next js", "springboot", "html", "javascript", "react js", "css","tailwind css","git","postgresql","tailwind css"]
+      technologies: ["next js", "springboot", "html", "javascript", "react js", "css", "tailwind css", "git", "postgresql", "tailwind css"]
     },
     {
       id: 6,
@@ -77,13 +77,13 @@ const Experience = () => {
       location: "remote",
       duration: "'may-2025'-'september-2025'",
       description: [
-       "Completed a comprehensive fullstack development internship focusing on java , responsive web design, JavaScript frameworks, and modern web technologies.",
+        "Completed a comprehensive fullstack development internship focusing on java , responsive web design, JavaScript frameworks, and modern web technologies.",
         "Built interactive applications using HTML5, CSS3, JavaScript, React/Vue.js, and integrated REST APIs.",
         " Developed skills in responsive design, performance optimization, and user experience enhancement through hands-on projects including SPAs, component libraries, and advanced animations."
       ],
-      technologies: ["Responsive Web Design", "React.js", "Performance Optimization", "JavaScript (ES6+)", "REST API Integration", "html&css","tailwind css","git","java"]
+      technologies: ["Responsive Web Design", "React.js", "Performance Optimization", "JavaScript (ES6+)", "REST API Integration", "html&css", "tailwind css", "git", "java"]
     },
-    
+
   ];
 
   const education = [
@@ -94,7 +94,7 @@ const Experience = () => {
       location: "GASABO, GISHUSHU",
       duration: "2023 - present",
       description: "Specialized in Web Technologies and Software Engineering",
-      
+
     },
     {
       id: 2,
@@ -112,16 +112,25 @@ const Experience = () => {
       location: "Remote",
       duration: "2024",
       description: "8 week intensive training in virtual assistance using various technologies.",
-      certificateUrl: "/assets/certificates/alx certificate .pdf" 
+      certificateUrl: "/assets/certificates/alx certificate .pdf"
     },
     {
       id: 4,
+      degree: "certification in virtual assistance",
+      institution: "ALX",
+      location: "Remote",
+      duration: "2024",
+      description: "8 week intensive training in virtual assistance using various technologies.",
+      certificateUrl: "/assets/certificates/alx certificate .pdf"
+    },
+    {
+      id: 5,
       degree: "certification in network operations 1",
       institution: "Internet society",
       location: "Remote",
       duration: "2024",
       description: "4 weeks training in introduction to network operations.",
-      certificateUrl: "/assets/certificates/netops certificate.pdf" 
+      certificateUrl: "/assets/certificates/netops certificate.pdf"
     },
   ];
 
@@ -143,11 +152,11 @@ const Experience = () => {
     <section className="experience-section">
       <div className="container">
         <h1 className="section-title">{t('experience.title')}</h1>
-        
+
         <div className="experience-container">
           <div className="timeline">
             <h2 className="timeline-title">{t('experience.work')}</h2>
-            
+
             {workExperience.map(job => (
               <div className="timeline-item" key={job.id}>
                 <div className="timeline-dot"></div>
@@ -175,10 +184,10 @@ const Experience = () => {
               </div>
             ))}
           </div>
-          
+
           <div className="timeline">
             <h2 className="timeline-title">{t('experience.education')}</h2>
-            
+
             {education.map(edu => (
               <div className="timeline-item" key={edu.id}>
                 <div className="timeline-dot"></div>
@@ -193,7 +202,7 @@ const Experience = () => {
                   <div className="timeline-description">
                     <p>{t(`experience.educationItems.${edu.id}.description`, { defaultValue: edu.description })}</p>
                     {edu.certificateUrl && (
-                      <button 
+                      <button
                         className="certificate-download"
                         onClick={() => handleDownloadCertificate(edu.certificateUrl, edu.institution)}
                         aria-label={`Download ${edu.degree} certificate`}
