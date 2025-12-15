@@ -107,8 +107,8 @@ const Experience = () => {
     },
     {
       id: 3,
-      degree: "certification in virtual assistance",
-      institution: "ALX",
+      degree: "Duolingo English Test",
+      institution: "Duolingo",
       location: "Remote",
       duration: "2024",
       description: "8 week intensive training in virtual assistance using various technologies.",
