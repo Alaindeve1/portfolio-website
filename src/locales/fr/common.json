@@ -141,6 +141,14 @@
       "5": {
         "degree": "Certification en opérations réseau 1",
         "description": "Formation de 4 semaines d'introduction aux opérations réseau."
+      },
+      "6": {
+        "degree": "Optimisation de l'utilisation d'outils d'intelligence artificielle & ingénierie de prompts",
+        "description": "Ingénierie de prompts – Élaboration d'instructions précises pour exploiter pleinement le potentiel de l'IA, Productivité alimentée par l'IA – Automatisation des flux de travail et optimisation des processus de développement, Applications d'IA générative – Utilisation d'outils comme ChatGPT, Claude, Copilot et plus encore, Résolution créative de problèmes – Utilisation de l'IA pour tout, de la génération de code au débogage complexe"
+      },
+      "7": {
+        "degree": "Certificat de fondamentaux en IA",
+        "description": "Apprentissage automatique & apprentissage profond – Compréhension des algorithmes qui alimentent les systèmes intelligents, Vision par ordinateur – Techniques de reconnaissance d'images et de traitement de données visuelles, Traitement du langage naturel – Création d'applications qui comprennent le langage humain, Réseaux de neurones – Architecture et implémentation de modèles d'apprentissage profond, Éthique de l'IA – Développement responsable de l'IA et considérations éthiques, IBM Watson Studio – Expérience pratique avec des outils d'IA de pointe"
       }
     }
   },
