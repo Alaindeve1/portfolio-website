@@ -132,6 +132,15 @@ const Experience = () => {
       description: "4 weeks training in introduction to network operations.",
       certificateUrl: "/assets/certificates/netops certificate.pdf"
     },
+    {
+      id: 6,
+      degree: "Artificial intelligence tools use optimisation & prompt engineering",
+      institution: "One million prompters",
+      location: "Remote",
+      duration: "2026",
+      description: " Prompt Engineering – Crafting precise instructions to unlock AI's full potential, AI-Powered Productivity – Automating workflows and optimizing development processes ,Generative AI Applications – Leveraging tools like ChatGPT, Claude, Copilot, and more, Creative Problem-Solving – Using AI for everything from code generation to complex debugging",
+      certificateUrl: "assets/certificates/AI fundamentals certificate.pdf"
+    },
   ];
 
   const handleDownloadCertificate = (url, institution) => {
