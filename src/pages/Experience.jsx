@@ -141,6 +141,21 @@ const Experience = () => {
       description: " Prompt Engineering – Crafting precise instructions to unlock AI's full potential, AI-Powered Productivity – Automating workflows and optimizing development processes ,Generative AI Applications – Leveraging tools like ChatGPT, Claude, Copilot, and more, Creative Problem-Solving – Using AI for everything from code generation to complex debugging",
       certificateUrl: "assets/certificates/AI fundamentals certificate.pdf"
     },
+     {
+      id: 7,
+      degree: "AI Fundamentals certificate",
+      institution: "IBM SkillsBuild",
+      location: "Remote",
+      duration: "2026",
+      description: `Machine Learning & Deep Learning – Understanding algorithms that power intelligent systems
+Computer Vision – Image recognition and visual data processing techniques
+Natural Language Processing – Building applications that understand human language
+Neural Networks – Architecture and implementation of deep learning models
+AI Ethics – Responsible AI development and ethical considerations
+IBM Watson Studio – Hands-on experience with industry-leading AI`,
+ 
+      certificateUrl: "assets/certificates/AI fundamentals certificate.pdf"
+    },
   ];
 
   const handleDownloadCertificate = (url, institution) => {
