@@ -25,8 +25,6 @@ const projectsData = [
     ],
     image: "/assets/images/Screenshot 2025-06-12 141855.webp",
     fallbackImage: "/assets/images/Screenshot 2025-06-12 141855.png",
-    liveLink:
-      "https://auction-managment-system-chi.vercel.app/",
     githubLink: "https://github.com/Alaindeve1/AUCTION-MANAGMENT-SYSTEM",
     category: "fullstack",
   },
@@ -37,8 +35,6 @@ const projectsData = [
     technologies: ["HTML", "CSS", "JavaScript"],
     image: "/assets/images/the fox.webp",
     fallbackImage: "/assets/images/the fox.png",
-    liveLink:
-      "https://www.loom.com/share/746caed9489647509e4b167a87293ad2?sid=9e60118d-dc52-4d47-b64b-a6dc508afb94",
     githubLink: "https://github.com/Alaindeve1/the-fox-website",
     category: "frontend",
   },
@@ -49,7 +45,6 @@ const projectsData = [
     technologies: ["Next JS", "Tailwind CSS", "TypeScript"],
     image: "/assets/images/nextjs.webp",
     fallbackImage: "/assets/images/nextjs.png",
-    liveLink: "https://ndizeye-portfolio2.netlify.app/",
     githubLink: "https://github.com/Alaindeve1/typescript-nextjs",
     category: "frontend",
   },
@@ -61,7 +56,6 @@ const projectsData = [
     technologies: ["React JS", "Tailwind CSS", "openweathermap API"],
     image: "/assets/images/weatherdash1.webp",
     fallbackImage: "/assets/images/weatherdash2.png",
-    liveLink: "https://weatherdash-alain.vercel.app/",
     githubLink: "https://github.com/Alaindeve1/frontend-intermediate-codveda",
     category: "frontend",
   },
