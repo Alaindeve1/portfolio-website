@@ -32,18 +32,6 @@ const projectsData = [
   },
   {
     id: 3,
-    title: "Auction Static Web",
-    description:
-      "A responsive static website for an auction platform, showcasing items and services.",
-    technologies: ["HTML", "CSS", "JavaScript", "Responsive Design"],
-    image: "/assets/images/netlify.webp",
-    fallbackImage: "/assets/images/netlify.png",
-    liveLink: "https://lucky-puffpuff-669d75.netlify.app/",
-    githubLink: "https://github.com/",
-    category: "frontend",
-  },
-  {
-    id: 4,
     title: "THE FOX WEB ",
     description: "A static website using HTML, CSS, and JavaScript.",
     technologies: ["HTML", "CSS", "JavaScript"],
@@ -55,7 +43,7 @@ const projectsData = [
     category: "frontend",
   },
   {
-    id: 5,
+    id: 4,
     title: "PORTFOLIO 2",
     description: "A portfolio website using Next JS, Tailwind CSS, and TypeScript.",
     technologies: ["Next JS", "Tailwind CSS", "TypeScript"],
@@ -66,7 +54,7 @@ const projectsData = [
     category: "frontend",
   },
   {
-    id: 6,
+    id: 5,
     title: "WeatherDash App",
     description:
       "A weather dashboard app that uses OpenWeatherMap API to display current weather conditions and forecasts.",
@@ -78,7 +66,7 @@ const projectsData = [
     category: "frontend",
   },
   {
-    id: 7,
+    id: 6,
     title: "Amusement Hub",
     description:
       "An backend amusement hub project developed using express.js and node.js with postgresql database .",
