@@ -61,7 +61,7 @@
     }
   },
   "projectDescriptions": {
-    "1": "Application Java Swing pour gérer les étudiants et le personnel avec connexion à la base de données via XAMPP (MySQL)",
+    "1": "Une application de bureau complète développée avec Java Swing qui rationalise l'administration des étudiants et du personnel. Intègre une connexion sécurisée à une base de données via MySQL, permettant une gestion efficace des utilisateurs, la récupération de données et des flux de travail administratifs. Implémente des opérations CRUD avec une interface graphique conviviale pour une productivité institutionnelle accrue.",
     "2": "Un projet fullstack utilisant le framework Spring Boot et Java avec PostgreSQL pour gérer les enchères pour les acheteurs et les vendeurs dans un environnement basé sur le temps réel.",
     "3": "Site statique réalisé en HTML, CSS et JavaScript.",
     "4": "Application météo utilisant l'API OpenWeatherMap pour afficher les conditions actuelles et les prévisions.",
