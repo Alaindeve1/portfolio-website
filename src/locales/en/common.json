@@ -62,7 +62,7 @@
   },
   "projectDescriptions": {
     "1": "A comprehensive desktop application built with Java Swing that streamlines student and staff administration. Features secure database integration via MySQL, enabling efficient user management, data retrieval, and administrative workflows. Implements CRUD operations with a user-friendly GUI for enhanced institutional productivity.",
-    "2": "A fullstack project using springboot framework and java with postgreSQL to manage auctions for both buyers and sellers in a realtime based environment.",
+    "2": "A full-stack real-time auction platform engineered with Spring Boot and PostgreSQL. Delivers seamless bidding experiences for buyers and sellers through RESTful APIs and real-time data synchronization. Features secure user authentication, dynamic bid management, and robust database architecture to ensure transactional integrity and scalability.",
     "3": "A static website using HTML, CSS, and JavaScript.",
     "4": "A weather dashboard app that uses OpenWeatherMap API to display current weather conditions and forecasts.",
     "5": "An backend amusement hub project developed using express.js and node.js with postgresql database ."
