@@ -63,7 +63,7 @@
   "projectDescriptions": {
     "1": "Une application de bureau complète développée avec Java Swing qui rationalise l'administration des étudiants et du personnel. Intègre une connexion sécurisée à une base de données via MySQL, permettant une gestion efficace des utilisateurs, la récupération de données et des flux de travail administratifs. Implémente des opérations CRUD avec une interface graphique conviviale pour une productivité institutionnelle accrue.",
     "2": "Une plateforme d'enchères en temps réel full-stack conçue avec Spring Boot et PostgreSQL. Offre des expériences d'enchères fluides pour les acheteurs et les vendeurs grâce à des API RESTful et une synchronisation de données en temps réel. Comprend une authentification sécurisée des utilisateurs, une gestion dynamique des enchères et une architecture de base de données robuste garantissant l'intégrité transactionnelle et l'évolutivité.",
-    "3": "Site statique réalisé en HTML, CSS et JavaScript.",
+    "3": "Un site web statique responsive démontrant des pratiques modernes de développement front-end. Construit avec HTML5 sémantique, CSS3 et JavaScript vanilla pour offrir une expérience utilisateur élégante. Démontre la maîtrise des principes de design responsive, de la manipulation du DOM et de la compatibilité multi-navigateurs.",
     "4": "Application météo utilisant l'API OpenWeatherMap pour afficher les conditions actuelles et les prévisions.",
     "5": "Projet backend d'espace de divertissement développé avec Express.js, Node.js et PostgreSQL."
   },
