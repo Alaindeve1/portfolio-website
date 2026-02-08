@@ -38,18 +38,9 @@ const projectsData = [
     githubLink: "https://github.com/Alaindeve1/the-fox-website",
     category: "frontend",
   },
+
   {
     id: 4,
-    title: "PORTFOLIO 2",
-    description: "A portfolio website using Next JS, Tailwind CSS, and TypeScript.",
-    technologies: ["Next JS", "Tailwind CSS", "TypeScript"],
-    image: "/assets/images/nextjs.webp",
-    fallbackImage: "/assets/images/nextjs.png",
-    githubLink: "https://github.com/Alaindeve1/typescript-nextjs",
-    category: "frontend",
-  },
-  {
-    id: 5,
     title: "WeatherDash App",
     description:
       "A weather dashboard app that uses OpenWeatherMap API to display current weather conditions and forecasts.",
