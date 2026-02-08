@@ -64,9 +64,8 @@
     "1": "Application Java Swing pour gérer les étudiants et le personnel avec connexion à la base de données via XAMPP (MySQL)",
     "2": "Un projet fullstack utilisant le framework Spring Boot et Java avec PostgreSQL pour gérer les enchères pour les acheteurs et les vendeurs dans un environnement basé sur le temps réel.",
     "3": "Site statique réalisé en HTML, CSS et JavaScript.",
-    "4": "Site portfolio développé avec Next JS, Tailwind CSS et TypeScript.",
-    "5": "Application météo utilisant l'API OpenWeatherMap pour afficher les conditions actuelles et les prévisions.",
-    "6": "Projet backend d'espace de divertissement développé avec Express.js, Node.js et PostgreSQL."
+    "4": "Application météo utilisant l'API OpenWeatherMap pour afficher les conditions actuelles et les prévisions.",
+    "5": "Projet backend d'espace de divertissement développé avec Express.js, Node.js et PostgreSQL."
   },
   "experience": {
     "title": "Expérience & Formation",
