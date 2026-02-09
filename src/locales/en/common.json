@@ -65,7 +65,7 @@
     "2": "A full-stack real-time auction platform engineered with Spring Boot and PostgreSQL. Delivers seamless bidding experiences for buyers and sellers through RESTful APIs and real-time data synchronization. Features secure user authentication, dynamic bid management, and robust database architecture to ensure transactional integrity and scalability.",
     "3": "A responsive  website showcasing modern front-end development practices. Built with semantic HTML5, CSS3, and vanilla JavaScript to deliver an elegant user experience. Demonstrates proficiency in responsive design principles, DOM manipulation, and cross-browser compatibility.",
     "4": "A dynamic weather dashboard application that leverages the OpenWeatherMap API to deliver real-time meteorological data and multi-day forecasts. Built with React JS and styled with Tailwind CSS for a modern, responsive interface. Features location-based weather tracking, interactive UI components, and efficient state management to provide users with accurate and accessible weather information.",
-    "5": "An backend amusement hub project developed using express.js and node.js with postgresql database ."
+    "5": "A scalable backend system for amusement park management developed with Node.js and Express.js. Implements RESTful API architecture with PostgreSQL database integration for efficient data persistence. Features robust server-side logic for handling attractions, visitor management, and operational workflows, demonstrating proficiency in asynchronous programming and database design."
   },
   "experience": {
     "title": "Experience & Education",
