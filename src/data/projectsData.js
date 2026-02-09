@@ -54,7 +54,7 @@ const projectsData = [
     id: 6,
     title: "Amusement Hub",
     description:
-      "An backend amusement hub project developed using express.js and node.js with postgresql database .",
+      "A scalable backend system for amusement park management developed with Node.js and Express.js. Implements RESTful API architecture with PostgreSQL database integration for efficient data persistence. Features robust server-side logic for handling attractions, visitor management, and operational workflows, demonstrating proficiency in asynchronous programming and database design.",
     technologies: ["Express.js", "Node.js", "PostgreSQL"],
     image: "/assets/images/amusement-hub2.webp",
     fallbackImage: "/assets/images/amusement-hub2.png",
