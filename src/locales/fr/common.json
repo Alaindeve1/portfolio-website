@@ -118,6 +118,15 @@
           "1": "Applications interactives avec HTML5, CSS3, JavaScript, React/Vue.js et intégration d'API REST.",
           "2": "Compétences en optimisation des performances et UX via des projets concrets (SPA, bibliothèques de composants, animations avancées)."
         }
+      },
+      "7": {
+        "role": "Stagiaire en Ingénierie Logicielle & Entrée sur le Marché",
+        "desc": {
+          "0": "Mener des études de marché à Kigali pour identifier des opportunités de déploiement pour Flowcode, une plateforme de conversion numérique utilisée par des entreprises du Fortune 500 (ESPN, Ford, Uber Eats).",
+          "1": "Concevoir et déployer des expériences numériques basées sur des QR codes pour des entreprises rwandaises, en suivant l'engagement et les performances de conversion grâce aux analyses.",
+          "2": "Développer une application basée sur des API en utilisant la plateforme développeur de Flowcode pour répondre aux besoins du marché local.",
+          "3": "Synthétiser 10 semaines de recherche sur le terrain, d'entretiens clients et de données de déploiement dans un plan stratégique d'opportunités au Rwanda ('Rwanda Opportunity Blueprint') présenté à la direction de l'entreprise."
+        }
       }
     },
     "educationItems": {

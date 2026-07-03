@@ -118,6 +118,15 @@
           "1": "Built interactive applications using HTML5, CSS3, JavaScript, React/Vue.js, and integrated REST APIs.",
           "2": "Developed skills in responsive design, performance optimization, and user experience enhancement through hands-on projects including SPAs, component libraries, and advanced animations."
         }
+      },
+      "7": {
+        "role": "Software Engineering & Market Entry Intern",
+        "desc": {
+          "0": "Conducting market research across Kigali to identify product deployment opportunities for Flowcode, a digital conversion platform used by Fortune 500 companies (ESPN, Ford, Uber Eats).",
+          "1": "Building and deploying live QR-based digital experiences for Rwandan businesses, tracking engagement and conversion performance through analytics.",
+          "2": "Developing an API-powered application using Flowcode's developer platform to address a local market need.",
+          "3": "Synthesizing 10 weeks of field research, customer interviews, and deployment data into a Rwanda Opportunity Blueprint presented to company leadership."
+        }
       }
     },
     "educationItems": {

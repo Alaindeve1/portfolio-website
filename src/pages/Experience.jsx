@@ -7,6 +7,20 @@ const Experience = () => {
 
   const workExperience = [
     {
+      id: 7,
+      role: "Software Engineering & Market Entry Intern",
+      company: "Flowcode",
+      location: "New York, USA (Remote)",
+      duration: "May 2026 - Present",
+      description: [
+        "Conducting market research across Kigali to identify product deployment opportunities for Flowcode, a digital conversion platform used by Fortune 500 companies (ESPN, Ford, Uber Eats).",
+        "Building and deploying live QR-based digital experiences for Rwandan businesses, tracking engagement and conversion performance through analytics.",
+        "Developing an API-powered application using Flowcode's developer platform to address a local market need.",
+        "Synthesizing 10 weeks of field research, customer interviews, and deployment data into a Rwanda Opportunity Blueprint presented to company leadership."
+      ],
+      technologies: ["React.js", "Node.js", "API Integration", "Data Analytics", "Market Research", "Product Strategy"]
+    },
+    {
       id: 1,
       role: "junior software developer & it personnel",
       company: "fabritech.",
