@@ -67,8 +67,8 @@ const projectsData = [
     description:
       "An Android telehealth platform bridging rural Community Health Workers and hospital doctors through real-time WebRTC video consultations, with live patient vital sign sharing during calls. Built in Java with Firebase (Authentication, Firestore, Cloud Messaging, Crashlytics), Room Database, Retrofit, WebRTC, and Socket.IO. Follows MVVM architecture with offline-first design and background synchronization via WorkManager.",
     technologies: ["Java", "Android", "Firebase", "WebRTC", "Socket.IO", "Room Database", "Retrofit", "WorkManager", "MVVM"],
-    image: "/assets/images/health-connect.png",
-    fallbackImage: "/assets/images/health-connect.png",
+    image: "/assets/images/health-connect.webp",
+    fallbackImage: "/assets/images/health-connect.jpg",
     githubLink: "https://github.com/Alaindeve1/Telehealth-SRS-Project",
     category: "fullstack",
   },
