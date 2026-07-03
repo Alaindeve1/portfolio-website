@@ -35,12 +35,18 @@ const About = () => {
             <p>
             {t('about.description')}
             </p>
-            
+          </div>
+        </div>
+
+        <div className="about-details">
+          <div className="about-detail-block">
             <h3>{t('about.journeyTitle')}</h3>
             <p>
             {t('about.journeyDesc')}
             </p>
-            
+          </div>
+          
+          <div className="about-detail-block">
             <h3>{t('about.drivesTitle')}</h3>
             <p>
               {t('about.drivesDesc')}
