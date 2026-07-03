@@ -21,57 +21,6 @@ const Experience = () => {
       technologies: ["React.js", "Node.js", "API Integration", "Data Analytics", "Market Research", "Product Strategy"]
     },
     {
-      id: 1,
-      role: "junior software developer & it personnel",
-      company: "fabritech.",
-      location: "kigali ,gasabo gishushu",
-      duration: "2023",
-      description: [
-        "development of a website using html,css and javascript",
-        "helped with graphical design ,flyers ,etc",
-        "Optimized application performance resulting in a 30% decrease in load time"
-      ],
-      technologies: ["css", "html", "javascript", "canva", "wordpress", "oracle", "pl/sql", "python", "excel", "postgresql", "java", "springboot", "docker", "git", "typescript", "react js", "word", "virtualbox"]
-    },
-    {
-      id: 2,
-      role: "Full Stack developer ,data entry & virtual assistant freelancer",
-      location: "kigali ,gasabo gishushu",
-      duration: "2022-now",
-      description: [
-        "Implemented user authentication system with JWT and OAuth integration",
-        "Created responsive frontend interfaces using React ,next javascript and styled-components"
-      ],
-      technologies: ["Node.js", "springboot", "Oracle", "javascript", "react js", "html", "css", "typescript", "docker", "git", "google workspace", "anydesk", "zoom"]
-    },
-
-    {
-      id: 3,
-      role: "IT Personnel",
-      company: "the fox company",
-      location: "kigali ,gasabo gishushu",
-      duration: "2022-2023",
-      description: [
-
-        "data analyst and virtual assistant as well as data entry clerk",
-        "Performed website maintenance & development and troubleshooting for clients"
-      ],
-      technologies: ["JavaScript", "HTML/CSS", "MySQL", "oracle", "pl/sql", "python", "google workspace",]
-    },
-    {
-      id: 4,
-      role: "Web developer & Data entry clerk",
-      company: "Stinda media ltd",
-      location: "kigali ,gasabo gishushu",
-      duration: "2022-2023",
-      description: [
-
-        "data analyst and virtual assistant as well as data entry clerk",
-        "Performed website development and IT support for clients"
-      ],
-      technologies: ["JavaScript", "HTML/CSS", "MySQL", "oracle", "pl/sql", "python", "google workspace",]
-    },
-    {
       id: 5,
       company: "desc softlab ltd",
       role: "Full Stack Developer",
@@ -83,6 +32,17 @@ const Experience = () => {
         "Created responsive frontend interfaces using React and styled-components"
       ],
       technologies: ["next js", "springboot", "html", "javascript", "react js", "css", "tailwind css", "git", "postgresql", "tailwind css"]
+    },
+    {
+      id: 2,
+      role: "Full Stack developer ,data entry & virtual assistant freelancer",
+      location: "kigali ,gasabo gishushu",
+      duration: "2022-now",
+      description: [
+        "Implemented user authentication system with JWT and OAuth integration",
+        "Created responsive frontend interfaces using React ,next javascript and styled-components"
+      ],
+      technologies: ["Node.js", "springboot", "Oracle", "javascript", "react js", "html", "css", "typescript", "docker", "git", "google workspace", "anydesk", "zoom"]
     },
     {
       id: 6,
@@ -97,7 +57,43 @@ const Experience = () => {
       ],
       technologies: ["Responsive Web Design", "React.js", "Performance Optimization", "JavaScript (ES6+)", "REST API Integration", "html&css", "tailwind css", "git", "java"]
     },
-
+    {
+      id: 1,
+      role: "junior software developer & it personnel",
+      company: "fabritech.",
+      location: "kigali ,gasabo gishushu",
+      duration: "2023",
+      description: [
+        "development of a website using html,css and javascript",
+        "helped with graphical design ,flyers ,etc",
+        "Optimized application performance resulting in a 30% decrease in load time"
+      ],
+      technologies: ["css", "html", "javascript", "canva", "wordpress", "oracle", "pl/sql", "python", "excel", "postgresql", "java", "springboot", "docker", "git", "typescript", "react js", "word", "virtualbox"]
+    },
+    {
+      id: 3,
+      role: "IT Personnel",
+      company: "the fox company",
+      location: "kigali ,gasabo gishushu",
+      duration: "2022-2023",
+      description: [
+        "data analyst and virtual assistant as well as data entry clerk",
+        "Performed website maintenance & development and troubleshooting for clients"
+      ],
+      technologies: ["JavaScript", "HTML/CSS", "MySQL", "oracle", "pl/sql", "python", "google workspace",]
+    },
+    {
+      id: 4,
+      role: "Web developer & Data entry clerk",
+      company: "Stinda media ltd",
+      location: "kigali ,gasabo gishushu",
+      duration: "2022-2023",
+      description: [
+        "data analyst and virtual assistant as well as data entry clerk",
+        "Performed website development and IT support for clients"
+      ],
+      technologies: ["JavaScript", "HTML/CSS", "MySQL", "oracle", "pl/sql", "python", "google workspace",]
+    },
   ];
 
   const education = [
@@ -116,7 +112,29 @@ const Experience = () => {
       location: "GASABO, GISHUSHU",
       duration: "2023 - present",
       description: "Specialized in Web Technologies and Software Engineering",
-
+    },
+    {
+      id: 7,
+      degree: "AI Fundamentals certificate",
+      institution: "IBM SkillsBuild",
+      location: "Remote",
+      duration: "2026",
+      description: `Machine Learning & Deep Learning – Understanding algorithms that power intelligent systems
+Computer Vision – Image recognition and visual data processing techniques
+Natural Language Processing – Building applications that understand human language
+Neural Networks – Architecture and implementation of deep learning models
+AI Ethics – Responsible AI development and ethical considerations
+IBM Watson Studio – Hands-on experience with industry-leading AI`,
+      certificateUrl: "assets/certificates/AI fundamentals certificate.pdf"
+    },
+    {
+      id: 6,
+      degree: "Artificial intelligence tools use optimisation & prompt engineering",
+      institution: "One million prompters",
+      location: "Remote",
+      duration: "2026",
+      description: " Prompt Engineering – Crafting precise instructions to unlock AI's full potential, AI-Powered Productivity – Automating workflows and optimizing development processes ,Generative AI Applications – Leveraging tools like ChatGPT, Claude, Copilot, and more, Creative Problem-Solving – Using AI for everything from code generation to complex debugging",
+      certificateUrl: "assets/certificates/AI fundamentals certificate.pdf"
     },
     {
       id: 2,
@@ -134,7 +152,6 @@ const Experience = () => {
       location: "Remote",
       duration: "2025",
       description: "Performed an online duolingo english test and passed with a score of 130.",
-
     },
     {
       id: 4,
@@ -153,30 +170,6 @@ const Experience = () => {
       duration: "2024",
       description: "4 weeks training in introduction to network operations.",
       certificateUrl: "/assets/certificates/netops certificate.pdf"
-    },
-    {
-      id: 6,
-      degree: "Artificial intelligence tools use optimisation & prompt engineering",
-      institution: "One million prompters",
-      location: "Remote",
-      duration: "2026",
-      description: " Prompt Engineering – Crafting precise instructions to unlock AI's full potential, AI-Powered Productivity – Automating workflows and optimizing development processes ,Generative AI Applications – Leveraging tools like ChatGPT, Claude, Copilot, and more, Creative Problem-Solving – Using AI for everything from code generation to complex debugging",
-      certificateUrl: "assets/certificates/AI fundamentals certificate.pdf"
-    },
-     {
-      id: 7,
-      degree: "AI Fundamentals certificate",
-      institution: "IBM SkillsBuild",
-      location: "Remote",
-      duration: "2026",
-      description: `Machine Learning & Deep Learning – Understanding algorithms that power intelligent systems
-Computer Vision – Image recognition and visual data processing techniques
-Natural Language Processing – Building applications that understand human language
-Neural Networks – Architecture and implementation of deep learning models
-AI Ethics – Responsible AI development and ethical considerations
-IBM Watson Studio – Hands-on experience with industry-leading AI`,
- 
-      certificateUrl: "assets/certificates/AI fundamentals certificate.pdf"
     },
   ];
 
