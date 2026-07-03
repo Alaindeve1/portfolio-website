@@ -11,7 +11,8 @@ import Typewriter from '../components/Typewriter';
 
 const Home = () => {
   const { t } = useTranslation('common');
-  const auctionProject = projectsData.find(p => p.id === 2);
+  const healthConnectProject = projectsData.find(p => p.id === 6);
+  const sdaProject = projectsData.find(p => p.id === 7);
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef(null);
 
@@ -35,6 +36,7 @@ const Home = () => {
       observer.unobserve(currentRef);
     };
   }, []);
+
   return (
     <section className="home-section" ref={sectionRef}>
       <div className="container">
@@ -61,7 +63,6 @@ const Home = () => {
               </Link>
               <Link to="/contact" className="btn btn-secondary">
                 {t('home.cta.contact')}
-                
               </Link>
             </div>
             {/* WhatsApp CTA Card */}
@@ -120,17 +121,19 @@ const Home = () => {
         <div className={`featured-projects fade-in ${isVisible ? 'visible' : ''}`}>
           <h2 className="section-title">{t('home.featured.title')}</h2>
           <div className="projects-preview">
+
+            {/* Health-Connect Featured Card */}
             <div className="project-card">
               <div className="project-image">
                 <div className="image-container">
                   <picture>
                     <source 
-                      srcSet="/assets/images/Screenshot 2025-06-12 141855.webp" 
+                      srcSet={healthConnectProject?.image} 
                       type="image/webp" 
                     />
                     <img 
-                      src="/assets/images/Screenshot 2025-06-12 141855.png" 
-                      alt="Student Portal" 
+                      src={healthConnectProject?.fallbackImage} 
+                      alt="Health-Connect telehealth platform" 
                       className="project-img"
                       loading="lazy"
                       width="600"
@@ -143,34 +146,33 @@ const Home = () => {
                   </picture>
                 </div>
                 <div className="project-tech">
-                  <span>Java</span>
-                  <span>React.js</span>
-                  <span>PostgreSQL</span>
-                  <span>Springboot</span>
-                  <span>Tailwind CSS</span>
+                  {healthConnectProject?.technologies.slice(0, 5).map((tech, i) => (
+                    <span key={i}>{tech}</span>
+                  ))}
                 </div>
               </div>
               <div className="project-info">
-                <h3>AUCTION MANAGMENT SYSTEM</h3>
-                <p>{t('projectDescriptions.2', { defaultValue: auctionProject?.description })}</p>
+                <h3>{healthConnectProject?.title}</h3>
+                <p>{t('projectDescriptions.6', { defaultValue: healthConnectProject?.description })}</p>
                 <Link to="/projects" className="project-link">
                   {t('home.featured.learnMore')}
                   <span>→</span>
                 </Link>
               </div>
             </div>
-            
+
+            {/* AI-Enhanced SDA Community Platform Featured Card */}
             <div className="project-card">
               <div className="project-image">
                 <div className="image-container">
                   <picture>
                     <source 
-                      srcSet="/assets/images/ishore-ecommerce-outsourcing.webp" 
+                      srcSet={sdaProject?.image} 
                       type="image/webp" 
                     />
                     <img 
-                      src="/assets/images/ishore-ecommerce-outsourcing.png" 
-                      alt="E-commerce Project" 
+                      src={sdaProject?.fallbackImage} 
+                      alt="AI-Enhanced SDA Community Platform" 
                       className="project-img"
                       loading="lazy"
                       width="600"
@@ -183,20 +185,21 @@ const Home = () => {
                   </picture>
                 </div>
                 <div className="project-tech">
-                  <span>React</span>
-                  <span>Node.js</span>
-                  <span>MongoDB</span>
+                  {sdaProject?.technologies.slice(0, 5).map((tech, i) => (
+                    <span key={i}>{tech}</span>
+                  ))}
                 </div>
               </div>
               <div className="project-info">
-                <h3>E-COMMERCE</h3>
-                <p>{t('home.featured.descriptions.ecommerce')}</p>
+                <h3>{sdaProject?.title}</h3>
+                <p>{t('projectDescriptions.7', { defaultValue: sdaProject?.description })}</p>
                 <Link to="/projects" className="project-link">
                   {t('home.featured.learnMore')}
                   <span>→</span>
                 </Link>
               </div>
             </div>
+
           </div>
         </div>
         
@@ -206,3 +209,4 @@ const Home = () => {
 };
 
 export default Home;
+

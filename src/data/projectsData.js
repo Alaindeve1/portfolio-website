@@ -61,6 +61,28 @@ const projectsData = [
     githubLink: "https://github.com/Alaindeve1/amusement-hub",
     category: "backend",
   },
+  {
+    id: 6,
+    title: "Health-Connect",
+    description:
+      "An Android telehealth platform bridging rural Community Health Workers and hospital doctors through real-time WebRTC video consultations, with live patient vital sign sharing during calls. Built in Java with Firebase (Authentication, Firestore, Cloud Messaging, Crashlytics), Room Database, Retrofit, WebRTC, and Socket.IO. Follows MVVM architecture with offline-first design and background synchronization via WorkManager.",
+    technologies: ["Java", "Android", "Firebase", "WebRTC", "Socket.IO", "Room Database", "Retrofit", "WorkManager", "MVVM"],
+    image: "/assets/images/health-connect.png",
+    fallbackImage: "/assets/images/health-connect.png",
+    githubLink: "https://github.com/Alaindeve1/health-connect",
+    category: "fullstack",
+  },
+  {
+    id: 7,
+    title: "AI-Enhanced SDA Community Platform",
+    description:
+      "A hybrid intelligent system for the Rwanda Seventh-day Adventist Union providing personalized multilingual devotionals, AI-powered prayer sentiment analysis, and smart content recommendations. Combines traditional ML (TF-IDF, cosine similarity with scikit-learn) and Google Gemini AI. Built with Python FastAPI, Spring Boot, React/Tailwind CSS, PostgreSQL, and Docker. Features an intelligent caching system achieving 70% cost reduction, MVVM-inspired separation, offline capability, and full API documentation. Deployed to Railway.",
+    technologies: ["Python", "FastAPI", "Spring Boot", "React", "Tailwind CSS", "PostgreSQL", "Docker", "Google Gemini AI", "scikit-learn", "Railway"],
+    image: "/assets/images/sda-platform.webp",
+    fallbackImage: "/assets/images/sda-platform.png",
+    githubLink: "https://github.com/Alaindeve1/sda-community-platform",
+    category: "fullstack",
+  },
 ];
 
 export default projectsData;
