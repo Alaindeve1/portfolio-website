@@ -462,20 +462,21 @@
   font-size: 1rem !important;
 }
 
-.about-details {
-  grid-template-columns: 1fr;
-  gap: 2.5rem;
-  padding: 0 1.5rem;
-}
-
-.about-detail-block {
-  text-align: center;
-}
-
-.about-detail-block h3::after {
-  left: 50%;
-  transform: translateX(-50%);
-}
+@media (max-width: 992px) {
+  .about-details {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    padding: 0 1.5rem;
+  }
+  
+  .about-detail-block {
+    text-align: center;
+  }
+  
+  .about-detail-block h3::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 @media (max-width: 768px) {
