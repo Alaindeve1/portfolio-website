@@ -10,11 +10,11 @@
   "home": {
     "hero": {
       "title": "Bonjour, je suis {{name}}",
-      "role1": "Développeur back-end polyvalent",
-      "role2": "Compétences full-stack",
-      "role3": "Chef de projet certifié",
-      "role": "Développeur back-end polyvalent | Compétences full-stack | Chef de projet certifié",
-      "desc": "Développeur back-end spécialisé dans les solutions serveur robustes, avec des compétences full-stack issues d'une expérience front-end concrète. Chef de projet certifié PeopleCert, je possède une expérience en exploitation réseau et en assistance virtuelle. Je crée des systèmes performants et maintenables, alliant exécution technique et livraison stratégique."
+      "role1": "Ingénieur Logiciel chez Flowcode",
+      "role2": "Étudiant en Master à CMU-Africa",
+      "role3": "Développeur Full-Stack & Praticien IA",
+      "role": "Ingénieur Logiciel chez Flowcode | Étudiant en Master à CMU-Africa | Développeur Full-Stack & Praticien IA",
+      "desc": "Ingénieur logiciel spécialisé dans les architectures backend évolutives, les systèmes full-stack et l'intégration pratique de l'IA. Actuellement stagiaire en ingénierie logicielle chez Flowcode et étudiant de master à Carnegie Mellon University Africa. Je conçois des systèmes performants et résilients avec la vision de bâtir des solutions technologiques à impact mondial."
     },
     "cta": {
       "projects": "Voir les projets",
@@ -31,12 +31,12 @@
   },
   "about": {
     "title": "À propos de moi",
-    "headline": "Transformer les idées en excellence numérique",
-    "description": "Développeur back-end spécialisé dans les architectures côté serveur évolutives, avec des capacités full-stack issues d'une expérience front-end concrète. Chef de projet certifié PeopleCert, je fais le lien entre exécution technique et livraison stratégique. Mon expérience en exploitation réseau et en assistance virtuelle me donne une vision globale de l'interconnexion des systèmes et de la collaboration entre les équipes. Je conçois des solutions efficaces et maintenables, tout en gardant une vision globale : de l'infrastructure à l'interface, de la planification des sprints à la communication avec les parties prenantes.",
+    "headline": "Ingénieur Logiciel | Étudiant en Master à CMU-Africa | Stagiaire en Ingénierie Logicielle chez Flowcode",
+    "description": "Je suis un ingénieur logiciel spécialisé dans les architectures backend évolutives, les systèmes full-stack et l'intégration de technologies d'IA. Je travaille actuellement à distance en tant que stagiaire en ingénierie logicielle pour Flowcode, une entreprise technologique basée à New York, tout en débutant mes études de master à Carnegie Mellon University Africa (CMU-Africa).\n\nTout au long de mon parcours, j'ai développé un portefeuille de projets diversifiés allant d'applications de bureau administratives et d'APIs RESTful à des systèmes de communication en temps réel et des plateformes hybrides intelligentes exploitant les grands modèles de langage (LLM). Mon expertise couvre des technologies clés telles que Java/Spring Boot, Python/FastAPI, Node.js, React, ainsi que des bases de données comme PostgreSQL et Oracle. En tant que chef de projet certifié PeopleCert, j'associe la rigueur technique de l'ingénierie à des méthodologies agiles pour piloter efficacement la livraison de produits complexes.\n\nMon objectif est d'intégrer l'industrie technologique mondiale et de concevoir des solutions qui répondent à des défis non seulement au Rwanda, mais à l'échelle de l'Afrique et du monde entier. Mon opportunité actuelle chez Flowcode constitue une étape clé de ce parcours, me permettant d'appliquer des standards d'ingénierie internationaux pour résoudre des problèmes complexes.",
     "journeyTitle": "Mon parcours",
-    "journeyDesc": "Ma passion pour la technologie est née très tôt lorsque j'ai découvert le pouvoir de l'ingénierie logicielle pour résoudre des problèmes concrets. Partie d'une simple curiosité, elle est devenue une carrière dédiée à repousser les limites du développement web. J'aime anticiper les tendances, maîtriser en continu les technologies émergentes et appliquer les meilleures pratiques pour créer des solutions qui font la différence.",
+    "journeyDesc": "Mon évolution en ingénierie logicielle s'est construite à travers différents paradigmes de développement. J'ai commencé par concevoir des applications de bureau robustes et des bases de données administratives, avant de me tourner vers les architectures web modernes, la communication en temps réel et les déploiements cloud conteneurisés. Récemment, j'ai orienté mes travaux vers l'intégration de l'apprentissage automatique et du calcul intelligent. Mon cursus de master à CMU-Africa me permet d'approfondir mes compétences en systèmes distribués et en bases de données avancées afin de concevoir des solutions technologiques d'envergure globale.",
     "drivesTitle": "Ce qui me motive",
-    "drivesDesc": "Je suis passionné par l'écriture d'un code propre et efficace et par la résolution de problèmes complexes. Je crois au pouvoir de la technologie pour transformer les entreprises et améliorer la vie, et je m'engage à créer des solutions à impact réel.",
+    "drivesDesc": "Je suis motivé par le code propre, l'optimisation des performances et la résolution de défis d'ingénierie non triviaux. J'aime concevoir des solutions élégantes face aux contraintes du monde réel—qu'il s'agisse de synchronisation de données hors-ligne, de flux peer-to-peer en temps réel ou d'optimisation de requêtes d'IA pour réduire les coûts d'infrastructure.",
     "skillsTitle": "Compétences techniques",
     "frontend": "Frontend",
     "backend": "Backend",

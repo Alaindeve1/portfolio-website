@@ -10,11 +10,11 @@
   "home": {
     "hero": {
       "title": "Hi, I'm {{name}}",
-      "role1": "Versatile Backend Developer",
-      "role2": "Full-Stack Capable",
-      "role3": "Certified Project Manager",
-      "role": "Versatile Backend Developer | Full-Stack Capable | Certified Project Manager",
-      "desc": "Backend developer specializing in robust server-side solutions with full-stack capabilities from hands-on frontend work. PeopleCert-certified project manager with experience in network operations and virtual assistance. I create efficient, maintainable systems while bridging technical execution with strategic delivery."
+      "role1": "Software Engineer at Flowcode",
+      "role2": "Graduate Student at CMU-Africa",
+      "role3": "Full-Stack & AI Practitioner",
+      "role": "Software Engineer at Flowcode | Graduate Student at CMU-Africa | Full-Stack & AI Practitioner",
+      "desc": "Software Engineer specializing in scalable backend architectures, full-stack systems, and practical AI integrations. Currently a Software Engineering Intern at Flowcode and a graduate student at Carnegie Mellon University Africa. I design performant, resilient systems with a vision to build technology solutions that scale globally."
     },
     "cta": {
       "projects": "View Projects",
@@ -31,12 +31,12 @@
   },
   "about": {
     "title": "About Me",
-    "headline": "Transforming Ideas Into Digital Excellence",
-    "description": "Backend developer specializing in scalable server-side architecture with full-stack capabilities from hands-on frontend work. PeopleCert-certified project manager who bridges technical execution and strategic delivery. Experience in network operations and virtual assistance gives me a holistic view of how systems interconnect and teams collaborate. I build efficient, maintainable solutions while keeping the bigger picture in focus—from infrastructure to interface, sprint planning to stakeholder communication.",
+    "headline": "Software Engineer | Graduate Student at CMU-Africa | Software Engineering Intern at Flowcode",
+    "description": "I am a Software Engineer specializing in scalable backend architectures, full-stack systems, and practical AI integrations. I currently work remotely as a Software Engineering Intern for Flowcode, a New York-based technology company, while beginning my graduate studies at Carnegie Mellon University Africa (CMU-Africa).\n\nOver my career, I have developed a diverse portfolio of applications, ranging from desktop administrative software and RESTful backend APIs to real-time communication platforms and hybrid intelligent systems utilizing Large Language Models (LLMs). My experience spans technologies like Java/Spring Boot, Python/FastAPI, Node.js, React, and databases such as PostgreSQL and Oracle. As a PeopleCert-certified project manager, I pair technical engineering with agile delivery practices to build efficient systems.\n\nMy goal is to break into the global tech industry and build solutions that address challenges not only in Rwanda, but across Africa and globally. My current opportunity at Flowcode is a key step along this journey, allowing me to apply international engineering standards to solve real-world problems at scale.",
     "journeyTitle": "My Journey",
-    "journeyDesc": "My passion for technology ignited at a young age when I first discovered the power of software engineering to solve real-world problems. What started as curiosity evolved into a dedicated career focused on pushing the boundaries of what's possible in web development. I thrive on staying ahead of industry trends, continuously mastering emerging technologies, and applying cutting-edge best practices to create solutions that make a difference.",
+    "journeyDesc": "My journey in software engineering has been defined by continuous growth across different paradigms. I began by building robust offline desktop applications and administrative databases, gradually expanding into modern web architectures, real-time sync systems, and containerized cloud deployments. Recently, my focus has shifted toward machine learning integration and intelligent computing. Pursuing my graduate degree at CMU-Africa allows me to deepen my expertise in distributed systems, database internals, and advanced computation, preparing me to engineer next-generation solutions at scale.",
     "drivesTitle": "What Drives Me",
-    "drivesDesc": "I'm passionate about creating clean, efficient code and solving complex problems. I believe in the power of technology to transform businesses and improve lives, and I'm committed to building solutions that make a real impact.",
+    "drivesDesc": "I am driven by clean code architectures, performance optimization, and solving non-trivial engineering challenges. I enjoy finding elegant solutions to complex constraints—whether that means designing offline-first database synchronization, building real-time peer-to-peer data streams, or optimizing AI queries to reduce latency and infrastructure costs.",
     "skillsTitle": "Technical Skills",
     "frontend": "Frontend",
     "backend": "Backend",
