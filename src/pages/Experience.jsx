@@ -102,6 +102,14 @@ const Experience = () => {
 
   const education = [
     {
+      id: 8,
+      degree: "Master of Science in Information Technology",
+      institution: "CARNEGIE MELLON UNIVERSITY AFRICA",
+      location: "KIGALI, RWANDA",
+      duration: "August 2026 - May 2028",
+      description: "Advanced graduate program focusing on Software Engineering, Distributed Systems, and Intelligent Technologies. Class of 2028."
+    },
+    {
       id: 1,
       degree: "bachelor of software engineering",
       institution: "ADVENTIST UNIVERSITY OF CENTRAL AFRICA",
