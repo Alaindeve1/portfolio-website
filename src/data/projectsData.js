@@ -69,7 +69,7 @@ const projectsData = [
     technologies: ["Java", "Android", "Firebase", "WebRTC", "Socket.IO", "Room Database", "Retrofit", "WorkManager", "MVVM"],
     image: "/assets/images/health-connect.png",
     fallbackImage: "/assets/images/health-connect.png",
-    githubLink: "https://github.com/Alaindeve1/health-connect",
+    githubLink: "https://github.com/Alaindeve1/Telehealth-SRS-Project",
     category: "fullstack",
   },
   {
@@ -80,7 +80,7 @@ const projectsData = [
     technologies: ["Python", "FastAPI", "Spring Boot", "React", "Tailwind CSS", "PostgreSQL", "Docker", "Google Gemini AI", "scikit-learn", "Railway"],
     image: "/assets/images/sda-platform.webp",
     fallbackImage: "/assets/images/sda-platform.png",
-    githubLink: "https://github.com/Alaindeve1/sda-community-platform",
+    githubLink: "https://github.com/Alaindeve1/AI-enhanced-sda-community-platform",
     category: "fullstack",
   },
 ];
