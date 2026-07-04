@@ -14,7 +14,6 @@ import {
   SiAndroid, 
   SiTailwindcss, 
   SiWebrtc,
-  SiGoogle,
   SiScikitlearn
 } from 'react-icons/si';
 import '../styles/HomeStyles.css';
@@ -160,10 +159,7 @@ const Home = () => {
                 <SiWebrtc className="skill-icon" />
                 <span className="skill-name">WebRTC</span>
               </div>
-              <div className="skill" title="Gemini AI">
-                <SiGoogle className="skill-icon" />
-                <span className="skill-name">Gemini AI</span>
-              </div>
+
               <div className="skill" title="scikit-learn">
                 <SiScikitlearn className="skill-icon" />
                 <span className="skill-name">scikit-learn</span>

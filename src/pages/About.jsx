@@ -62,12 +62,12 @@ const About = () => {
               <h3><FaCode className="skill-icon" /> {t('about.frontend')}</h3>
               <ul>
                 <li>React JS</li>
-                <li>JavaScript (ES6+)</li>
+                <li>Next JS</li>
                 <li>TypeScript</li>
+                <li>JavaScript (ES6+)</li>
                 <li>HTML5 & CSS3</li>
                 <li>Tailwind CSS</li>
                 <li>Responsive Design</li>
-                <li>Next JS</li>
               </ul>
             </div>
             
@@ -76,20 +76,22 @@ const About = () => {
               <ul>
                 <li>Node.js</li>
                 <li>Express JS</li>
-                <li>Python</li>
-                <li>Java/Spring Boot</li>
+                <li>Spring Boot (Java)</li>
+                <li>FastAPI (Python)</li>
                 <li>RESTful APIs</li>
-                <li>Authentication & Authorization</li>
                 <li>API Integration</li>
+                <li>JWT & OAuth</li>
               </ul>
             </div>
             
             <div className="skill-category">
               <h3><FaDatabase className="skill-icon" /> {t('about.databases')}</h3>
               <ul>
-                <li>Oracle (PL/SQL)</li>
                 <li>PostgreSQL</li>
                 <li>MySQL</li>
+                <li>Oracle (PL/SQL)</li>
+                <li>Firebase</li>
+                <li>Room Database & SQLite</li>
                 <li>Database Design</li>
               </ul>
             </div>
@@ -99,10 +101,10 @@ const About = () => {
               <ul>
                 <li>Git & GitHub</li>
                 <li>Docker</li>
-                <li>VS Code</li>
-                <li>Netlify</li>
-                <li>Agile/Scrum</li>
-                <li>CI/CD</li>
+                <li>Android Development</li>
+                <li>WebRTC & Socket.IO</li>
+                <li>Machine Learning (scikit-learn)</li>
+                <li>VS Code & Netlify</li>
               </ul>
             </div>
           </div>
