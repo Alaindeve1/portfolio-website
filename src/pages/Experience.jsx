@@ -114,6 +114,15 @@ const Experience = () => {
       description: "Specialized in Web Technologies and Software Engineering",
     },
     {
+      id: 2,
+      degree: "PRINCE2 (Project Management) Certification",
+      institution: "Peoplecert - Article26",
+      location: "REMOTE",
+      duration: "'june-2025'-'august-2025'",
+      description: "An international framework used in project management certification",
+      certificateUrl: "/assets/certificates/e-cert prince2 certificate.pdf"
+    },
+    {
       id: 7,
       degree: "AI Fundamentals certificate",
       institution: "IBM SkillsBuild",
@@ -137,23 +146,6 @@ IBM Watson Studio – Hands-on experience with industry-leading AI`,
       certificateUrl: "assets/certificates/AI fundamentals certificate.pdf"
     },
     {
-      id: 2,
-      degree: "PRINCE2 (Project Management) Certification",
-      institution: "Peoplecert - Article26",
-      location: "REMOTE",
-      duration: "'june-2025'-'august-2025'",
-      description: "An international framework used in project management certification",
-      certificateUrl: "/assets/certificates/e-cert prince2 certificate.pdf"
-    },
-    {
-      id: 3,
-      degree: "Duolingo English Test",
-      institution: "Duolingo",
-      location: "Remote",
-      duration: "2025",
-      description: "Performed an online duolingo english test and passed with a score of 130.",
-    },
-    {
       id: 4,
       degree: "certification in virtual assistance",
       institution: "ALX",
@@ -170,6 +162,14 @@ IBM Watson Studio – Hands-on experience with industry-leading AI`,
       duration: "2024",
       description: "4 weeks training in introduction to network operations.",
       certificateUrl: "/assets/certificates/netops certificate.pdf"
+    },
+    {
+      id: 3,
+      degree: "Duolingo English Test",
+      institution: "Duolingo",
+      location: "Remote",
+      duration: "2025",
+      description: "Performed an online duolingo english test and passed with a score of 130.",
     },
   ];
 
