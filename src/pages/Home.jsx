@@ -1,7 +1,22 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaReact, FaNodeJs, FaJava, FaDatabase, FaHtml5 } from 'react-icons/fa';
-import { SiJavascript, SiC } from 'react-icons/si';
+import { 
+  SiJavascript, 
+  SiNextdotjs, 
+  SiExpress, 
+  SiTypescript, 
+  SiPython, 
+  SiSpringboot, 
+  SiFastapi, 
+  SiDocker, 
+  SiFirebase, 
+  SiAndroid, 
+  SiTailwindcss, 
+  SiWebrtc,
+  SiGoogle,
+  SiScikitlearn
+} from 'react-icons/si';
 import '../styles/HomeStyles.css';
 import '../styles/Animations.css';
 import WhatsAppCTA from '../components/WhatsAppCTA';
@@ -81,13 +96,45 @@ const Home = () => {
                 <FaReact className="skill-icon" />
                 <span className="skill-name">React JS</span>
               </div>
-              <div className="skill" title="Node.js">
-                <FaNodeJs className="skill-icon" />
-                <span className="skill-name">Node.js</span>
+              <div className="skill" title="Next JS">
+                <SiNextdotjs className="skill-icon" />
+                <span className="skill-name">Next JS</span>
+              </div>
+              <div className="skill" title="TypeScript">
+                <SiTypescript className="skill-icon" />
+                <span className="skill-name">TypeScript</span>
               </div>
               <div className="skill" title="JavaScript">
                 <SiJavascript className="skill-icon" />
                 <span className="skill-name">JavaScript</span>
+              </div>
+              <div className="skill" title="Html & Css">
+                <FaHtml5 className="skill-icon" />
+                <span className="skill-name">Html & Css</span>
+              </div>
+              <div className="skill" title="Tailwind CSS">
+                <SiTailwindcss className="skill-icon" />
+                <span className="skill-name">Tailwind CSS</span>
+              </div>
+              <div className="skill" title="Node.js">
+                <FaNodeJs className="skill-icon" />
+                <span className="skill-name">Node.js</span>
+              </div>
+              <div className="skill" title="Express JS">
+                <SiExpress className="skill-icon" />
+                <span className="skill-name">Express JS</span>
+              </div>
+              <div className="skill" title="Spring Boot">
+                <SiSpringboot className="skill-icon" />
+                <span className="skill-name">Spring Boot</span>
+              </div>
+              <div className="skill" title="FastAPI">
+                <SiFastapi className="skill-icon" />
+                <span className="skill-name">FastAPI</span>
+              </div>
+              <div className="skill" title="Python">
+                <SiPython className="skill-icon" />
+                <span className="skill-name">Python</span>
               </div>
               <div className="skill" title="Java">
                 <FaJava className="skill-icon" />
@@ -97,22 +144,29 @@ const Home = () => {
                 <FaDatabase className="skill-icon" />
                 <span className="skill-name">PostgreSQL</span>
               </div>
-              <div className="skill" title="Html & Css">
-                <FaHtml5 className="skill-icon" />
-                <span className="skill-name">Html & Css</span>
+              <div className="skill" title="Firebase">
+                <SiFirebase className="skill-icon" />
+                <span className="skill-name">Firebase</span>
               </div>
-             
-              <div className="skill" title="Next JS">
-                <SiC className="skill-icon" />
-                <span className="skill-name">Next JS</span>
+              <div className="skill" title="Docker">
+                <SiDocker className="skill-icon" />
+                <span className="skill-name">Docker</span>
               </div>
-              <div className="skill" title="Express JS">
-                <SiC className="skill-icon" />
-                <span className="skill-name">Express JS</span>
+              <div className="skill" title="Android">
+                <SiAndroid className="skill-icon" />
+                <span className="skill-name">Android</span>
               </div>
-              <div className="skill" title="Typescript">
-                <SiC className="skill-icon" />
-                <span className="skill-name">Typescript</span>
+              <div className="skill" title="WebRTC">
+                <SiWebrtc className="skill-icon" />
+                <span className="skill-name">WebRTC</span>
+              </div>
+              <div className="skill" title="Gemini AI">
+                <SiGoogle className="skill-icon" />
+                <span className="skill-name">Gemini AI</span>
+              </div>
+              <div className="skill" title="scikit-learn">
+                <SiScikitlearn className="skill-icon" />
+                <span className="skill-name">scikit-learn</span>
               </div>
             </div>
           </div>
