@@ -23,6 +23,17 @@ const projectsData = [
     category: "fullstack",
   },
   {
+    id: 8,
+    title: "ML-Based Early Detection of Rheumatic Heart Disease",
+    description:
+      "Designed an ML-powered cardiac screening system to address the critical gap in early Rheumatic Heart Disease detection across Sub-Saharan Africa. The system uses a two-stage classification pipeline — first identifying whether a cardiac case is normal or abnormal, then classifying it into one of four specific RHD valve diseases. The solution targets high mortality rates, unaffordable diagnostic equipment, and the severe shortage of cardiac specialists in low-income regions. A conceptual clinical dashboard was designed for deployment in resource-limited healthcare settings, providing real-time diagnosis results and specialist referral recommendations.",
+    technologies: ["Machine Learning", "Python", "FastAPI", "Data Analytics", "Healthcare Tech", "Product Strategy"],
+    image: "/assets/images/rhd-detection.png",
+    fallbackImage: "/assets/images/rhd-detection.png",
+    githubLink: "https://github.com/Alaindeve1",
+    category: "fullstack",
+  },
+  {
     id: 2,
     title: "AUCTION MANAGMENT SYSTEM",
     description:
