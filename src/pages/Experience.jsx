@@ -103,7 +103,7 @@ const Experience = () => {
       institution: "CARNEGIE MELLON UNIVERSITY AFRICA",
       location: "KIGALI, RWANDA",
       duration: "August 2026 - May 2028",
-      description: "Advanced graduate program focusing on Software Engineering, Distributed Systems, and Intelligent Technologies. Class of 2028."
+      description: "Master of Science in Information Technology (MSIT) specializing in IT Entrepreneurship with an academic focus on Machine Learning and Cybersecurity. Concentrated on designing secure, intelligent systems and scaling technology ventures that solve critical global and regional challenges. Class of 2028."
     },
     {
       id: 1,
