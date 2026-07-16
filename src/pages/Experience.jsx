@@ -107,11 +107,11 @@ const Experience = () => {
     },
     {
       id: 1,
-      degree: "bachelor of software engineering",
+      degree: "Bachelor of Science in Software Engineering (First-Class Honours)",
       institution: "ADVENTIST UNIVERSITY OF CENTRAL AFRICA",
       location: "GASABO, GISHUSHU",
-      duration: "2023 - present",
-      description: "Specialized in Web Technologies and Software Engineering",
+      duration: "2023 - 2026",
+      description: "Graduated with First-Class Honours. Comprehensive curriculum covering software design patterns, advanced algorithms, object-oriented programming (OOP), database systems (SQL/NoSQL), web technologies, and systems analysis. Focused on building scalable full-stack applications and applying software engineering methodologies to solve real-world problems."
     },
     {
       id: 2,

@@ -131,8 +131,8 @@
     },
     "educationItems": {
       "1": {
-        "degree": "Licence en génie logiciel",
-        "description": "Spécialisation en technologies web et en ingénierie logicielle"
+        "degree": "Licence en Génie Logiciel (First-Class Honours)",
+        "description": "Diplômé avec mention Très Bien (First-Class Honours). Programme rigoureux couvrant la conception de logiciels, les algorithmes avancés, la programmation orientée objet (POO), les bases de données (SQL/NoSQL), les technologies web et l'analyse de systèmes. Axé sur le développement d'applications full-stack et l'application de méthodologies d'ingénierie logicielle."
       },
       "8": {
         "degree": "Master of Science en Technologies de l'Information",
